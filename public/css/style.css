@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111840;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+strong {
+  font-size: inherit;
+}
+
+.button-blue {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  background-color: #111840;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin: auto 1rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #111840;
+}
+
+.navbar .navbar-toggler-icon {
+  color: #111840;
+  font-size: 1.5rem;
+}
+
+.main-header {
+  background-color: #111840;
+  color: #ffffff;
+}
+
+.main-header .row {
+  padding: 6rem 0;
+}
+
+.main-header .header-logo {
+  width: 350px;
+  max-width: 100%;
+}
+
+.main-header .header-title {
+  font-family: "Lato", sans-serif;
+}
+
+.main-header .header-desc {
+  font-family: "Montserrat", sans-serif;
+}
+
+#upcoming-events {
+  padding: 4rem 0;
+  color: #111840;
+}
+
+#upcoming-events .container {
+  max-width: 1140px;
+}
+
+#upcoming-events .upcoming-events-title {
+  font-family: "Lato", sans-serif;
+  font-size: 4.5rem;
+  width: 350px;
+  max-width: 100%;
+}
+
+#upcoming-events .upcoming-events-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  width: 350px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+#upcoming-events .events {
+  width: 250px;
+  max-width: 100%;
+  height: 170px;
+  border: 1px solid #111840;
+  border-radius: 1.5rem;
+}
+
+#main-blogs .container {
+  max-width: 1140px;
+}
+
+#main-blogs .blogs-header {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem;
+  color: #111840;
+}
+
+#main-blogs .blogs-summary {
+  width: 250px;
+  max-width: 100%;
+  height: 150px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#main-blogs .blogs-summary .blogs-pict {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+#main-members {
+  background: url(../img/bg-member.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #262626;
+  padding: 6rem 0;
+}
+
+#main-members .members-title {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#main-members .members-desc {
+  font-weight: 600;
+}
+
+#our-members {
+  background: url(../img/member-photos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#our-members .container {
+  min-height: 525px;
+}
+
+#our-members .our-members-title {
+  font-family: "Lato", sans-serif;
+  font-size: 5.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#our-members .our-members-logo {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  width: 90px;
+}
+
+#testimonials {
+  color: #111840;
+}
+
+#testimonials .testimonials-title {
+  padding: 4.25rem 0;
+  font-family: "Lato", sans-serif;
+  font-size: 4.25rem;
+  font-weight: bold;
+}
+
+#testimonials .testimonials-content {
+  padding: 4rem 2.5rem;
+  background: #f2e7dc;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  min-height: 450px;
+  position: relative;
+}
+
+#testimonials .testimonials-content .testimonials-said {
+  text-align: justify;
+  font-style: italic;
+}
+
+#testimonials .testimonials-content .testimonials-quotes {
+  position: absolute;
+}
+
+#testimonials .testimonials-content .testimonials-quotes:nth-of-type(1) {
+  top: 17px;
+  left: 17px;
+}
+
+#testimonials .testimonials-content .testimonials-quotes:nth-of-type(2) {
+  bottom: 17px;
+  right: 17px;
+}
+
+#testimonials .testimonials-hashtag {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+footer .row {
+  padding: 6rem 0;
+}
+
+footer .footer-logo {
+  width: 350px;
+  max-width: 100%;
+}
+
+footer .footer-title {
+  font-family: "Lato", sans-serif;
+}
+
+footer .footer-desc {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonials .testimonials-content {
+    min-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-header .header-logo {
+    width: 80%;
+  }
+  #upcoming-events .upcoming-events-title {
+    font-family: "Lato", sans-serif;
+    font-size: 3.5rem;
+    width: fit-content;
+    max-width: 100%;
+  }
+  #main-blogs .blogs-header {
+    width: 350px;
+    max-width: 100%;
+  }
+  footer .footer-logo {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

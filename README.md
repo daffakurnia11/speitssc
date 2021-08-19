@@ -6,38 +6,39 @@
 
 ## Repository Requirement
 
-Before cloning this repository, make sure you have the following requirements :
+Before cloning this repository, make sure you have these following requirements :
 
--   PHP Version up to 7.4
+-   PHP 7.4 or higher
 -   MySQL
 -   Composer 2
 -   Gitbash
 
-<strong>RECOMMEND!</strong> Please using <em>Visual Studio Code</em> for better performence.
-Use this extensions in <em>Visual Studio Code</em> to make work easier and tidy up lines of code.
+<strong>RECOMMENDED!</strong> Please use <em>Visual Studio Code</em> for better performence.
+Use these extensions in <em>Visual Studio Code</em> to work easier and tidy up lines of code.
 
--   PHP intelephense,
+-   PHP Intelephense,
 -   Laravel Artisan,
 -   Laravel Snippets,
 -   Laravel Blade Snippets,
 -   Laravel Blade Spacer,
 -   Laravel Go To View
 
-## Features
+## Usage
 
-This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of this following features :
-
--   [ ] Member Login and Registration
-
-## What you have to do
-
-After completely cloning this repository, Please do some configuration as below :
+After completely cloning this repository, please do some configuration as below :
 
 -   Start <code>php artisan serve</code> on your Gitbash
 
+## Features
+
+This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
+
+-   [x] Main Page
+-   [ ] Member Login and Registration
+
 ## Contact Support
 
-If you have problems or need help, and also want to give suggestions and criticisms, it is very pleasure to contact the contact below :
+If you have problems or need help, and also want to give suggestions and criticisms, you are welcome to contact me by :
 
 -   Line : <a href="http://line.me/ti/p/~daffakurnia11">daffakurnia11</a>
 -   Whatsapp : <a href="https://wa.me/6285156317473">0851 5631 7473</a>
