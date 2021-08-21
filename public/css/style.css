@@ -7,6 +7,10 @@
   font-size: 14px;
 }
 
+*:focus {
+  outline: 0 !important;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -16,7 +20,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #111840;
+  background: #0a1931;
 }
 
 html {
@@ -41,14 +45,9 @@ strong {
   font-size: inherit;
 }
 
-.button-blue {
-  font-family: "Lato", sans-serif;
-  font-size: 1.25rem;
-  background-color: #111840;
-  color: #ffffff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 3rem;
-  text-transform: uppercase;
+textarea:focus,
+input:focus {
+  outline: 0 !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -58,16 +57,16 @@ strong {
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
-  color: #111840;
+  color: #0a1931;
 }
 
 .navbar .navbar-toggler-icon {
-  color: #111840;
+  color: #0a1931;
   font-size: 1.5rem;
 }
 
 .main-header {
-  background-color: #111840;
+  background-color: #0a1931;
   color: #ffffff;
 }
 
@@ -90,7 +89,7 @@ strong {
 
 #upcoming-events {
   padding: 4rem 0;
-  color: #111840;
+  color: #0a1931;
 }
 
 #upcoming-events .container {
@@ -116,8 +115,18 @@ strong {
   width: 250px;
   max-width: 100%;
   height: 170px;
-  border: 1px solid #111840;
+  border: 1px solid #0a1931;
   border-radius: 1.5rem;
+}
+
+#upcoming-events .upcoming-events-button {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+  font-size: 1.25rem;
 }
 
 #main-blogs .container {
@@ -127,7 +136,7 @@ strong {
 #main-blogs .blogs-header {
   font-family: "Lato", sans-serif;
   font-size: 3.5rem;
-  color: #111840;
+  color: #0a1931;
 }
 
 #main-blogs .blogs-summary {
@@ -162,6 +171,16 @@ strong {
   font-weight: 600;
 }
 
+#main-members .members-register {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+  font-size: 1.25rem;
+}
+
 #our-members {
   background: url(../img/member-photos.jpg);
   background-size: cover;
@@ -187,7 +206,7 @@ strong {
 }
 
 #testimonials {
-  color: #111840;
+  color: #0a1931;
 }
 
 #testimonials .testimonials-title {
@@ -271,5 +290,255 @@ footer .footer-desc {
   footer .footer-logo {
     width: 80%;
   }
+}
+
+.button-back {
+  color: #ffffff;
+  position: fixed;
+  top: 2rem;
+  left: 2.5rem;
+  cursor: pointer;
+}
+
+#authContent {
+  background-color: #0a1931;
+  min-height: 100vh;
+  position: relative;
+}
+
+#authContent .auth-content {
+  background-color: #ffffff;
+  color: #0a1931;
+  width: 375px;
+  max-width: 100%;
+  font-family: "Lato", sans-serif;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  margin: 0 1rem 2.5rem;
+}
+
+#authContent .auth-content .input-group-text {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  background-color: #ffffff;
+}
+
+#authContent .auth-content .input-group .form-control {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+#authContent .auth-content .login-submit {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+}
+
+#authContent .auth-content .divider {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+}
+
+#authContent .auth-content .divider::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background-color: #0a1931;
+}
+
+#authContent .auth-content .divider::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  width: 40%;
+  height: 2px;
+  background-color: #0a1931;
+}
+
+#authContent .auth-content .login-register {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+}
+
+#authContent .register-content {
+  margin: 2rem;
+  background-color: #ffffff;
+  color: #0a1931;
+  width: 875px;
+  max-width: 100%;
+  font-family: "Lato", sans-serif;
+  border-radius: 1rem;
+  padding: 2.5rem 4rem;
+  margin: 0 1rem 2.5rem;
+}
+
+#authContent .register-content p.register-notes {
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+#authContent .register-content p.register-notes::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #0a1931;
+}
+
+#authContent .register-content label.register-notes {
+  font-size: 0.9rem;
+}
+
+#authContent .register-content .register-button {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1.75rem;
+}
+
+#memberInfo {
+  background-color: #0a1931;
+  min-height: 100vh;
+  position: relative;
+}
+
+#memberInfo .instruction {
+  margin: 2rem;
+  padding: 2.25rem 3.5rem;
+  width: 875px;
+  max-width: 100%;
+  border-radius: 1.5rem;
+  background-color: #f2e7dc;
+  color: #0a1931;
+}
+
+#memberInfo .instruction-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+}
+
+#memberInfo .instruction a {
+  text-decoration: underline;
+}
+
+#memberInfo .instruction ol {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+#memberInfo .instruction ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#memberInfo .instruction ul li::before {
+  content: "-";
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .button-back {
+    top: 1rem;
+    left: 2rem;
+  }
+  .button-back .fa-3x {
+    font-size: 2.5rem;
+  }
+  #authContent .register-content {
+    margin: 5rem 0.75rem 2rem;
+    padding: 2.5rem 2rem;
+  }
+  #memberInfo .instruction {
+    margin: 5rem 0.75rem 2rem;
+    padding: 2.5rem 2rem;
+  }
+}
+
+#registerInfo {
+  color: #0a1931;
+}
+
+#registerInfo .row {
+  padding: 0;
+}
+
+#registerInfo .info-mockup {
+  background-color: #0a1931;
+  min-height: calc(100vh - 82.22px);
+}
+
+#registerInfo .info-mockup .info-mockup-img {
+  width: 360px;
+}
+
+#registerInfo .info-content {
+  padding: 0 4.25rem;
+}
+
+#registerInfo .info-content .info-title {
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#registerInfo .info-content .info-title small {
+  font-size: 2.75rem;
+  font-weight: normal;
+}
+
+#registerInfo .info-benefit ul {
+  list-style: none;
+}
+
+#registerInfo .info-benefit ul li {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  padding-left: 2rem;
+  text-align: justify;
+}
+
+#registerInfo .info-benefit ul .fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2rem;
+}
+
+#registerInfo .info-register {
+  font-family: "Lato", sans-serif;
+  background-color: #0a1931;
+  color: #ffffff;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 1.25rem 2.75rem;
+}
+
+#registerInfo .info-renew {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

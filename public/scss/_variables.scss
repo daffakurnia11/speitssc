@@ -1,0 +1,23 @@
+$font-lato: "Lato", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+
+$text-primary: #0a1931;
+$text-white: #ffffff;
+$text-black: #262626;
+$text-gray: #f2e7dc;
+
+@mixin button-blue() {
+    font-family: $font-lato;
+    background-color: $text-primary;
+    color: $text-white;
+    border-radius: 0.75rem;
+    text-transform: uppercase;
+}
+
+@mixin button-blue-rounded() {
+    font-family: $font-lato;
+    background-color: $text-primary;
+    color: $text-white;
+    border-radius: 3rem;
+    text-transform: uppercase;
+}

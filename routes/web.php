@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main.index');
-});
+Route::get('/', [PagesController::class, 'landing']);
+Route::get('/member', [PagesController::class, 'member']);
+
+Route::get('/member/new', [AuthController::class, 'new_member']);
+Route::get('/member/renewal', [AuthController::class, 'renewal_member']);
+
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);
+Route::get('/renewal', [AuthController::class, 'renewal']);

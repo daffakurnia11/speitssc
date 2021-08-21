@@ -1,63 +1,15 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('templates.main')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
-    {{-- CSS --}}
-    <link rel="stylesheet" href="css/style.css?modified={{ date("Ymd")}}">
-    {{-- Favicon --}}
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+@section('navbar')
+  @include('templates.navbar')
+@endsection
 
-    <title>SPE ITS Student Chapter</title>
-  </head>
-  <body>
-    {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="SPE ITS SC Logo" width="70">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <svg class="navbar-toggler-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Petrolida</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Members</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Merch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    {{-- End of Navbar --}}
+@section('footer')
+  @include('templates.footer')
+@endsection
 
+@section('content')
+    
     {{-- Header --}}
     <header class="main-header">
       <div class="container d-flex align-items-center flex-column">
@@ -92,7 +44,7 @@
               <div class="col-sm-6 col-md-12">
                 <p class="upcoming-events-desc text-justify mt-4 mb-5 mx-auto">Develop crucial skills and learn with SPE ITS SC through our events, from <strong>Company Visits to Competition 101</strong>.</p>
                 <div class="text-center text-start">
-                  <a href="" class="button-blue">Sign up as member</a>
+                  <a href="" class="upcoming-events-button">Sign up as member</a>
                 </div>
               </div>
             </div>
@@ -173,7 +125,7 @@
         <div class="row align-content-center">
           <div class="col-md-4 text-center">
             <h2 class="members-title mb-5">Become a Member</h2>
-            <a href="" class="button-blue">Sign-up</a>
+            <a href="/member" class="members-register">Sign-up</a>
           </div>
           <div class="col-md-8 mt-4 mt-md-0">
             <p class="members-desc fs-5 px-4">
@@ -245,43 +197,5 @@
       </div>
     </section>
     {{-- End of Testimonials --}}
-
-    {{-- Footer --}}
-    <footer>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4 text-center">
-            <img src="/img/logo.png" alt="SPE ITS SC Logo" class="footer-logo mb-4">
-          </div>
-          <div class="col-md-8 px-5 px-md-0">
-            <h1 class="footer-title mb-4">
-              Society of Petroleum Engineers<br>
-              Institut Teknologi Sepuluh Nopember<br>
-              Student Chapter
-            </h1>
-            <p class="footer-desc fs-5">
-              Department of Geophysics Engineering, Geomatics Building 1st Floor<br>
-              Kampus Sukolilo, Institut Teknologi Sepuluh Nopember<br>
-              Surabaya 60111
-            </p>
-            <div class="footer-contact">
-              <a href="https://speitssc.org/">
-                <img src="svg/worldwideweb.svg" alt="WorldWideWeb Icon">
-              </a>
-              <a href="https://www.instagram.com/speitssc/" target="_blank">
-                <img src="svg/instagram.svg" alt="Instagram Logo">
-              </a>
-              <a href="https://www.linkedin.com/company/speitssc/" target="_blank">
-                <img src="svg/linkedin.svg" alt="Linkedin Logo">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    {{-- End of Footer --}}
-
-    {{-- Javascript --}}
-    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    
+@endsection

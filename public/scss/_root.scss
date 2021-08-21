@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: $text-white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $text-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+strong {
+    font-size: inherit;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0 !important;
+}

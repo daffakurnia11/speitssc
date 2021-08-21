@@ -1,0 +1,55 @@
+#registerInfo {
+    color: $text-primary;
+    .row {
+        padding: 0;
+    }
+    .info-mockup {
+        background-color: $text-primary;
+        min-height: calc(100vh - 82.22px);
+        .info-mockup-img {
+            width: 360px;
+        }
+    }
+    .info-content {
+        padding: 0 4.25rem;
+        .info-title {
+            font-family: $font-lato;
+            font-size: 3.5rem;
+            font-weight: bold;
+            small {
+                font-size: 2.75rem;
+                font-weight: normal;
+            }
+        }
+    }
+    .info-benefit {
+        ul {
+            list-style: none;
+            li {
+                position: relative;
+                font-family: $font-lato;
+                font-size: 1.3rem;
+                margin-bottom: 1.25rem;
+                padding-left: 2rem;
+                text-align: justify;
+            }
+            .fas {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -2rem;
+            }
+        }
+    }
+    .info-register {
+        @include button-blue-rounded();
+        font-size: 1.75rem;
+        font-weight: bold;
+        padding: 1.25rem 2.75rem;
+    }
+    .info-renew {
+        font-family: $font-lato;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

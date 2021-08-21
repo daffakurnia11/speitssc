@@ -1,0 +1,155 @@
+.button-back {
+    color: $text-white;
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem;
+    cursor: pointer;
+}
+
+#authContent {
+    background-color: $text-primary;
+    min-height: 100vh;
+    position: relative;
+    .auth-content {
+        background-color: $text-white;
+        color: $text-primary;
+        width: 375px;
+        max-width: 100%;
+        font-family: $font-lato;
+        border-radius: 1rem;
+        padding: 2.5rem;
+        margin: 0 1rem 2.5rem;
+        .input-group {
+            &-text {
+                border-top-left-radius: 0.75rem;
+                border-bottom-left-radius: 0.75rem;
+                background-color: $text-white;
+            }
+            .form-control {
+                border-top-right-radius: 0.75rem;
+                border-bottom-right-radius: 0.75rem;
+            }
+        }
+        .login-submit {
+            @include button-blue();
+            padding: 0.8rem 1.75rem;
+        }
+        .divider {
+            display: block;
+            position: relative;
+            background-color: $text-white;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                width: 40%;
+                height: 2px;
+                background-color: $text-primary;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: 0;
+                width: 40%;
+                height: 2px;
+                background-color: $text-primary;
+            }
+        }
+        .login-register {
+            @include button-blue();
+            padding: 0.8rem 1.75rem;
+        }
+    }
+    .register-content {
+        margin: 2rem;
+        background-color: $text-white;
+        color: $text-primary;
+        width: 875px;
+        max-width: 100%;
+        font-family: $font-lato;
+        border-radius: 1rem;
+        padding: 2.5rem 4rem;
+        margin: 0 1rem 2.5rem;
+        p.register-notes {
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 1rem;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: $text-primary;
+            }
+        }
+        label.register-notes {
+            font-size: 0.9rem;
+        }
+        .register-button {
+            @include button-blue();
+            padding: 0.8rem 1.75rem;
+        }
+    }
+}
+
+#memberInfo {
+    background-color: $text-primary;
+    min-height: 100vh;
+    position: relative;
+    .instruction {
+        margin: 2rem;
+        padding: 2.25rem 3.5rem;
+        width: 875px;
+        max-width: 100%;
+        border-radius: 1.5rem;
+        background-color: $text-gray;
+        color: $text-primary;
+        &-title {
+            font-family: $font-lato;
+            font-size: 1.75rem;
+        }
+        a {
+            text-decoration: underline;
+        }
+        ol {
+            margin-top: 0;
+            padding-left: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            li::before {
+                content: "-";
+                padding-right: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .button-back {
+        top: 1rem;
+        left: 2rem;
+        .fa-3x {
+            font-size: 2.5rem;
+        }
+    }
+    #authContent {
+        .register-content {
+            margin: 5rem 0.75rem 2rem;
+            padding: 2.5rem 2rem;
+        }
+    }
+    #memberInfo {
+        .instruction {
+            margin: 5rem 0.75rem 2rem;
+            padding: 2.5rem 2rem;
+        }
+    }
+}
