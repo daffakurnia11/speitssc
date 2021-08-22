@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\MemberController;
+use App\Http\Controllers\Auth\RenewalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +17,21 @@ use App\Http\Controllers\PagesController;
 |
 */
 
+// PagesController
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 
-Route::get('/member/new', [AuthController::class, 'new_member']);
-Route::get('/member/renewal', [AuthController::class, 'renewal_member']);
+// MemberController
+Route::get('/member/new', [MemberController::class, 'new_member'])->middleware('guest');
+Route::get('/register', [MemberController::class, 'register'])->middleware('guest');
+Route::post('/register', [MemberController::class, 'store']);
 
-Route::get('/login', [AuthController::class, 'login']);
-Route::get('/register', [AuthController::class, 'register']);
-Route::get('/renewal', [AuthController::class, 'renewal']);
+// RenewalController
+Route::get('/member/renewal', [RenewalController::class, 'renewal_member'])->middleware('guest');
+Route::get('/renewal', [RenewalController::class, 'renewal'])->middleware('guest');
+Route::post('renewal', [RenewalController::class, 'store']);
+
+// AuthController
+Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
+Route::post('/login', [AuthController::class, 'authenticate']);
+Route::post('/logout', [AuthController::class, 'logout']);
