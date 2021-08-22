@@ -29,6 +29,7 @@ Route::post('/register', [MemberController::class, 'store']);
 // RenewalController
 Route::get('/member/renewal', [RenewalController::class, 'renewal_member'])->middleware('guest');
 Route::get('/renewal', [RenewalController::class, 'renewal'])->middleware('guest');
+Route::post('renewal', [RenewalController::class, 'store']);
 
 // AuthController
 Route::get('/login', [AuthController::class, 'login'])->middleware('guest');

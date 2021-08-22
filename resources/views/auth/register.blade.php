@@ -159,7 +159,12 @@
         <p class="fw-bold register-notes mb-1">Upload the screenshot of your twibbon post & fee payment transaction!</p>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of twibbon post</strong> on Instagram</label>
-          <input register class="form-control" type="file" id="formFileMultiple" name="screenshot">
+          <input register class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot">
+          @error('screenshot')
+            <div class="invalid-feedback">
+              {{ $message }}
+            </div>
+          @enderror
         </div>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of the fee payment transaction</strong></label>
