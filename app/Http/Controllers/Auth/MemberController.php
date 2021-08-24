@@ -49,7 +49,7 @@ class MemberController extends Controller
         if ($firstNumber === '0') {
             $profileData['phone'] = $profileData['phone'];
         } else {
-            $profileData['phone'] = '+62' . $profileData['phone'];
+            $profileData['phone'] = '0' . $profileData['phone'];
         }
 
         // Uploading Files

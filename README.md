@@ -27,14 +27,33 @@ Use these extensions in <em>Visual Studio Code</em> to work easier and tidy up l
 
 After completely cloning this repository, please do some configuration as below :
 
--   Start <code>php artisan serve</code> on your Gitbash
+-   Setup your database credentials in the .env file
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=speits_2021
+DB_USERNAME={USERNAME}
+DB_PASSWORD={PASSWORD}
+```
+
+-   Start Laravel Server
+-   Migrate Database and Seeder for Dummy Data using command
+
+```
+php artisan serve
+php artisan migrate --seed
+```
 
 ## Features
 
 This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
 
--   [x] Main Page
--   [ ] Member Login and Registration
+-   [ ] Main Page
+-   [x] New Member Login and Registration
+-   [x] Renewal Member Login and Registration
+-   [ ] Email Verification
 
 ## Contact Support
 
