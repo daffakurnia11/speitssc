@@ -1,6 +1,6 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 17-08-2021 ||
+<strong>Last Update</strong> : 26-08-2021 ||
 <strong>Last Deploy</strong> : -
 </p>
 
@@ -53,7 +53,7 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 -   [ ] Main Page
 -   [x] New Member Login and Registration
 -   [x] Renewal Member Login and Registration
--   [ ] Email Verification
+-   [x] Email Notification for Registration
 
 ## Contact Support
 

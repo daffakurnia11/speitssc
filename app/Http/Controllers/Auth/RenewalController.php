@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\WelcomeMail;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\File;
@@ -24,7 +26,7 @@ class RenewalController extends Controller
     public function store(Request $request)
     {
         // Validating
-        $profileData = $request->validate([
+        $request->validate([
             'member_id' => 'required|max:255|exists:profiles'
         ]);
         $userData = $request->validate([
@@ -47,6 +49,8 @@ class RenewalController extends Controller
 
             // Inserting Data
             $profileId = Profile::firstWhere('member_id', $request->member_id)->id;
+            $name = Profile::firstWhere('member_id', $request->member_id)->fullname;
+
             $userData['password'] = Hash::make($userData['password']);
             $userData['profile_id'] = $profileId;
             User::create($userData);
@@ -55,6 +59,8 @@ class RenewalController extends Controller
                 'payment'       => $paymentImage,
                 'screenshot'    => $screenshotImage
             ]);
+
+            Mail::to($request->email)->send(new WelcomeMail($name));
         }
         return redirect('/login')->with('success', 'Registration success! Please login!');
     }
