@@ -18,7 +18,11 @@ use App\Http\Controllers\Auth\RenewalController;
 */
 
 // PagesController
-Route::get('/', [PagesController::class, 'landing']);
+Route::get('/', function () {
+  return view('errors.maintenance');
+});
+
+Route::get('/home', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 
 // MemberController

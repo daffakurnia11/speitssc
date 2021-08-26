@@ -1,0 +1,36 @@
+#errors {
+    background-color: $text-primary;
+    color: $text-white;
+    min-height: 100vh;
+    .text-404 {
+        font-family: $font-montserrat;
+        font-size: 7rem;
+        font-weight: bolder;
+    }
+    .text-name {
+        font-family: $font-lato;
+        font-size: 2.75rem;
+        font-weight: bold;
+    }
+    .text-desc {
+        font-family: $font-lato;
+        font-size: 1.75rem;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #errors {
+        .text-404 {
+            font-size: 5rem;
+        }
+        .text-name {
+            font-size: 1.75rem;
+        }
+        .text-desc {
+            font-size: 1rem;
+            max-width: 600px;
+            padding: 0 2rem;
+        }
+    }
+}

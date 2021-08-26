@@ -1,7 +1,7 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
 <strong>Last Update</strong> : 26-08-2021 ||
-<strong>Last Deploy</strong> : -
+<strong>Last Deploy</strong> : 26-08-2021
 </p>
 
 ## Repository Requirement
@@ -54,6 +54,7 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 -   [x] New Member Login and Registration
 -   [x] Renewal Member Login and Registration
 -   [x] Email Notification for Registration
+-   [x] Support 404 and Under Maintenance View
 
 ## Contact Support
 
