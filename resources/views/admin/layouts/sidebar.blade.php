@@ -22,7 +22,7 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <a href="/admin" class="nav-link {{ Request::is('admin') ? 'active' : '' }}">
+          <a href="/dashboard" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
@@ -31,7 +31,7 @@
         </li>
         <li class="nav-header">SHORT LINK</li>
         <li class="nav-item">
-          <a href="/admin/shortlink" class="nav-link {{ Request::is('admin/shortlink') ? 'active' : '' }}">
+          <a href="/dashboard/shortlink" class="nav-link {{ Request::is('dashboard/shortlink') ? 'active' : '' }}">
             <i class="nav-icon fas fa-link"></i>
             <p>
               Short Link Lists
@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="/admin/shortlink/create" class="nav-link {{ Request::is('admin/shortlink/create') ? 'active' : '' }}">
+          <a href="/dashboard/shortlink/create" class="nav-link {{ Request::is('dashboard/shortlink/create') ? 'active' : '' }}">
             <i class="nav-icon fas fa-plus"></i>
             <p>
               Create Link
