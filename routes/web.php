@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Auth\MemberController;
 use App\Http\Controllers\Auth\RenewalController;
+use App\Http\Controllers\Admin\ShortlinkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +37,12 @@ Route::post('renewal', [RenewalController::class, 'store']);
 Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout']);
+
+// Admin Routes
+Route::prefix('admin')->group(function () {
+  Route::get('/', [AdminController::class, 'index']);
+  Route::get('/login', [AdminController::class, 'login']);
+  Route::resource('shortlink', ShortlinkController::class);
+});
+
+Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);
