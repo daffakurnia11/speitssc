@@ -17,7 +17,6 @@ class DatabaseSeeder extends Seeder
         $profile = new Profile;
 
         $profile->member_id         = '220210001';
-        $profile->fullname          = 'Rizky Ramadhan';
         $profile->student_number    = '2038201057';
         $profile->batch             = '2020';
         $profile->faculty           = 'VOCATION';

@@ -45,7 +45,7 @@ class ShortlinkController extends Controller
         ]);
         Shortlink::create($validated);
 
-        return redirect('/admin/shortlink');
+        return redirect('/dashboard/shortlink');
     }
 
     /**
@@ -87,7 +87,7 @@ class ShortlinkController extends Controller
 
         $shortlink->update($request->all());
 
-        return redirect('/admin/shortlink');
+        return redirect('/dashboard/shortlink');
     }
 
     /**
@@ -100,6 +100,6 @@ class ShortlinkController extends Controller
     {
         $shortlink->delete();
 
-        return redirect('/admin/shortlink');
+        return redirect('/dashboard/shortlink');
     }
 }

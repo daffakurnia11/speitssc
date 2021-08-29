@@ -29,7 +29,7 @@
         <div class="card-header">
           <h3 class="card-title">Create SPE ITS SC Short Link</h3>
         </div>
-        <form action="/admin/shortlink" method="POST">
+        <form action="/dashboard/shortlink" method="POST">
           @csrf
           <div class="card-body">
             <div class="form-group">

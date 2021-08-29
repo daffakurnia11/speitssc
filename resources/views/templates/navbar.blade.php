@@ -38,7 +38,7 @@
         @auth          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Hello, {{ auth()->user()->profile->fullname }}
+              Hello, {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-grid"></i> Dashboard</a></li>

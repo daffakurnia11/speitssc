@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Auth\MemberController;
-use App\Http\Controllers\Auth\RenewalController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ShortlinkController;
 
 /*
@@ -23,15 +23,14 @@ use App\Http\Controllers\Admin\ShortlinkController;
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 
-// MemberController
-Route::get('/member/new', [MemberController::class, 'new_member'])->middleware('guest');
-Route::get('/register', [MemberController::class, 'register'])->middleware('guest');
-Route::post('/register', [MemberController::class, 'store']);
+// RegisterController
+Route::get('/member/new', [RegisterController::class, 'new_member'])->middleware('guest');
+Route::get('/register', [RegisterController::class, 'register'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'member_store']);
 
-// RenewalController
-Route::get('/member/renewal', [RenewalController::class, 'renewal_member'])->middleware('guest');
-Route::get('/renewal', [RenewalController::class, 'renewal'])->middleware('guest');
-Route::post('renewal', [RenewalController::class, 'store']);
+Route::get('/member/renewal', [RegisterController::class, 'renewal_member'])->middleware('guest');
+Route::get('/renewal', [RegisterController::class, 'renewal'])->middleware('guest');
+Route::post('renewal', [RegisterController::class, 'renewal_store']);
 
 // AuthController
 Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
@@ -42,10 +41,11 @@ Route::post('/logout', [AuthController::class, 'logout']);
 Route::prefix('dashboard')->group(function () {
   Route::get('/', [DashboardController::class, 'index']);
   Route::get('/login', [DashboardController::class, 'login']);
+  Route::post('/login', [DashboardController::class, 'authenticate']);
 
   Route::resource('shortlink', ShortlinkController::class);
 
-  Route::resource('admin', AdminController::class);
+  Route::resource('user', UserController::class);
 });
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

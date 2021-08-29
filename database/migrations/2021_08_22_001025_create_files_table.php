@@ -15,9 +15,10 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->string('payment');
             $table->string('screenshot');
-            $table->foreignId('profile_id');
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

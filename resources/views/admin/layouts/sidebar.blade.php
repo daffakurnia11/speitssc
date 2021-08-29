@@ -21,6 +21,7 @@
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        {{-- Main Menu --}}
         <li class="nav-item">
           <a href="/dashboard" class="nav-link {{ Request::is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -29,12 +30,14 @@
             </p>
           </a>
         </li>
+
+        {{-- Short Link Menu --}}
         <li class="nav-header">SHORT LINK</li>
         <li class="nav-item">
           <a href="/dashboard/shortlink" class="nav-link {{ Request::is('dashboard/shortlink') ? 'active' : '' }}">
             <i class="nav-icon fas fa-link"></i>
             <p>
-              Short Link Lists
+              Short Links List
             </p>
           </a>
         </li>
@@ -46,6 +49,18 @@
             </p>
           </a>
         </li>
+
+        {{-- Member Menu --}}
+        <li class="nav-header">MEMBER</li>
+        <li class="nav-item">
+          <a href="/dashboard/user" class="nav-link {{ Request::is('dashboard/user') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Members List
+            </p>
+          </a>
+        </li>
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

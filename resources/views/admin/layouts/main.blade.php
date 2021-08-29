@@ -65,6 +65,12 @@
       "buttons": ["copy", "excel", "pdf", "colvis"]
     }).buttons().container().appendTo('#shortlinkList_wrapper .col-md-6:eq(0)');
   });
+  $(function () {
+    $("#memberList").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#memberList_wrapper .col-md-6:eq(0)');
+  });
 </script>
 </body>
 </html>

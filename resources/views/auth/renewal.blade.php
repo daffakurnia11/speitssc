@@ -13,7 +13,7 @@
               <span class="input-group-text" id="basic-addon1">
                 <i class="fas fa-fw fa-user"></i>
               </span>
-              <input register type="text" name="username" class="form-control @error('username') is-invalid @enderror" placeholder="Username" autofocus value="{{ old('username') }}">
+              <input type="text" name="username" class="form-control @error('username') is-invalid @enderror" placeholder="Username" autofocus value="{{ old('username') }}">
               @error('username')
                 <div class="invalid-feedback">
                   {{ $message }}
@@ -24,7 +24,7 @@
               <span class="input-group-text" id="basic-addon1">
                 <i class="fas fa-fw fa-lock"></i>
               </span>
-              <input register type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password">
+              <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password">
               @error('password')
                 <div class="invalid-feedback">
                   {{ $message }}
@@ -33,24 +33,32 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <input register type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
+            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
             @error('email')
               <div class="invalid-feedback">
                 {{ $message }}
               </div>
             @enderror
-            <input register type="text" name="member_id" class="form-control mt-3 @error('member_id') is-invalid @enderror" placeholder="Member ID" value="{{ old('member_id') }}">
-            @error('member_id')
+            <input type="text" name="name" class="form-control mt-3 @error('name') is-invalid @enderror" placeholder="Full Name" value="{{ old('name') }}">
+            @error('name')
               <div class="invalid-feedback">
                 {{ $message }}
               </div>
+            @enderror
+          </div>
+          <div class="col-12">
+            <input type="text" name="student_number" class="form-control @error('student_number') is-invalid @enderror" placeholder="Student Number" value="{{ old('student_number') }}">
+            @error('student_number')
+            <div class="invalid-feedback mb-3">
+              {{ $message }}
+            </div>
             @enderror
           </div>
         </div>
         <p class="fw-bold register-notes mb-1">Upload the screenshot of your Instagram Story & fee payment transaction!</p>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of Instagram Story</strong></label>
-          <input register class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot">
+          <input class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot">
           @error('screenshot')
             <div class="invalid-feedback">
               {{ $message }}
@@ -59,7 +67,7 @@
         </div>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of the fee payment transaction</strong></label>
-          <input register class="form-control @error('payment') is-invalid @enderror" type="file" id="formFileMultiple" name="payment">
+          <input class="form-control @error('payment') is-invalid @enderror" type="file" id="formFileMultiple" name="payment">
           @error('payment')
             <div class="invalid-feedback">
               {{ $message }}

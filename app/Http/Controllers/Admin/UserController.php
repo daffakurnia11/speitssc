@@ -1,11 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Admin;
+use App\Http\Controllers\Controller;
+use App\Models\User;
+use App\Models\Profile;
+use App\Models\File;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +17,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.member.index', [
+            'users' => User::all()
+        ]);
     }
 
     /**
@@ -41,21 +46,21 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Admin  $admin
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Admin $admin)
+    public function show(User $user)
     {
-        //
+        return view('admin.member.show', compact('user'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Admin  $admin
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Admin $admin)
+    public function edit(User $user)
     {
         //
     }
@@ -64,10 +69,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Admin  $admin
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Admin $admin)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -75,11 +80,18 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Admin  $admin
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Admin $admin)
+    public function destroy(User $user)
     {
-        //
+        $profile = Profile::firstWhere('id', $user->profile_id);
+        $file = File::firstWhere('user_id', $user->id);
+
+        $file->delete();
+        $profile->delete();
+        $user->delete();
+
+        return redirect('/dashboard/user');
     }
 }
