@@ -7,12 +7,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">SPE ITS SC Short Link</h1>
+          <h1 class="m-0">SPE ITS SC Admin</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
-            <li class="breadcrumb-item active">Short Link</li>
+            <li class="breadcrumb-item active">Admin</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -26,54 +26,45 @@
       
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Lists of SPE ITS SC Short Link</h3>
+          <h3 class="card-title">Lists of SPE ITS SC Admin</h3>
         </div>
         <div class="card-body">
-          <table id="shortlinkList" class="table table-bordered table-hover">
+          <table id="memberList" class="table table-bordered table-hover">
             <thead>
             <tr class="text-center">
-              <th>No.</th>
+              <th width="30">No.</th>
+              <th width="70">Action</th>
               <th>Name</th>
-              <th>Short link</th>
-              <th>Original</th>
-              <th>Visited</th>
-              <th>Action</th>
+              <th>Username</th>
+              <th>Department</th>
             </tr>
             </thead>
             <tbody>
-              @foreach ($links as $link)
+              @foreach ($admin as $user)
               <tr>
                 <td class="text-center">{{ $loop->iteration }}</td>
-                <td>{{ $link->name }}</td>
-                <td class="text-wrap">
-                  <a href="/{{ $link->short }}" target="_blank">speitssc.org/{{ $link->short }}</a> 
-                </td>
-                <td class="text-wrap">
-                  <a href="{{ $link->original }}" target="_blank">{{ $link->original }}</a> 
-                </td>
                 <td class="text-center">
-                  {{ $link->visited }}
-                </td>
-                <td class="text-center">
-                  <form action="/dashboard/shortlink/{{ $link->id }}" method="POST">
+                  <form action="/dashboard/user/{{ $user->id }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <a href="/{{ $link->short }}" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-fw fa-eye"></i></a>
-                    <a href="/dashboard/shortlink/{{ $link->id }}/edit" class="btn btn-sm btn-success"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                    <a href="/dashboard/user/{{ $user->id }}" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-eye"></i></a>
+                    {{-- <a href="/dashboard/user/{{ $user->id }}/edit" class="btn btn-sm btn-success"><i class="fas fa-fw fa-pencil-alt"></i></a> --}}
                     <button type="submit" class="btn btn-sm btn-danger" style="border-color: none"><i class="fas fa-fw fa-trash"></i></button>
                   </form>
                 </td>
+                <td class="text-nowrap">{{ $user->name }}</td>
+                <td class="text-nowrap">{{ $user->username }}</td>
+                <td class="text-nowrap">{{ $user->role }}</td>
               </tr>
               @endforeach
             </tbody>
             <tfoot>
             <tr class="text-center">
-              <th>No.</th>
+              <th width="30">No.</th>
+              <th width="70">Action</th>
               <th>Name</th>
-              <th>Short link</th>
-              <th>Original</th>
-              <th>Visited</th>
-              <th>Action</th>
+              <th>Username</th>
+              <th>Department</th>
             </tr>
             </tfoot>
           </table>

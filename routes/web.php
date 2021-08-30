@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\Auth\AuthController;
@@ -33,19 +34,21 @@ Route::get('/renewal', [RegisterController::class, 'renewal'])->middleware('gues
 Route::post('renewal', [RegisterController::class, 'renewal_store']);
 
 // AuthController
-Route::get('/login', [AuthController::class, 'login'])->middleware('guest');
+Route::get('/login', [AuthController::class, 'login'])->middleware('guest')->name('login');
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
 // Admin Routes
-Route::prefix('dashboard')->group(function () {
+Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(function () {
   Route::get('/', [DashboardController::class, 'index']);
-  Route::get('/login', [DashboardController::class, 'login']);
-  Route::post('/login', [DashboardController::class, 'authenticate']);
 
   Route::resource('shortlink', ShortlinkController::class);
 
   Route::resource('user', UserController::class);
+
+  Route::get('/admin', [AdminController::class, 'index']);
+  Route::get('/admin/create', [AdminController::class, 'create']);
+  Route::post('/admin', [AdminController::class, 'store']);
 });
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

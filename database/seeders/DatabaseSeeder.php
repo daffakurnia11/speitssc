@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Profile;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -25,5 +27,14 @@ class DatabaseSeeder extends Seeder
         $profile->line_id           = 'rizram2001';
 
         $profile->save();
+
+        $user = new User;
+
+        $user->name     = 'Daffa Kurnia Fatah';
+        $user->username = 'daffakurnia11';
+        $user->password = Hash::make('123123123');
+        $user->role     = 'Dev';
+
+        $user->save();
     }
 }

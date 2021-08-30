@@ -9,7 +9,10 @@
       <a href="/" class="nav-link">Main Page</a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="" class="nav-link">Logout</a>
+      <form action="/logout" method="POST">
+        @csrf
+        <button type="submit" class="btn py-0 nav-link">Logout</button>
+      </form>
     </li>
   </ul>
 

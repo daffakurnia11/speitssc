@@ -9,5 +9,5 @@ class Shortlink extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['original', 'short', 'name'];
+    protected $fillable = ['original', 'short', 'name', 'visited'];
 }

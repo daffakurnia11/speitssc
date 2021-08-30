@@ -126,6 +126,16 @@
               
               <div class="row">
                 <div class="col-sm-3">
+                  <strong>Email</strong>
+                  <strong class="float-right">:</strong>
+                </div>
+                <div class="col-sm-9">
+                  {{ $user->email }}
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm-3">
                   <strong>Username</strong>
                   <strong class="float-right">:</strong>
                 </div>

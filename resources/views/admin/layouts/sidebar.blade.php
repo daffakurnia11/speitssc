@@ -14,7 +14,7 @@
         <img src="/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Daffa Kurnia Fatah</a>
+        <a href="#" class="d-block">{{ auth()->user()->name }}</a>
       </div>
     </div>
 
@@ -30,6 +30,27 @@
             </p>
           </a>
         </li>
+
+        @if (auth()->user()->role == 'Dev')
+        {{-- Admin Menu --}}
+        <li class="nav-header">ADMINISTRATOR</li>
+        <li class="nav-item">
+          <a href="/dashboard/admin" class="nav-link {{ Request::is('dashboard/admin') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-user-shield"></i>
+            <p>
+              Admins List
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard/admin/create" class="nav-link {{ Request::is('dashboard/admin/create') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-user-plus"></i>
+            <p>
+              Add New Admin
+            </p>
+          </a>
+        </li>
+        @endif
 
         {{-- Short Link Menu --}}
         <li class="nav-header">SHORT LINK</li>

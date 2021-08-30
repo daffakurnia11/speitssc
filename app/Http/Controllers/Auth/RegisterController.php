@@ -48,7 +48,6 @@ class RegisterController extends Controller
             $profileId = Profile::firstWhere('student_number', $request->student_number)->id;
 
             $userData['password'] = Hash::make($userData['password']);
-            $userData['role'] = 'Renewal';
             $userData['profile_id'] = $profileId;
             $userId = User::create($userData)->id;
 

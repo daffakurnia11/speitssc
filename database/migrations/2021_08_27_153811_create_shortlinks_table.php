@@ -18,6 +18,7 @@ class CreateShortlinksTable extends Migration
             $table->string('name');
             $table->string('short')->unique();
             $table->string('original');
+            $table->integer('visited')->default(0);
             $table->timestamps();
         });
     }

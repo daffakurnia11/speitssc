@@ -56,6 +56,10 @@ class ShortlinkController extends Controller
      */
     public function show(Shortlink $shortlink)
     {
+        $visited = $shortlink->visited;
+        $shortlink->update([
+            'visited' => $visited + 1
+        ]);
         return redirect($shortlink->original);
     }
 

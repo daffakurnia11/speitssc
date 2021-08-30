@@ -22,9 +22,18 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
+            // Admin Validation
+            if (auth()->user()->role != 'Member') {
+                $request->session()->regenerate();
 
-            return redirect()->intended('/');
+                return redirect()->intended('/dashboard');
+            }
+            // Member Validation
+            else {
+                $request->session()->regenerate();
+
+                return redirect()->intended('/');
+            }
         }
 
         return back()->with('loginError', 'Login Failed!');
