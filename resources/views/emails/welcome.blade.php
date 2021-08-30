@@ -1,5 +1,5 @@
 @component('mail::message')
-Dear, {{ $fullname }}
+Dear, {{ $name }}
 
 Congratulations, your SPE ITS SC membership account is active now. 
 

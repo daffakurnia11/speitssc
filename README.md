@@ -1,7 +1,7 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 26-08-2021 ||
-<strong>Last Deploy</strong> : 26-08-2021
+<strong>Last Update</strong> : 30-08-2021 ||
+<strong>Last Deploy</strong> : 30-08-2021
 </p>
 
 ## Repository Requirement
@@ -30,6 +30,11 @@ After completely cloning this repository, please do some configuration as below 
 -   Setup your database credentials in the .env file
 
 ```
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=https://speitssc.org
+APP_TIMEZONE=Asia/Jakarta
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -39,22 +44,41 @@ DB_PASSWORD={PASSWORD}
 ```
 
 -   Start Laravel Server
--   Migrate Database and Seeder for Dummy Data using command
+-   Migrate Database and Seeder for Dummy Data
 
 ```
 php artisan serve
 php artisan migrate --seed
 ```
 
-## Features
+## Features and Updates
 
 This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
 
+##### On Going
+
 -   [ ] Main Page
+-   [ ] Article Management
+-   [ ] Member Points System
+
+##### 30 August 2021
+
+-   [x] Admin Authentication
+-   [x] Member Management
+
+##### 28 August 2021
+
+-   [x] SPE ITS SC Short Links
+
+##### 26 August 2021
+
+-   [x] Email Notification for Registration
+-   [x] Error State View (404 and Maintenance)
+
+##### 22 August 2021
+
 -   [x] New Member Login and Registration
 -   [x] Renewal Member Login and Registration
--   [x] Email Notification for Registration
--   [x] Support 404 and Under Maintenance View
 
 ## Contact Support
 

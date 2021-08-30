@@ -45,7 +45,6 @@ class RegisterController extends Controller
             $paymentImage = $request->username . '-payment.' . $request->payment->extension();
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
-            // return $request;
             // Inserting Data
             $profileId = Profile::firstWhere('student_number', $request->student_number)->id;
 
@@ -61,6 +60,7 @@ class RegisterController extends Controller
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
             $request->screenshot->move(public_path('files/screenshot'), $screenshotImage);
+            Mail::to($request->email)->send(new WelcomeMail($request->name));
         }
         return redirect('/login')->with('success', 'Registration success! Please login!');
     }
@@ -125,7 +125,7 @@ class RegisterController extends Controller
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
             $request->screenshot->move(public_path('files/screenshot'), $screenshotImage);
-            Mail::to($request->email)->send(new WelcomeMail($request->fullname));
+            Mail::to($request->email)->send(new WelcomeMail($request->name));
         }
 
         return redirect('/login')->with('success', 'Registration success! Please login!');

@@ -36,6 +36,8 @@
               <th width="70">Action</th>
               <th>Name</th>
               <th>Student Number</th>
+              <th>Phone</th>
+              <th>Line ID</th>
               <th>Email</th>
               <th>Batch</th>
               <th>Faculty</th>
@@ -57,6 +59,8 @@
                 </td>
                 <td class="text-nowrap">{{ $user->name }}</td>
                 <td class="text-nowrap">{{ $user->profile->student_number }}</td>
+                <td class="text-nowrap">{{ $user->profile->phone }}</td>
+                <td class="text-nowrap">{{ $user->profile->line_id }}</td>
                 <td class="text-nowrap">{{ $user->email }}</td>
                 <td class="text-nowrap">{{ $user->profile->batch }}</td>
                 <td class="text-nowrap">{{ $user->profile->faculty }}</td>
@@ -70,6 +74,8 @@
               <th>Action</th>
               <th>Name</th>
               <th>Student Number</th>
+              <th>Phone</th>
+              <th>Line ID</th>
               <th>Email</th>
               <th>Batch</th>
               <th>Faculty</th>

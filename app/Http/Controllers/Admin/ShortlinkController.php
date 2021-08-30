@@ -43,6 +43,7 @@ class ShortlinkController extends Controller
             'name' => 'required|max:191',
             'short' => 'required|max:191|unique:shortlinks|alpha_dash',
         ]);
+        $validated['user_id'] = auth()->user()->id;
         Shortlink::create($validated);
 
         return redirect('/dashboard/shortlink');

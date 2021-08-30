@@ -36,7 +36,7 @@
               <th width="70">Action</th>
               <th>Name</th>
               <th>Username</th>
-              <th>Department</th>
+              <th>Role</th>
             </tr>
             </thead>
             <tbody>
@@ -64,7 +64,7 @@
               <th width="70">Action</th>
               <th>Name</th>
               <th>Username</th>
-              <th>Department</th>
+              <th>Role</th>
             </tr>
             </tfoot>
           </table>

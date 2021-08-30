@@ -37,6 +37,7 @@
               <th>Short link</th>
               <th>Original</th>
               <th>Visited</th>
+              <th>Created By</th>
               <th>Action</th>
             </tr>
             </thead>
@@ -54,7 +55,10 @@
                 <td class="text-center">
                   {{ $link->visited }}
                 </td>
-                <td class="text-center">
+                <td class="text-nowrap">
+                  {{ $link->user->name }}
+                </td>
+                <td class="text-center text-nowrap">
                   <form action="/dashboard/shortlink/{{ $link->id }}" method="POST">
                     @csrf
                     @method('DELETE')
@@ -73,6 +77,7 @@
               <th>Short link</th>
               <th>Original</th>
               <th>Visited</th>
+              <th>Created By</th>
               <th>Action</th>
             </tr>
             </tfoot>
