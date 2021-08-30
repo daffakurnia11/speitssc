@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\WelcomeMail;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\File;
@@ -123,6 +125,7 @@ class RegisterController extends Controller
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
             $request->screenshot->move(public_path('files/screenshot'), $screenshotImage);
+            Mail::to($request->email)->send(new WelcomeMail($request->fullname));
         }
 
         return redirect('/login')->with('success', 'Registration success! Please login!');

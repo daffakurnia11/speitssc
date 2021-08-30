@@ -50,6 +50,44 @@ input:focus {
   outline: 0 !important;
 }
 
+#errors {
+  background-color: #0a1931;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+#errors .text-404 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
+  font-weight: bolder;
+}
+
+#errors .text-name {
+  font-family: "Lato", sans-serif;
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+#errors .text-desc {
+  font-family: "Lato", sans-serif;
+  font-size: 1.75rem;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 576px) {
+  #errors .text-404 {
+    font-size: 5rem;
+  }
+  #errors .text-name {
+    font-size: 1.75rem;
+  }
+  #errors .text-desc {
+    font-size: 1rem;
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+}
+
 .navbar .navbar-nav .nav-link {
   margin: auto 1rem;
   font-family: "Lato", sans-serif;

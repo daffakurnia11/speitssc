@@ -10,8 +10,7 @@
     {{-- Fontawesome --}}
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     {{-- CSS --}}
-    {{-- <link rel="stylesheet" href="css/style.css?modified={{ date("Ymd")}}"> --}}
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?modified={{ date("Ymd")}}">
     {{-- Favicon --}}
     <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 

@@ -21,7 +21,11 @@ use App\Http\Controllers\Admin\ShortlinkController;
 */
 
 // PagesController
-Route::get('/', [PagesController::class, 'landing']);
+Route::get('/', function () {
+  return view('errors.maintenance');
+});
+
+Route::get('/home', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 
 // RegisterController
