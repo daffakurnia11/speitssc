@@ -53,6 +53,7 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/admin', [AdminController::class, 'index']);
   Route::get('/admin/create', [AdminController::class, 'create']);
   Route::post('/admin', [AdminController::class, 'store']);
+  Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
 });
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

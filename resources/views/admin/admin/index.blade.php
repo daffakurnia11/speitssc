@@ -44,11 +44,9 @@
               <tr>
                 <td class="text-center">{{ $loop->iteration }}</td>
                 <td class="text-center">
-                  <form action="/dashboard/user/{{ $user->id }}" method="POST">
+                  <form action="/dashboard/admin/{{ $user->id }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <a href="/dashboard/user/{{ $user->id }}" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-eye"></i></a>
-                    {{-- <a href="/dashboard/user/{{ $user->id }}/edit" class="btn btn-sm btn-success"><i class="fas fa-fw fa-pencil-alt"></i></a> --}}
                     <button type="submit" class="btn btn-sm btn-danger" style="border-color: none"><i class="fas fa-fw fa-trash"></i></button>
                   </form>
                 </td>

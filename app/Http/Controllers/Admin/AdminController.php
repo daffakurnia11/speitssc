@@ -34,4 +34,11 @@ class AdminController extends Controller
 
         return redirect('dashboard/admin');
     }
+
+    public function destroy($id)
+    {
+        User::where('id', $id)->delete();
+
+        return redirect('/dashboard/admin');
+    }
 }
