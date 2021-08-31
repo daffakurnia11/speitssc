@@ -11,7 +11,7 @@ Contact Person :
 <a href="http://line.me/ti/p/~george.nanlohy">George</a>
   
 
-@component('mail::button', ['url' => 'https://speitssc.org', 'color' => 'primary'])
+@component('mail::button', ['url' => 'https://speitssc.org/login', 'color' => 'primary'])
 Login
 @endcomponent
 

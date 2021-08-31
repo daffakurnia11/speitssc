@@ -4,6 +4,18 @@
 <strong>Last Deploy</strong> : 30-08-2021
 </p>
 
+## Technologies
+
+<a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter</a> Website is built with several technologies, languages, frameworks, and templates. These technologies are as follows.
+
+-   <a href="https://www.w3schools.com/html/default.asp">HTML</a>
+-   <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+-   <a href="https://sass-lang.com/">SASS</a>
+-   <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap v5</a>
+-   <a href="https://fontawesome.com/">Fontawesome</a>
+-   <a href="https://laravel.com/docs/8.x">Laravel 8</a>
+-   <a href="https://adminlte.io/">AdminLTE Bootstrap v4 v3.1.0 Templates</a>
+
 ## Repository Requirement
 
 Before cloning this repository, make sure you have these following requirements :
@@ -38,7 +50,7 @@ APP_TIMEZONE=Asia/Jakarta
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=speits_2021
+DB_DATABASE=speitssc_2021
 DB_USERNAME={USERNAME}
 DB_PASSWORD={PASSWORD}
 ```

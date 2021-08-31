@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+  <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">

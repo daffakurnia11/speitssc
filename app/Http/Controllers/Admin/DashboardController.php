@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Shortlink;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
@@ -12,7 +13,8 @@ class DashboardController extends Controller
     public function index()
     {
         return view('admin.dashboard', [
-            'members'   => User::where('role', 'Member')->count()
+            'members'       => User::where('role', 'Member')->count(),
+            'shortlinks'    => Shortlink::all()->count()
         ]);
     }
 }

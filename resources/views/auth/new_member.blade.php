@@ -19,7 +19,7 @@
         <li><strong>BCA Bank</strong> : 7105039794 (<em>George Billy N</em>)</li>
         <li><strong>GoPay or OVO</strong> : 087898372360 (<em>George Billy</em>)</li>
       </ul>
-      <p class="mb-0">Twibbon, caption, and snapgram video can be downloaded in the link as follows: <a href="http://bit.ly/TermsforMember" target="_blank">http://bit.ly/TermsforMember</a></p>
+      <p class="mb-0">Twibbon, caption, and snapgram video can be downloaded in the link as follows: <a href="https://speitssc.org/TermsforMember" target="_blank">https://speitssc.org/TermsforMember</a></p>
       <p>Member renewal fee applies for Members of SPE ITS SC 2020/2021</p>
       <p class="my-4">Don't hesitate to contact us if you need further information!</p>
       <div class="contact">

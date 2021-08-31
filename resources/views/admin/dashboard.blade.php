@@ -41,7 +41,7 @@
           <!-- small box -->
           <div class="small-box bg-primary">
             <div class="inner">
-              <h3>{{ $members }}</h3>
+              <h3>{{ $shortlinks }}</h3>
               
               <p>Short Links</p>
             </div>
