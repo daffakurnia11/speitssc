@@ -40,8 +40,14 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Hello, {{ auth()->user()->name }}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu w-100 text-center" aria-labelledby="navbarDropdown">
+              
+              @if (auth()->user()->role == 'Member')
               <li><a class="dropdown-item" href="/profile"><i class="bi bi-grid"></i> Profile</a></li>
+              @else
+              <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-grid"></i>Admin Dashboard</a></li>
+              @endif
+              
               <li><hr class="dropdown-divider"></li>
               <li>
                 <form action="/logout" method="POST">

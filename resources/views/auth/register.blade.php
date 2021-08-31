@@ -71,9 +71,6 @@
           </div>
           <div class="col-sm-6">
             <input type="text" name="batch" class="form-control @error('batch') is-invalid @enderror" placeholder="Batch (ex : 2021)" list="batch" value="{{ old('batch') }}">
-            <datalist id="batch">
-              <option value="">
-            </datalist>
             @error('batch')
               <div class="invalid-feedback">
                 {{ $message }}

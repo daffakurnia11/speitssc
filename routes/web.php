@@ -27,6 +27,8 @@ Route::get('/', function () {
 
 Route::get('/home', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
+Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
+Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
 
 // RegisterController
 Route::get('/member/new', [RegisterController::class, 'new_member'])->middleware('guest');
