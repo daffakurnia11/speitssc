@@ -63,6 +63,34 @@ php artisan serve
 php artisan migrate --seed
 ```
 
+## SASS Configuration
+
+Before creating your SCSS files, please make sure that you have installed <strong>Live Sass Compiler v3.0.0</strong> extension on Visual Studio Code. Then run the compiler by clicking <strong>Watch SASS</strong> on Visual Studio Code Status Bar.
+
+Please do some configurations in `settings.json` of Live Sass Compiler extension as below :
+
+-   Open Visual Studio Code Settings
+-   Type <em>Live Sass compile</em> and click `Edit in settings.json`
+-   Change the settings into the following.
+
+```
+{
+  "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "public/css"  // Edit this line
+        }
+    ],
+  "liveSassCompile.settings.excludeList": [
+        "public/vendor/**",           // Add this line
+        "vendor/**",                  // Add this line
+        "dist/**",
+        ".vscode/**"
+    ],
+}
+```
+
 ## Features and Updates
 
 This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
@@ -100,3 +128,7 @@ If you have problems or need help, and also want to give suggestions and critici
 -   Whatsapp : <a href="https://wa.me/6285156317473">0851 5631 7473</a>
 -   Instagram : <a href="https://www.instagram.com/daffakurniaf11/">daffakurniaf11</a>
 -   Email : <a href="mailto:daffakurniaf11@gmail.com">daffakurniaf11@gmail.com</a>
+
+```
+
+```
