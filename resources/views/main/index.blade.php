@@ -44,7 +44,7 @@
               <div class="col-sm-6 col-md-12">
                 <p class="upcoming-events-desc text-justify mt-4 mb-5 mx-auto">Develop crucial skills and learn with SPE ITS SC through our events, from <strong>Company Visits to Competition 101</strong>.</p>
                 <div class="text-center text-start">
-                  <a href="" class="upcoming-events-button">Sign up as member</a>
+                  <a href="/member" class="upcoming-events-button">Sign up as member</a>
                 </div>
               </div>
             </div>
@@ -153,9 +153,9 @@
     <section id="testimonials">
       <div class="container">
         <h2 class="testimonials-title text-center">What They Say?</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="testimonials-content mb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonials-content mx-2 mb-4">
               <p class="text-justify testimonials-said">
                 Being a member of SPE ITS SC undeniably gave me tons of new experience and insights. I have gained many soft skills by participating in webinars or events with useful topics that were informed almost weekly to members. Other than that, all competitions with related fields as well as the oil and gas industry were always notified hence members were never outdated and able to contribute to one. Furthermore, materials needed in order to win these competitions were also given to each member. Therefore, I could say that being a member of SPE ITS Student Chapter undoubtedly benefits me for now and in the future.​
               </p>
@@ -166,8 +166,8 @@
               <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="testimonials-content mb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonials-content mx-2 mb-4">
               <p class="text-justify testimonials-said">
                 Being a member of SPE ITS SC is the best decision I’ve ever made. At first, I didn’t know where to begin to learn about oil and gas, but SPE ITS SC provided me with everything that I needed. I didn’t just learn “what” the oil and gas industry is – “how” and “why” also became much clearer and I eventually gained enough courage to become a delegate, participating in some competitions. But it wasn’t just about the knowledge. The main benefits came from participating in many SPE ITS SC events such as company visits, soft skill courses, and many more. And we can even meet a lot of exciting new people to expand relations!
               </p>
@@ -178,8 +178,8 @@
               <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="testimonials-content mb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonials-content mx-2 mb-4">
               <p class="text-justify testimonials-said">
                 When I was a freshman, SPE ITS SC became my first place to develop myself and I am so grateful for that. SPE ITS SC shows me the beauty of research and scientific competition that becomes my main interest. At first, I thought SPE ITS SC just provided knowledge, but as the time goes by, this organization also encourage me to join the competition, enhance my soft skills, and also experience. By being a member of SPE ITS SC, I get lots of benefits from their events such as science course, soft skill course, and competition 101. So, If you are interested in the oil and gas sector or even just want to expand your relation, want to enhance your soft skills, and broaden your knowledge, don't wait for another second to join SPE ITS SC!
               </p>

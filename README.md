@@ -1,6 +1,6 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 30-08-2021 ||
+<strong>Last Update</strong> : 01-09-2021 ||
 <strong>Last Deploy</strong> : 30-08-2021
 </p>
 

@@ -47,15 +47,15 @@
             @enderror
           </div>
           <div class="col-12">
-            <input type="text" name="student_number" class="form-control @error('student_number') is-invalid @enderror" placeholder="Student Number" value="{{ old('student_number') }}">
+            <input type="text" name="student_number" class="form-control mt-3 @error('student_number') is-invalid @enderror" placeholder="NRP / Student Number" value="{{ old('student_number') }}">
             @error('student_number')
-            <div class="invalid-feedback mb-3">
+            <div class="invalid-feedback">
               {{ $message }}
             </div>
             @enderror
           </div>
         </div>
-        <p class="fw-bold register-notes mb-1">Upload the screenshot of your Instagram Story & fee payment transaction!</p>
+        <p class="fw-bold register-notes mb-1 mt-3">Upload the screenshot of your Instagram Story & fee payment transaction!</p>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of Instagram Story</strong></label>
           <input class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot">

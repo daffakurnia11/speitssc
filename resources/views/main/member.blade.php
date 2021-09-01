@@ -14,9 +14,9 @@
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-lg-6 info-mockup d-flex justify-content-center align-items-center">
-          <img src="img/phone-mockup.png" alt="SPE ITS SC Mockup Phone" class="info-mockup-img">
+          <img src="img/phone-mockup.png" alt="SPE ITS SC Mockup Phone" class="info-mockup-img my-3">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mx-0 px-0">
           <div class="info-content">
             <h1 class="info-title">
               <small>Register as</small><br>
@@ -54,9 +54,9 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-4 d-flex justify-content-between align-items-center">
+            <div class="mt-4 d-flex justify-content-between align-items-center flex-lg-column flex-xl-row flex-md-row flex-column">
               <a href="member/new" class="info-register">Register</a>
-              <a href="member/renewal" class="info-renew">Renew Your Membership</a>
+              <a href="member/renewal" class="info-renew mt-3">Renew Your Membership</a>
             </div>
           </div>
         </div>

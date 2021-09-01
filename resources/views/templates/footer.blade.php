@@ -5,7 +5,7 @@
           <div class="col-md-4 text-center">
             <img src="/img/logo.png" alt="SPE ITS SC Logo" class="footer-logo mb-4">
           </div>
-          <div class="col-md-8 px-5 px-md-0">
+          <div class="col-md-8 px-5 px-md-4">
             <h1 class="footer-title mb-4">
               Society of Petroleum Engineers<br>
               Institut Teknologi Sepuluh Nopember<br>

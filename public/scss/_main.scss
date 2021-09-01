@@ -31,6 +31,7 @@
     }
     .header-title {
         font-family: $font-lato;
+        line-height: 2.5rem;
     }
     .header-desc {
         font-family: $font-montserrat;
@@ -203,7 +204,20 @@ footer {
 // End of Footer
 
 @media screen and (max-width: 768px) {
+    #main-members {
+        .members-title {
+            font-size: 2rem;
+        }
+    }
+    #our-members {
+        .our-members-title {
+            font-size: 3rem;
+        }
+    }
     #testimonials {
+        .testimonials-title {
+            font-size: 2.5rem;
+        }
         .testimonials-content {
             min-height: fit-content;
         }
@@ -211,11 +225,15 @@ footer {
 }
 @media screen and (max-width: 576px) {
     .main-header {
+        .row {
+            padding: 2rem 0;
+        }
         .header-logo {
             width: 80%;
         }
     }
     #upcoming-events {
+        padding: 2.5rem 0;
         .upcoming-events-title {
             font-family: $font-lato;
             font-size: 3.5rem;
@@ -225,6 +243,7 @@ footer {
     }
     #main-blogs {
         .blogs-header {
+            font-size: 2.5rem;
             width: 350px;
             max-width: 100%;
         }

@@ -133,6 +133,9 @@
 }
 
 #editProfile {
+    .profile-img {
+        width: 150px;
+    }
     .update-button {
         @include button-blue-rounded();
         font-size: 1.25rem;
@@ -158,6 +161,23 @@
         .instruction {
             margin: 5rem 0.75rem 2rem;
             padding: 2.5rem 2rem;
+        }
+    }
+    #editProfile {
+        .profile-img {
+            width: 75px;
+        }
+        .profile-name {
+            font-size: 1.5rem;
+        }
+        .profile-desc {
+            font-size: 1.15rem;
+        }
+        .profile-info {
+            font-size: 1.25rem;
+        }
+        .form-label {
+            font-size: 1.15rem;
         }
     }
 }

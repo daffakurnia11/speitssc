@@ -39,7 +39,7 @@
                 {{ $message }}
               </div>
             @enderror
-            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror mt-3" placeholder="Email" value="{{ old('email') }}">
+            <input type="email" name="email" class="form-control mt-3 @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
             @error('email')
               <div class="invalid-feedback">
                 {{ $message }}
@@ -47,13 +47,23 @@
             @enderror
           </div>
           <div class="col-sm-6">
-            <input type="text" name="student_number" class="form-control @error('student_number') is-invalid @enderror" placeholder="NRP / Student Number" value="{{ old('student_number') }}">
+            <input type="text" name="student_number" class="form-control mt-3 @error('student_number') is-invalid @enderror" placeholder="NRP / Student Number" value="{{ old('student_number') }}">
             @error('student_number')
               <div class="invalid-feedback">
                 {{ $message }}
               </div>
             @enderror
-            <input type="text" name="faculty" class="form-control @error('faculty') is-invalid @enderror mt-3" placeholder="Faculty" list="faculty" value="{{ old('faculty') }}">
+          </div>
+          <div class="col-sm-6">
+            <input type="text" name="batch" class="form-control mt-3 @error('batch') is-invalid @enderror" placeholder="Batch (ex : 2021)" list="batch" value="{{ old('batch') }}">
+            @error('batch')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+          <div class="col-sm-6">
+            <input type="text" name="faculty" class="form-control mt-3 @error('faculty') is-invalid @enderror mt-3" placeholder="Faculty" list="faculty" value="{{ old('faculty') }}">
             <datalist id="faculty">
               <option value="SCIENTICS">FACULTY OF SCIENCE AND DATA ANALYTICS (SCIENTICS)</option>
               <option value="MARTECH">FACULTY OF MARINE TECHNOLOGY (MARTECH)</option>
@@ -70,12 +80,6 @@
             @enderror
           </div>
           <div class="col-sm-6">
-            <input type="text" name="batch" class="form-control @error('batch') is-invalid @enderror" placeholder="Batch (ex : 2021)" list="batch" value="{{ old('batch') }}">
-            @error('batch')
-              <div class="invalid-feedback">
-                {{ $message }}
-              </div>
-            @enderror
             <input type="text" name="major" class="form-control @error('major') is-invalid @enderror mt-3" placeholder="Major" list="major" value="{{ old('major') }}">
             <datalist id="major">
               <option value="Physics">Physics</option>
@@ -127,7 +131,7 @@
             @enderror
           </div>
           <div class="col-sm-6">
-            <div class="input-group my-3">
+            <div class="input-group mt-3">
               <span class="input-group-text" id="basic-addon1">
                 +62
               </span>
@@ -140,7 +144,7 @@
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="input-group my-3">
+            <div class="input-group mt-3">
               <span class="input-group-text" id="basic-addon1">
                 <i class="fab fa-fw fa-line fa-lg"></i>
               </span>
@@ -153,7 +157,7 @@
             </div>
           </div>
         </div>
-        <p class="fw-bold register-notes mb-1">Upload the screenshot of your twibbon post & fee payment transaction!</p>
+        <p class="fw-bold register-notes mb-1 mt-4">Upload the screenshot of your twibbon post & fee payment transaction!</p>
         <div class="mb-3">
           <label class="register-notes mb-2">Please <strong>upload the screenshot of twibbon post</strong> on Instagram</label>
           <input class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot">
