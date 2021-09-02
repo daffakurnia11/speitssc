@@ -24,7 +24,15 @@
 
     @yield('footer')
 
+    @yield('scroll')
     {{-- Javascript --}}
     <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <!-- jQuery -->
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script>
+      $('#scroll-to-top').on('click', function() {
+        $(window).scrollTop(0);
+      });
+    </script>
   </body>
 </html>

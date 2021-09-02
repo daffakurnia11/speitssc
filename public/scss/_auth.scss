@@ -90,6 +90,9 @@
         }
         label.register-notes {
             font-size: 0.9rem;
+            a {
+                font-size: inherit;
+            }
         }
         .register-button {
             @include button-blue();

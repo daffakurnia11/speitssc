@@ -13,7 +13,7 @@
   <section id="editProfile">
     <div class="container">
       <div class="d-flex align-items-center my-4">
-        <img src="/img/svgs/profile_avatar.svg" class="profile-img" alt="">
+        <img src="/svg/profile_avatar.svg" class="profile-img" alt="">
         <div class="ms-4">
           <h1 class="profile-name">{{ auth()->user()->name }}</h1>
           <h2 class="profile-desc">{{ auth()->user()->profile->major }}, {{ auth()->user()->profile->batch }}</h2>

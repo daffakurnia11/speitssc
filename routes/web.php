@@ -21,11 +21,11 @@ use App\Http\Controllers\Admin\ShortlinkController;
 */
 
 // PagesController
-Route::get('/', function () {
-  return view('errors.maintenance');
-});
+// Route::get('/', function () {
+//   return view('errors.maintenance');
+// });
 
-Route::get('/home', [PagesController::class, 'landing']);
+Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 Route::get('/blog', [PagesController::class, 'blog']);
 Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);

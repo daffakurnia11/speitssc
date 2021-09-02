@@ -3,7 +3,7 @@
 @section('content')
   <section id="errors" class="d-flex align-items-center">
     <div class="container text-center">
-      <img src="/img/svgs/maintenance.svg" class="mb-4" alt="">
+      <img src="/svg/maintenance.svg" class="mb-4" alt="">
       <h1>
         <span class="d-block text-name">Under maintenance</span>
       </h1>

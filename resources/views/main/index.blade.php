@@ -8,6 +8,12 @@
   @include('templates.footer')
 @endsection
 
+@section('scroll')
+  <section id="scroll-to-top">
+    <i class="fas fa-chevron-up fa-2x scroll-button"></i>
+  </section>
+@endsection
+
 @section('content')
     
     {{-- Header --}}
@@ -151,51 +157,137 @@
 
     {{-- Testimonials --}}
     <section id="testimonials">
-      <div class="container">
-        <h2 class="testimonials-title text-center">What They Say?</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonials-content mx-2 mb-4">
-              <p class="text-justify testimonials-said">
-                Being a member of SPE ITS SC undeniably gave me tons of new experience and insights. I have gained many soft skills by participating in webinars or events with useful topics that were informed almost weekly to members. Other than that, all competitions with related fields as well as the oil and gas industry were always notified hence members were never outdated and able to contribute to one. Furthermore, materials needed in order to win these competitions were also given to each member. Therefore, I could say that being a member of SPE ITS Student Chapter undoubtedly benefits me for now and in the future.​
-              </p>
-              <p class="text-end">
-                <strong>- Awandhana Anggi, Geomatics Engineering 2020</strong>​
-              </p>
-              <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
-              <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+      <h2 class="testimonials-title text-center">What They Say?</h2>
+      <div class="member-section">
+        <div class="container">
+          <h3 class="testimonials-section">SPE Members</h3>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  Being a member of SPE ITS SC undeniably gave me tons of new experience and insights. I have gained many soft skills by participating in webinars or events with useful topics that were informed almost weekly to members. Other than that, all competitions with related fields as well as the oil and gas industry were always notified hence members were never outdated and able to contribute to one. Furthermore, materials needed in order to win these competitions were also given to each member. Therefore, I could say that being a member of SPE ITS Student Chapter undoubtedly benefits me for now and in the future.​
+                </p>
+                <p class="text-end">
+                  <strong>- Awandhana Anggi, Geomatics Engineering 2020</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonials-content mx-2 mb-4">
-              <p class="text-justify testimonials-said">
-                Being a member of SPE ITS SC is the best decision I’ve ever made. At first, I didn’t know where to begin to learn about oil and gas, but SPE ITS SC provided me with everything that I needed. I didn’t just learn “what” the oil and gas industry is – “how” and “why” also became much clearer and I eventually gained enough courage to become a delegate, participating in some competitions. But it wasn’t just about the knowledge. The main benefits came from participating in many SPE ITS SC events such as company visits, soft skill courses, and many more. And we can even meet a lot of exciting new people to expand relations!
-              </p>
-              <p class="text-end">
-                <strong>- Safira Khairunnisa, Engineering Phyiscs 2019</strong>​
-              </p>
-              <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
-              <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  Being a member of SPE ITS SC is the best decision I’ve ever made. At first, I didn’t know where to begin to learn about oil and gas, but SPE ITS SC provided me with everything that I needed. I didn’t just learn “what” the oil and gas industry is – “how” and “why” also became much clearer and I eventually gained enough courage to become a delegate, participating in some competitions. But it wasn’t just about the knowledge. The main benefits came from participating in many SPE ITS SC events such as company visits, soft skill courses, and many more. And we can even meet a lot of exciting new people to expand relations!
+                </p>
+                <p class="text-end">
+                  <strong>- Safira Khairunnisa, Engineering Phyiscs 2019</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonials-content mx-2 mb-4">
-              <p class="text-justify testimonials-said">
-                When I was a freshman, SPE ITS SC became my first place to develop myself and I am so grateful for that. SPE ITS SC shows me the beauty of research and scientific competition that becomes my main interest. At first, I thought SPE ITS SC just provided knowledge, but as the time goes by, this organization also encourage me to join the competition, enhance my soft skills, and also experience. By being a member of SPE ITS SC, I get lots of benefits from their events such as science course, soft skill course, and competition 101. So, If you are interested in the oil and gas sector or even just want to expand your relation, want to enhance your soft skills, and broaden your knowledge, don't wait for another second to join SPE ITS SC!
-              </p>
-              <p class="text-end">
-                <strong>- Adiv Gayu</strong>​
-              </p>
-              <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
-              <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  When I was a freshman, SPE ITS SC became my first place to develop myself and I am so grateful for that. SPE ITS SC shows me the beauty of research and scientific competition that becomes my main interest. At first, I thought SPE ITS SC just provided knowledge, but as the time goes by, this organization also encourage me to join the competition, enhance my soft skills, and also experience. By being a member of SPE ITS SC, I get lots of benefits from their events such as science course, soft skill course, and competition 101. So, If you are interested in the oil and gas sector or even just want to expand your relation, want to enhance your soft skills, and broaden your knowledge, don't wait for another second to join SPE ITS SC!
+                </p>
+                <p class="text-end">
+                  <strong>- Adiv Gayu</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
             </div>
           </div>
         </div>
-        <div class="testimonials-hashtag text-end my-4">
-          &#35;WeAreSPE
+      </div>
+      <div class="boc-section">
+        <div class="container">
+          <h3 class="testimonials-section ms-auto">Board of Committee</h3>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  There are a bunch of places where we can hone our leadership skills, teamwork, and project management. But SPE ITS SC gave me more than what i expected. Knowledge, professionalism, international exposure, and of course family. Its atmosphere brought me to a different experience. Being HoD, I was able to hone leadership and teamwork by managing and developing my staff, and together reaching the goals of SPE ITS SC. This is by far the best place to develop myself as an individual as well.
+                </p>
+                <p class="text-end">
+                  <strong>- Alvina Choirun Nisa</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  Organizational experience becomes a very valuable experience in college, especially when we can get a chance to be in a strategic position such as head of division. I was very grateful when I had the opportunity to become the head of fundraising division, which at that time was considered as a new division in SPE ITS SC. I learned a lot of new things, learned how to innovate, and also managed a team and worked together with them. Moreover, what I've always realized is there's never any pressure when working in this organization. Instead, the atmosphere of this organization makes us enjoy and motivates us to always give our best in every moment to grow together.
+                </p>
+                <p class="text-end">
+                  <strong>- Muhammad Daffa Alim Putra</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonials-content mx-2 mb-4">
+                <p class="text-justify testimonials-said">
+                  Being a HoD of SPE ITS SC has given me a lot of experience from communication, leadership, to creativity. I had multiple opportunities to meet and get to know someone new, either from the same SPE ITS SC, other universities' SPE, or from a professional field. It taught me a lot about how to manage people working in a team and being responsible as their head. It not only brought me to a wider network of people, but also showed me ways to cope with different types of people. Being a head of SPE ITS SC's division was definitely a great step before entering a workplace after college!
+                </p>
+                <p class="text-end">
+                  <strong>- Salsabiella Ramadhanti Abadi</strong>​
+                </p>
+                <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
+                <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-hashtag text-end my-4">
+            &#35;WeAreSPE
+          </div>
         </div>
       </div>
     </section>
     {{-- End of Testimonials --}}
+
+    {{-- Members in Competition --}}
+    <section id="main-competitions">
+      <div class="container">
+        <h2 class="competitions-title">Members in<br>Competitions</h2>
+        <a href="" class="competitions-button">See Competitions</a>
+      </div>
+    </section>
+    {{-- End of Members in Competition --}}
+
+    {{-- Leaderboard --}}
+    <section id="main-leaderboard">
+      <div class="container-fluid leaderboard">
+        <div class="row">
+          <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
+            <h2 class="leaderboard-title ms-5 ms-lg-0">Leaderboard</h2>
+          </div>
+          <div class="col-lg-7 col-xl-8 order-2 order-lg-1">
+            <div class="container leaderboard-content">
+              <div class="leaderboard-list ms-auto d-flex justify-content-between flex-column flex-sm-row">
+                <div class="leaderboard-name flex-fill">
+                  <span class="float-start">1</span>                
+                  <p class="ms-2 text-center my-0">Daffa Kurnia Fatah</p>
+                </div>
+                <p class="leaderboard-points m-0 text-center">1000 pts</p>                
+              </div>
+              <div class="leaderboard-list ms-auto d-flex justify-content-between flex-column flex-sm-row">
+                <div class="leaderboard-name flex-fill">
+                  <span class="float-start">2</span>                
+                  <p class="ms-2 text-center my-0">Annisa Septyana Ningrum</p>
+                </div>
+                <p class="leaderboard-points m-0 text-center">500 pts</p>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="/svg/leaderboard-icon.svg" class="leaderboard-icon" alt="">
+    </section>
+    {{-- End of Leaderboard --}}
     
 @endsection

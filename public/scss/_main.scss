@@ -149,32 +149,71 @@
 #testimonials {
     color: $text-primary;
     .testimonials-title {
-        padding: 4.25rem 0;
+        padding: 4.25rem 0 0;
         font-family: $font-lato;
         font-size: 4.25rem;
         font-weight: bold;
     }
-    .testimonials-content {
+    @mixin testimonials-section($background) {
+        margin: 2rem 0.75rem;
+        padding: 0.75rem 2.25rem;
+        width: fit-content;
+        font-family: $font-lato;
+        background: $background;
+        font-weight: bold;
+        font-size: 2rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0.75rem;
+    }
+    @mixin testimonials-content($background) {
         padding: 4rem 2.5rem;
-        background: $text-gray;
+        background: $background;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         min-height: 450px;
         position: relative;
-        .testimonials-said {
-            text-align: justify;
-            font-style: italic;
+        @media screen and (max-width: 768px) {
+            min-height: fit-content;
         }
-        .testimonials-quotes {
-            position: absolute;
-            &:nth-of-type(1) {
-                top: 17px;
-                left: 17px;
-            }
-            &:nth-of-type(2) {
-                bottom: 17px;
-                right: 17px;
-            }
+        @media screen and (max-width: 1200px) {
+            min-height: 620px;
+        }
+        @media screen and (max-width: 1400px) {
+            min-height: 520px;
+        }
+    }
+    .member-section {
+        padding: 3rem 0;
+        .testimonials-section {
+            @include testimonials-section($text-gray);
+        }
+        .testimonials-content {
+            @include testimonials-content($text-gray);
+        }
+    }
+    .boc-section {
+        background-color: #dcdcdc;
+        padding: 2rem 0;
+        .testimonials-section {
+            @include testimonials-section($text-white);
+        }
+        .testimonials-content {
+            @include testimonials-content($text-white);
+        }
+    }
+    .testimonials-said {
+        text-align: justify;
+        font-style: italic;
+    }
+    .testimonials-quotes {
+        position: absolute;
+        &:nth-of-type(1) {
+            top: 17px;
+            left: 17px;
+        }
+        &:nth-of-type(2) {
+            bottom: 17px;
+            right: 17px;
         }
     }
     .testimonials-hashtag {
@@ -184,6 +223,129 @@
     }
 }
 // End of Testimonials
+
+// Members in Competitions
+#main-competitions {
+    padding: 4rem 0;
+    background-color: $text-primary;
+    color: $text-white;
+    .competitions-title {
+        font-family: $font-lato;
+        font-weight: bold;
+        font-size: 4.25rem;
+        line-height: 5rem;
+        margin-bottom: 2.5rem;
+    }
+    .competitions-button {
+        padding: 1rem 3rem;
+        background: $text-white;
+        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 4rem;
+        font-family: $font-lato;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: $text-primary;
+        text-transform: uppercase;
+    }
+}
+// End of Members in Competitions
+
+// Leaderboard
+#main-leaderboard {
+    background-color: #f2e7dc;
+    padding: 2.25rem 0;
+    min-height: 100vh;
+    color: $text-white;
+    position: relative;
+    overflow: hidden;
+    .leaderboard-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 700px;
+        max-width: 100%;
+    }
+    .leaderboard {
+        position: relative;
+        z-index: 1;
+        &-title {
+            padding: 2.5rem 3.5rem;
+            font-family: $font-lato;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 3.25rem;
+            text-transform: uppercase;
+            background-color: $text-primary;
+            border-radius: 5rem 0 0 5rem;
+        }
+        &-content {
+            list-style: none;
+        }
+        &-list {
+            margin: 1.25rem;
+            padding: 1rem 3.25rem;
+            background-color: $text-primary;
+            border-radius: 3rem;
+            box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+            max-width: 800px;
+            span,
+            p {
+                font-size: 1.5rem;
+            }
+            &:first-of-type {
+                span,
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+// End of Leaderboard
+
+// Scroll to Top
+#scroll-to-top {
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    bottom: 20px;
+    right: 30px;
+    animation-name: scrollToTop;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    .scroll-button {
+        background-size: 300% 100%;
+        background-color: $text-primary;
+        padding: 10px 13px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+        color: $text-white;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+            box-shadow: 0 0px 15px #0101013f;
+            transform: translateY(-10px);
+            background-position: 100% 0;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes scrollToTop {
+    0% {
+        bottom: -20px;
+        opacity: 0;
+    }
+    50% {
+        bottom: 40px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 20px;
+    }
+}
+// End of Scroll to Top
 
 // Footer
 footer {
@@ -218,9 +380,6 @@ footer {
         .testimonials-title {
             font-size: 2.5rem;
         }
-        .testimonials-content {
-            min-height: fit-content;
-        }
     }
 }
 @media screen and (max-width: 576px) {
@@ -246,6 +405,34 @@ footer {
             font-size: 2.5rem;
             width: 350px;
             max-width: 100%;
+        }
+    }
+    #main-competitions {
+        .competitions-title {
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+    }
+    #main-leaderboard {
+        .leaderboard {
+            &-title {
+                padding: 1.5rem 0 1.5rem 2.25rem;
+                font-size: 2rem;
+            }
+            &-list {
+                margin: 0.5rem;
+                padding: 1rem 1.75rem;
+                span,
+                p {
+                    font-size: 1rem;
+                }
+                &:first-of-type {
+                    span,
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
     footer {
