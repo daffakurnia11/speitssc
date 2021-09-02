@@ -1,0 +1,117 @@
+/*css blog */
+
+/*Header*/
+.blog-header {
+    background: url(../img/header_blog.png);
+    background-size: cover;
+    background-position: center;
+    color: #262626;
+    padding: 15rem 0;
+}
+.blog-header .blog {
+    background-color: rgba(242, 231, 220, 1);
+    background-position: center;
+    height: 114px;
+    width: 375px;
+    border-radius: 0px;
+}
+.blog-header .blog .blog-title {
+    text-align: center;
+    padding-top: 35px;
+}
+@media (max-width: 768px) {
+    .blog-header .blog {
+        width: 300px;
+    }
+}
+@media (max-width: 576px) {
+    .blog-header .blog {
+        width: 250px;
+    }
+}
+
+/*Section List*/
+.nav {
+    margin-top: 30px;
+}
+.nav-item {
+    padding: 2px;
+    font-size: 18px;
+}
+.nav-tabs .nav-link {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 2px;
+    margin-right: 50px;
+}
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    font-weight: bold;
+    padding: 2px;
+    border-bottom: 2px solid;
+}
+.nav-tabs .nav-link.active {
+    background-color: #111840;
+    border-color: transparent transparent #111840 transparent;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 213px;
+    border-radius: 0px;
+}
+
+/*Section Petroknowledge*/
+#petroknowledge {
+    padding: 4rem 0;
+    color: #0a1931;
+}
+#petroknowledge .announcement {
+    margin: 20rem 0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+}
+
+#petroknowledge .petroknowledge-title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+#petroknowledge .petroknowledge-desc {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: justified;
+    margin-top: 5px;
+}
+#petroknowledge .petroknowledge-date {
+    margin-top: 55px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+    #petroknowledge .announcement {
+        margin: 10rem 0;
+        font-size: 20px;
+    }
+}

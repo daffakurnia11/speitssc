@@ -27,6 +27,7 @@ Route::get('/', function () {
 
 Route::get('/home', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
+Route::get('/blog', [PagesController::class, 'blog']);
 Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
 Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
 

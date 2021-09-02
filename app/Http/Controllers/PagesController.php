@@ -18,6 +18,11 @@ class PagesController extends Controller
         return view('main.member');
     }
 
+    public function blog()
+    {
+        return view('main.blog');
+    }
+
     public function edit()
     {
         return view('main.profile');
