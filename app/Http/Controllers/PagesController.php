@@ -43,4 +43,9 @@ class PagesController extends Controller
 
         return redirect('/profile');
     }
+
+    public function competitions()
+    {
+        return view('main.competitions');
+    }
 }
