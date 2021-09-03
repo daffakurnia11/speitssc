@@ -10,12 +10,12 @@
 
 @section('content')
 
-  <header id="competitions-header" style="background: linear-gradient(90deg, #FFD955 37.5%, rgba(255, 255, 255, 0) 100%);">
+  <header id="competitions-header" style="background: linear-gradient(90deg, #83AFB8 37.5%, rgba(255, 255, 255, 0) 100%);">
     <img class="background-header" src="/img/competition-header.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
-      <div class="col-lg-6 header-content text-center text-lg-start">
-        <h1 class="header-title mb-4">Fracture Fluid Design Competition</h1>
-        <p class="header-desc">Our Petrolida’s signature since we are the first and the only body to ever conduct this type of competition since 2018 across Asia Pacific</p>
+      <div class="col-lg-7 header-content text-center text-lg-start">
+        <h1 class="header-title mb-4">Business Case Competitions</h1>
+        <p class="header-desc">A brand-new competition held by our Petrolida in 2021 that successfully obtain high enthusiasm among undergraduate students across Indonesia</p>
       </div>
       <i class="fas fa-3x fa-chevron-circle-left"></i>
       <i class="fas fa-3x fa-chevron-circle-right"></i>
@@ -68,19 +68,16 @@
   <section id="competitions-content">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <p class="content-paragraph">
-            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner.
+            Business Case Competition is a competition that challenges participants in determining the best strategy for a specific business-related case in order to adapt to current trend change or to maintain current business model and strategy. Each team which consists of 3 members must pass several competition stages in order to win.
           </p>
-        </div>
-        <div class="col-lg-3 text-center">
-          <img src="/img/petrolida-2022-logo.png" alt="Petrolida 2022 Logo">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(255, 217, 85, 0.32) 0%, #ffd955 23.58%, #ffd955 79.31%, rgba(255, 217, 85, 0.32) 100%);">
+  <section id="competitions-gallery" style="background: linear-gradient(90deg, #83AFB8 37.5%, rgba(255, 255, 255, 0) 100%);">
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">

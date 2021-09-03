@@ -10,11 +10,11 @@
 
 @section('content')
 
-  <header id="competitions-header" style="background: linear-gradient(90deg, #FFD955 37.5%, rgba(255, 255, 255, 0) 100%);">
+  <header id="competitions-header" style="background: linear-gradient(90deg, #FFC890 37.5%, rgba(255, 255, 255, 0) 100%);">
     <img class="background-header" src="/img/competition-header.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-6 header-content text-center text-lg-start">
-        <h1 class="header-title mb-4">Fracture Fluid Design Competition</h1>
+        <h1 class="header-title mb-4">Stock Trading Competitions</h1>
         <p class="header-desc">Our Petrolida’s signature since we are the first and the only body to ever conduct this type of competition since 2018 across Asia Pacific</p>
       </div>
       <i class="fas fa-3x fa-chevron-circle-left"></i>
@@ -68,19 +68,16 @@
   <section id="competitions-content">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <p class="content-paragraph">
-            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner.
+            Stock Trading Competition is a competition that challenges participants in obtaining the highest profit from online trading and giving their arguments and analysis regarding Indonesia’s stock market. Each team which consists of 2 members must pass several stages such as Online Trading and Focused Group Discussion (FGD). 
           </p>
-        </div>
-        <div class="col-lg-3 text-center">
-          <img src="/img/petrolida-2022-logo.png" alt="Petrolida 2022 Logo">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(255, 217, 85, 0.32) 0%, #ffd955 23.58%, #ffd955 79.31%, rgba(255, 217, 85, 0.32) 100%);">
+  <section id="competitions-gallery" style="background: linear-gradient(90deg, #FFC890 37.5%, rgba(255, 255, 255, 0) 100%);">
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">

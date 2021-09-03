@@ -10,12 +10,15 @@
 
 @section('content')
 
-  <header id="competitions-header" style="background: linear-gradient(90deg, #FFD955 37.5%, rgba(255, 255, 255, 0) 100%);">
+  <header id="competitions-header" style="background: linear-gradient(90deg, #D0E8F2 37.5%, rgba(255, 255, 255, 0) 100%);">
     <img class="background-header" src="/img/competition-header.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
-      <div class="col-lg-6 header-content text-center text-lg-start">
-        <h1 class="header-title mb-4">Fracture Fluid Design Competition</h1>
-        <p class="header-desc">Our Petrolida’s signature since we are the first and the only body to ever conduct this type of competition since 2018 across Asia Pacific</p>
+      <div class="col-lg-5 header-content text-center text-lg-start">
+        <h1 class="header-title mb-4">Oil Rig Design
+          Competitions</h1>
+      </div>
+      <div class="col-lg-7 header-content text-center text-lg-start">
+          <p class="header-desc">A perfect competition for those who are eager to apply their engineering knowledge and create innovations for offshore drilling operations.</p>
       </div>
       <i class="fas fa-3x fa-chevron-circle-left"></i>
       <i class="fas fa-3x fa-chevron-circle-right"></i>
@@ -68,30 +71,45 @@
   <section id="competitions-content">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <p class="content-paragraph">
-            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner.
+            Oil Rig Design Competition is a competition that challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible oil rig platform for a specific offshore oil field. Each team which consists of 4 to 5 members must pass the project explanation/blueprint selection (preliminary stage), make a 3D video of their semi-submersible platform, and attend the presentation day (final stage).
           </p>
-        </div>
-        <div class="col-lg-3 text-center">
-          <img src="/img/petrolida-2022-logo.png" alt="Petrolida 2022 Logo">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(255, 217, 85, 0.32) 0%, #ffd955 23.58%, #ffd955 79.31%, rgba(255, 217, 85, 0.32) 100%);">
+  <section id="competitions-content">
+    <div class="container">
+      <div class="row align-items-center">
+        <p class="content-desc">SPE ITS SC’s achievements:</p>
+        <ol class="content-list">
+          <li>BOREYES 2021 by SPE UNPAD SC (1st Winner, 3rd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+          <li>OGIP 2021 by SPE UPNVY SC (Favorite Winner of Oil Rig Design Competition)</li>
+          <li>PETROLIDA 2020 by SPE ITS SC (2nd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+          <li>BOREYES 2020 by SPE UNPAD SC (Favorite Winner of Oil Rig Design Competition)</li>
+          <li>PELANTAR 2018 by UiTM Shah Alam Malaysia (2nd Winner of Oil Rig Design Competition)</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  
+  <section id="competitions-gallery" style="background: linear-gradient(90deg, #D0E8F2 37.5%, rgba(255, 255, 255, 0) 100%);">
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/1 ordc.png" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/2 ordc.png" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/3 ordc.png" class="gallery-pict" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/4 ordc.png" class="gallery-pict" alt="">
         </div>
       </div>
     </div>
