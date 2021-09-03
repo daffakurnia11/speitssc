@@ -1,0 +1,184 @@
+// Navbar
+.navbar {
+    .navbar-nav {
+        .nav-link {
+            margin: auto 1rem;
+            font-family: $font-lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: $text-primary;
+        }
+    }
+    .navbar-toggler-icon {
+        color: $text-primary;
+        font-size: 1.5rem;
+    }
+}
+// End of Navbar
+
+// Main Header
+.main-header {
+    background-color: $text-white;
+    color: $text-primary;
+    .row {
+        padding: 6rem 0;
+    }
+    .header-logo {
+        position: relative;
+        width: 350px;
+        max-width: 100%;
+        bottom: 30px;
+    }
+    .header-title {
+        font-family: $font-lato;
+        line-height: 2.5rem;
+    }
+    .header-desc {
+        font-family: $font-montserrat;
+        font-size: medium;
+    }
+    .one-piece {
+        bottom: 30px;
+        position: relative;
+    }
+    .signature {
+        position: absolute;
+        top: 1110px;
+        right: 630px;
+        width: 150px;
+        height: 62px;
+    }
+}
+// End of Main Header
+
+// Top Wrappers
+#top-wrappers {
+    background: url(../img/imagestaffs.png);
+    background-size: cover;
+    background-position: center;
+    .container {
+        min-height: 525px;
+    }
+    .top-wrapper-title {
+        font-family: $font-lato;
+        font-size: 5.25rem;
+        font-weight: 700;
+        color: $text-white;
+        padding-bottom: 30px;
+    }
+}
+// End of Top Wrappers
+
+// Tagline
+#tagline {
+    background: url(../img/bg-member.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $text-black;
+    padding: 6rem 0;
+    .tagline-title {
+        font-family: $font-lato;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+// End of Tagline
+
+// Team Wrappers
+#team-wrap {
+    background: #0a1931;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .container {
+        min-height: 205px;
+    }
+    .top-wrapper-title {
+        font-family: $font-lato;
+        font-size: 5.25rem;
+        font-weight: 700;
+        color: $text-white;
+        left: 191px;
+    }
+    .header-desc {
+        color: $text-white;
+        position: relative;
+        top: 0px;
+    }
+}
+// End of Top Wrappers
+
+// Organigram
+#organigram {
+    position: relative;
+    top: 80px;
+    background: #0a1931;
+    background-size: cover;
+    background-position: center;
+    .img {
+        width: auto;
+        height: auto;
+    }
+    .container {
+        min-height: 525px;
+    }
+}
+// End of Organigram
+
+//Achievements
+#achievements {
+    position: fixed;
+    .achievements-title {
+        font-family: $font-lato;
+        font-size: 5.25rem;
+        font-weight: 700;
+        color: $text-primary;
+    }
+}
+//End of Achievements
+
+// Footer
+footer {
+    .row {
+        padding: 6rem 0;
+    }
+    .footer-logo {
+        width: 350px;
+        max-width: 100%;
+    }
+    .footer-title {
+        font-family: $font-lato;
+    }
+    .footer-desc {
+        font-family: $font-montserrat;
+    }
+}
+// End of Footer
+
+@media screen and (max-width: 768px) {
+    #tagline {
+        .tagline-title {
+            font-size: 2rem;
+        }
+    }
+    #top-wrappers {
+        .top-wrapper-title {
+            font-size: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .main-header {
+        .row {
+            padding: 2rem 0;
+        }
+    }
+    footer {
+        .footer-logo {
+            width: 80%;
+        }
+    }
+}

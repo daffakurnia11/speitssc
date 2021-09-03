@@ -15,36 +15,36 @@
           <a class="nav-link active" href="/">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Introduction
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="aboutMenu">
-            <li><a class="dropdown-item" href="#">About Us</a></li>
-            <li><a class="dropdown-item" href="#">Our Members</a></li>
+            <li><a class="dropdown-item" href="">About Us</a></li>
+            <li><a class="dropdown-item" href="">Our Members</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="eventMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="" id="eventMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             SPE Events
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="eventMenu">
-            <li><a class="dropdown-item" href="#">Events</a></li>
-            <li><a class="dropdown-item" href="#">Competition</a></li>
-            <li><a class="dropdown-item" href="#">Petrolida</a></li>
+            <li><a class="dropdown-item" href="">Events</a></li>
+            <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Competition</a></li>
+            <li><a class="dropdown-item" href="">Petrolida</a></li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Merch</a>
+          <a class="nav-link" href="">Merch</a>
         </li>
         {{-- <li class="nav-item">
           <a class="nav-link" href="/login">Login</a>
         </li> --}}
         @auth          
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="profileMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="" id="profileMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Hello, {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu w-100 text-center" aria-labelledby="profileMenu">

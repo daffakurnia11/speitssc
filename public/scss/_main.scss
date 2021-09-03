@@ -65,6 +65,45 @@
         height: 170px;
         border: 1px solid $text-primary;
         border-radius: 1.5rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &-img {
+            width: 100%;
+        }
+        &-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.37) -45.35%,
+                #ffffff 100%
+            );
+            .events-date {
+                font-family: $font-lato;
+                font-size: 0.9rem;
+            }
+            .events-name {
+                font-family: $font-lato;
+                font-weight: bold;
+                font-size: 1.25rem;
+                line-height: 1.6rem;
+            }
+        }
+        &:hover {
+            .events-content {
+                background: $text-primary;
+                .events-date {
+                    color: $text-white;
+                }
+                .events-name {
+                    color: $text-white;
+                }
+            }
+        }
     }
     .upcoming-events-button {
         @include button-blue-rounded();
@@ -227,25 +266,43 @@
 // Members in Competitions
 #main-competitions {
     padding: 4rem 0;
-    background-color: $text-primary;
-    color: $text-white;
-    .competitions-title {
-        font-family: $font-lato;
-        font-weight: bold;
-        font-size: 4.25rem;
-        line-height: 5rem;
-        margin-bottom: 2.5rem;
+    background-color: #f2e7dc;
+    color: $text-primary;
+    position: relative;
+    z-index: 2;
+    .competitions {
+        &-title {
+            font-family: $font-lato;
+            font-weight: bold;
+            font-size: 4.25rem;
+            line-height: 5rem;
+            margin-bottom: 2.5rem;
+        }
+        &-button {
+            padding: 1rem 3rem;
+            background: $text-white;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+            border-radius: 4rem;
+            font-family: $font-lato;
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: $text-primary;
+            text-transform: uppercase;
+        }
+        &-pict {
+            width: 300px;
+            max-width: 100%;
+            border-radius: 1.5rem;
+            box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
+        }
     }
-    .competitions-button {
-        padding: 1rem 3rem;
-        background: $text-white;
-        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
-        border-radius: 4rem;
-        font-family: $font-lato;
-        font-weight: 600;
-        font-size: 1.25rem;
-        color: $text-primary;
-        text-transform: uppercase;
+    .competitions-icon {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        width: 325px;
+        max-width: 100%;
     }
 }
 // End of Members in Competitions

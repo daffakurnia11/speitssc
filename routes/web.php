@@ -28,6 +28,7 @@ use App\Http\Controllers\Admin\ShortlinkController;
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 Route::get('/blog', [PagesController::class, 'blog']);
+Route::get('/aboutus', [PagesController::class, 'aboutus']);
 
 // Competitions Routing
 Route::prefix('competitions')->group(function () {
