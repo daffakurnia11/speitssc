@@ -18,13 +18,13 @@
             </p>
             <div class="footer-contact">
               <a href="https://speitssc.org/">
-                <img src="svg/worldwideweb.svg" alt="WorldWideWeb Icon">
+                <img src="/svg/worldwideweb.svg" alt="WorldWideWeb Icon">
               </a>
               <a href="https://www.instagram.com/speitssc/" target="_blank">
-                <img src="svg/instagram.svg" alt="Instagram Logo">
+                <img src="/svg/instagram.svg" alt="Instagram Logo">
               </a>
               <a href="https://www.linkedin.com/company/speitssc/" target="_blank">
-                <img src="svg/linkedin.svg" alt="Linkedin Logo">
+                <img src="/svg/linkedin.svg" alt="Linkedin Logo">
               </a>
             </div>
           </div>

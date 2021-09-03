@@ -28,6 +28,18 @@ use App\Http\Controllers\Admin\ShortlinkController;
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 Route::get('/blog', [PagesController::class, 'blog']);
+
+// Competitions Routing
+Route::prefix('competitions')->group(function () {
+  Route::get('/fracture-fluid-design', [PagesController::class, 'fracture_fluid_design']);
+  Route::get('/paper', [PagesController::class, 'paper']);
+  Route::get('/smart', [PagesController::class, 'smart']);
+  Route::get('/case-study', [PagesController::class, 'case_study']);
+  Route::get('/business-case', [PagesController::class, 'business_case']);
+  Route::get('/oil-rig-design', [PagesController::class, 'oil_rig_design']);
+  Route::get('/stock-trading', [PagesController::class, 'stock_trading']);
+});
+// End of Competitions Routing
 Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
 Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
 

@@ -49,8 +49,32 @@ class PagesController extends Controller
         return redirect('/profile');
     }
 
-    public function competitions()
+    public function fracture_fluid_design()
     {
-        return view('main.competitions');
+        return view('main.competitions.fracture_fluid_design');
+    }
+    public function paper()
+    {
+        return view('main.competitions.paper');
+    }
+    public function smart()
+    {
+        return view('main.competitions.smart');
+    }
+    public function case_study()
+    {
+        return view('main.competitions.case_study');
+    }
+    public function business_case()
+    {
+        return view('main.competitions.business_case');
+    }
+    public function oil_rig_design()
+    {
+        return view('main.competitions.oil_rig_design');
+    }
+    public function stock_trading()
+    {
+        return view('main.competitions.stock_trading');
     }
 }
