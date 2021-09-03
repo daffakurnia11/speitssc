@@ -1,25 +1,5 @@
-// Navbar
-.navbar {
-    .navbar-nav {
-        .nav-link {
-            margin: auto 1rem;
-            font-family: $font-lato;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1rem;
-            text-transform: uppercase;
-            color: $text-primary;
-        }
-    }
-    .navbar-toggler-icon {
-        color: $text-primary;
-        font-size: 1.5rem;
-    }
-}
-// End of Navbar
-
-// Main Header
-.main-header {
+// About Header
+.about-header {
     background-color: $text-white;
     color: $text-primary;
     .row {
@@ -51,7 +31,7 @@
         height: 62px;
     }
 }
-// End of Main Header
+// End of About Header
 
 // Top Wrappers
 #top-wrappers {

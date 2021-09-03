@@ -55,7 +55,7 @@
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Oil Rig Design
         </button>
-        <ul class="dropdown-menu w-100">
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Fracture Fluid Design</a></li>
           <li><a class="dropdown-item" href="/competitions/paper">Paper</a></li>
           <li><a class="dropdown-item" href="/competitions/smart">Smart</a></li>
@@ -75,22 +75,15 @@
           <p class="content-paragraph">
             Oil Rig Design Competition is a competition that challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible oil rig platform for a specific offshore oil field. Each team which consists of 4 to 5 members must pass the project explanation/blueprint selection (preliminary stage), make a 3D video of their semi-submersible platform, and attend the presentation day (final stage).
           </p>
+          <p class="content-desc">SPE ITS SC’s achievements:</p>
+          <ol class="content-list">
+            <li>BOREYES 2021 by SPE UNPAD SC (1st Winner, 3rd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+            <li>OGIP 2021 by SPE UPNVY SC (Favorite Winner of Oil Rig Design Competition)</li>
+            <li>PETROLIDA 2020 by SPE ITS SC (2nd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+            <li>BOREYES 2020 by SPE UNPAD SC (Favorite Winner of Oil Rig Design Competition)</li>
+            <li>PELANTAR 2018 by UiTM Shah Alam Malaysia (2nd Winner of Oil Rig Design Competition)</li>
+          </ol>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="competitions-content">
-    <div class="container">
-      <div class="row align-items-center">
-        <p class="content-desc">SPE ITS SC’s achievements:</p>
-        <ol class="content-list">
-          <li>BOREYES 2021 by SPE UNPAD SC (1st Winner, 3rd Winner, Favorite Winner of Oil Rig Design Competition)</li>
-          <li>OGIP 2021 by SPE UPNVY SC (Favorite Winner of Oil Rig Design Competition)</li>
-          <li>PETROLIDA 2020 by SPE ITS SC (2nd Winner, Favorite Winner of Oil Rig Design Competition)</li>
-          <li>BOREYES 2020 by SPE UNPAD SC (Favorite Winner of Oil Rig Design Competition)</li>
-          <li>PELANTAR 2018 by UiTM Shah Alam Malaysia (2nd Winner of Oil Rig Design Competition)</li>
-        </ol>
       </div>
     </div>
   </section>
@@ -100,16 +93,16 @@
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/1 ordc.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc1.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/2 ordc.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc2.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/3 ordc.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc3.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/4 ordc.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc4.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

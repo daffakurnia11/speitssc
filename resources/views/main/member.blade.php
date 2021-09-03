@@ -12,12 +12,12 @@
     
   <section id="registerInfo">
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-6 info-mockup d-flex justify-content-center align-items-center">
+      <div class="row info">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
           <img src="img/phone-mockup.png" alt="SPE ITS SC Mockup Phone" class="info-mockup-img my-3">
         </div>
-        <div class="col-lg-6 mx-0 px-0">
-          <div class="info-content">
+        <div class="col-lg-6 info-content d-flex align-items-center">
+          <div class="container">
             <h1 class="info-title">
               <small>Register as</small><br>
               OUR MEMBER

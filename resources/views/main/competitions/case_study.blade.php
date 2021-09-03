@@ -52,7 +52,7 @@
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Case Study
         </button>
-        <ul class="dropdown-menu w-100">
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Fracture Fluid Design</a></li>
           <li><a class="dropdown-item" href="/competitions/paper">Paper</a></li>
           <li><a class="dropdown-item" href="/competitions/smart">Smart</a></li>
@@ -98,16 +98,16 @@
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/1_case.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/case-study/case1.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/2_case.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/case-study/case2.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/3_case.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/case-study/case3.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/4_case.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/case-study/case4.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

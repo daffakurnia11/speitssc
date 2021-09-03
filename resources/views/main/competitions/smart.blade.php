@@ -52,7 +52,7 @@
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Smart
         </button>
-        <ul class="dropdown-menu w-100">
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Fracture Fluid Design</a></li>
           <li><a class="dropdown-item" href="/competitions/paper">Paper</a></li>
           <li><a class="dropdown-item" href="/competitions/smart">Smart</a></li>
@@ -94,14 +94,17 @@
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/3_smart_2.png" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/smart/smart1.jpg" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/4_smart_2.png" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/smart/smart2.jpg" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/5_smart_2.png" class="gallery-pict" alt="">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/smart/smart3.jpg" class="gallery-pict" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/smart/smart4.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

@@ -98,10 +98,10 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 ##### On Going
 
 -   [ ] Article Management
--   [ ] Main Page
 
 ##### 3 September 2021
 
+-   [x] Main Page
 -   [x] Member Points System
 
 ##### 30 August 2021

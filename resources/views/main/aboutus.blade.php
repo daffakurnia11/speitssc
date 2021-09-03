@@ -19,7 +19,7 @@
     {{-- End of top-wrapper --}}
 
     {{-- 2nd-Wrapper --}}
-    <header class="main-header">
+    <header class="about-header">
       <div class="container d-flex align-items-center flex-column">
         <div class="row align-items-center">
           <div class="col-md-5 text-center">

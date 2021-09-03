@@ -52,7 +52,7 @@
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Business Case
         </button>
-        <ul class="dropdown-menu w-100">
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Fracture Fluid Design</a></li>
           <li><a class="dropdown-item" href="/competitions/paper">Paper</a></li>
           <li><a class="dropdown-item" href="/competitions/smart">Smart</a></li>

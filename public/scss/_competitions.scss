@@ -66,7 +66,8 @@
             font-size: 1.25rem;
         }
         .dropdown-menu {
-            background: rgba(255, 255, 255, 0.55);
+            background: rgba(255, 255, 255, 1);
+            width: 170px;
             .dropdown-item {
                 font-family: $font-lato;
             }

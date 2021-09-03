@@ -53,7 +53,7 @@
         <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Paper
         </button>
-        <ul class="dropdown-menu w-100">
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Fracture Fluid Design</a></li>
           <li><a class="dropdown-item" href="/competitions/paper">Paper</a></li>
           <li><a class="dropdown-item" href="/competitions/smart">Smart</a></li>
@@ -98,13 +98,13 @@
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/3_paper_2.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/paper/paper1.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/2_paper_2.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/paper/paper2.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/1_paper_2.png" class="gallery-pict" alt="">
+          <img src="/img/competitions/paper/paper3.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

@@ -1,59 +1,54 @@
 #registerInfo {
     color: $text-primary;
-    .container-fluid {
-        background-color: $text-primary;
-    }
-    .row {
-        padding: 0;
+    background-color: $text-primary;
+    .info {
         min-height: calc(100vh - 82.22px);
-    }
-    .info-mockup {
-        .info-mockup-img {
+        &-mockup-img {
             width: 360px;
         }
-    }
-    .info-content {
-        background-color: $text-white;
-        padding: 2rem 4.25rem;
-        .info-title {
-            font-family: $font-lato;
-            font-size: 3.5rem;
-            font-weight: bold;
-            small {
-                font-size: 2.75rem;
-                font-weight: normal;
-            }
-        }
-    }
-    .info-benefit {
-        ul {
-            list-style: none;
-            li {
-                position: relative;
+        &-content {
+            background-color: $text-white;
+            padding: 2rem 4.25rem;
+            .info-title {
                 font-family: $font-lato;
-                font-size: 1.3rem;
-                margin-bottom: 1.25rem;
-                padding-left: 2rem;
-                text-align: justify;
-            }
-            .fas {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -2rem;
+                font-size: 3.5rem;
+                font-weight: bold;
+                small {
+                    font-size: 2.75rem;
+                    font-weight: normal;
+                }
             }
         }
-    }
-    .info-register {
-        @include button-blue-rounded();
-        font-size: 1.75rem;
-        font-weight: bold;
-        padding: 1.25rem 2.75rem;
-    }
-    .info-renew {
-        font-family: $font-lato;
-        font-size: 1.5rem;
-        font-weight: bold;
+        &-benefit {
+            ul {
+                list-style: none;
+                li {
+                    position: relative;
+                    font-family: $font-lato;
+                    font-size: 1.3rem;
+                    margin-bottom: 1.25rem;
+                    padding-left: 2rem;
+                    text-align: justify;
+                }
+                .fas {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -2rem;
+                }
+            }
+        }
+        &-register {
+            @include button-blue-rounded();
+            font-size: 1.75rem;
+            font-weight: bold;
+            padding: 1.25rem 2.75rem;
+        }
+        &-renew {
+            font-family: $font-lato;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     }
 }
 
