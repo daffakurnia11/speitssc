@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img src="img/logo.png" alt="SPE ITS SC Logo" width="70">
+      <img src="/img/logo.png" alt="SPE ITS SC Logo" width="70">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <svg class="navbar-toggler-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
