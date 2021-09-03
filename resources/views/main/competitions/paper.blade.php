@@ -10,12 +10,12 @@
 
 @section('content')
 
-  <header id="competitions-header" style="background: linear-gradient(90deg, #FFD955 37.5%, rgba(255, 255, 255, 0) 100%);">
+  <header id="competitions-header" style="background: linear-gradient(90deg, #F2E7DC 37.5%, rgba(255, 255, 255, 0) 100%);">
     <img class="background-header" src="/img/competition-header.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-6 header-content text-center text-lg-start">
-        <h1 class="header-title mb-4">Fracture Fluid Design Competition</h1>
-        <p class="header-desc">Our Petrolida’s signature since we are the first and the only body to ever conduct this type of competition since 2018 across Asia Pacific</p>
+        <h1 class="header-title mb-4">Paper Competition</h1>
+        <p class="header-desc">A suitable competition for those who love to do scientific research</p>
       </div>
       <i class="fas fa-3x fa-chevron-circle-left"></i>
       <i class="fas fa-3x fa-chevron-circle-right"></i>
@@ -69,30 +69,42 @@
   <section id="competitions-content">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <p class="content-paragraph">
-            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner.
+            Paper Competition is a competition that challenges participants to apply their knowledge in the oil and gas industry and their ability in conducting scientific research in order to bring new and intriguing innovations for the energy industry. Each team which consists of 3 members must pass the abstract selection (preliminary stage), make a paper based on the submitted abstract, and attend the presentation day (final stage) in order to win.
           </p>
         </div>
+        {{--
         <div class="col-lg-3 text-center">
           <img src="/img/petrolida-2022-logo.png" alt="Petrolida 2022 Logo">
         </div>
+        --}}
+        <p class="content-desc">SPE ITS SC’s achievements:</p>
+        <ol class="content-list">
+          <li>PETROLIDA 2021 by SPE ITS SC (2nd Winner of Paper Competition)</li>
+          <li>BOREYES 2021 by SPE UNPAD SC (Favorite Winner of Paper & Poster Competition)</li>
+          <li>PETROLIDA 2020 by SPE ITS SC (3rd Winner of Paper Competition)</li>
+          <li>APECX 2020 by SPE UGM SC (Best Poster of Paper & Poster Competition)</li>
+          <li>SPE University of Petroleum and Energy Studies SC 2019, India (1st Winner in of Paper Competition Category Exploration, 1st Winner of Paper Competition Category Health Safety Environment, 2nd Winner of Paper Competition Category Reservoir, 3rd Winner of Paper Competition Category Production)</li>
+          <li>SPE Petroleum-Gas University of Ploiesti SC 2019, Romania (1st Winner of Paper & Poster Competition)</li>
+          <li>Oil & Gas Horizons XI, Russia (1st Winner of Paper Competition)</li>
+        </ol>
       </div>
     </div>
   </section>
 
-  <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(255, 217, 85, 0.32) 0%, #ffd955 23.58%, #ffd955 79.31%, rgba(255, 217, 85, 0.32) 100%);">
+  <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(242, 231, 220, 0.32) 0%, #F2E7DC 23.58%, #F2E7DC 79.31%, rgba(242, 231, 220, 0.32) 100%);">
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/3_paper_2.png" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/2_paper_2.png" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/1_paper_2.png" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

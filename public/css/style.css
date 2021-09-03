@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 14px;
 }
 
@@ -182,7 +183,8 @@ input:focus {
   width: 250px;
   max-width: 100%;
   height: 150px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #main-blogs .blogs-summary .blogs-pict {
@@ -262,19 +264,23 @@ input:focus {
 #testimonials .member-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #f2e7dc;
   font-weight: bold;
   font-size: 2rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .member-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #f2e7dc;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -282,6 +288,8 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .member-section .testimonials-content {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -306,19 +314,23 @@ input:focus {
 #testimonials .boc-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #ffffff;
   font-weight: bold;
   font-size: 2rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .boc-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #ffffff;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -326,6 +338,8 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .boc-section .testimonials-content {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -384,7 +398,8 @@ input:focus {
 #main-competitions .competitions-button {
   padding: 1rem 3rem;
   background: #ffffff;
-  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 4rem;
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -435,7 +450,8 @@ input:focus {
   padding: 1rem 3.25rem;
   background-color: #0a1931;
   border-radius: 3rem;
-  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
   max-width: 800px;
 }
 
@@ -455,10 +471,14 @@ input:focus {
   opacity: 0;
   bottom: 20px;
   right: 30px;
-  animation-name: scrollToTop;
-  animation-duration: 0.5s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: scrollToTop;
+          animation-name: scrollToTop;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #scroll-to-top .scroll-button {
@@ -466,17 +486,36 @@ input:focus {
   background-color: #0a1931;
   padding: 10px 13px;
   border-radius: 50px;
-  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
   color: #ffffff;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 #scroll-to-top .scroll-button:hover {
-  box-shadow: 0 0px 15px #0101013f;
-  transform: translateY(-10px);
+  -webkit-box-shadow: 0 0px 15px #0101013f;
+          box-shadow: 0 0px 15px #0101013f;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   background-position: 100% 0;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+}
+
+@-webkit-keyframes scrollToTop {
+  0% {
+    bottom: -20px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 20px;
+  }
 }
 
 @keyframes scrollToTop {
@@ -535,6 +574,8 @@ footer .footer-desc {
   #upcoming-events .upcoming-events-title {
     font-family: "Lato", sans-serif;
     font-size: 3.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
   }
@@ -671,7 +712,8 @@ footer .footer-desc {
   content: "";
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -831,7 +873,8 @@ footer .footer-desc {
 #registerInfo .info-benefit ul .fas {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: -2rem;
 }
 
@@ -1059,6 +1102,7 @@ footer .footer-desc {
 }
 
 #competitions-menu ul.competitions-list li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, #ffffff));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
 }
 
@@ -1093,6 +1137,28 @@ footer .footer-desc {
   text-align: justify;
 }
 
+#competitions-content p.content-desc {
+  margin-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
+#competitions-content ol.content-list li {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
 #competitions-gallery {
   padding: 2.75rem 0;
   color: #0a1931;
@@ -1107,7 +1173,8 @@ footer .footer-desc {
 
 #competitions-gallery .gallery-pict {
   border-radius: 2.25rem;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
   width: 275px;
   max-width: 100%;
 }
@@ -1141,6 +1208,16 @@ footer .footer-desc {
     padding: 3.25rem 1rem;
   }
   #competitions-content p.content-paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: unset;
+  }
+  #competitions-content p.content-desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: unset;
+  }
+  #competitions-content ol.content-list li {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: unset;

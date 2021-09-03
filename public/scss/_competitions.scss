@@ -84,6 +84,26 @@
         line-height: 2rem;
         text-align: justify;
     }
+    p.content-desc {
+        margin-top: 2rem;
+        font-family: $font-montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: justified;
+    }
+    ol.content-list li {
+        margin-left: 20px;
+        font-family: $font-montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: justified;
+    }
 }
 
 #competitions-gallery {
@@ -141,6 +161,16 @@
     #competitions-content {
         padding: 3.25rem 1rem;
         p.content-paragraph {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: unset;
+        }
+        p.content-desc {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: unset;
+        }
+        ol.content-list li {
             font-size: 1rem;
             line-height: 1.5rem;
             text-align: unset;
