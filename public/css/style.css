@@ -156,6 +156,46 @@ input:focus {
   height: 170px;
   border: 1px solid #0a1931;
   border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+#upcoming-events .events-img {
+  width: 100%;
+}
+
+#upcoming-events .events-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) -45.35%, #ffffff 100%);
+}
+
+#upcoming-events .events-content .events-date {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+}
+
+#upcoming-events .events-content .events-name {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+}
+
+#upcoming-events .events:hover .events-content {
+  background: #0a1931;
+}
+
+#upcoming-events .events:hover .events-content .events-date {
+  color: #ffffff;
+}
+
+#upcoming-events .events:hover .events-content .events-name {
+  color: #ffffff;
 }
 
 #upcoming-events .upcoming-events-button {
@@ -369,8 +409,10 @@ input:focus {
 
 #main-competitions {
   padding: 4rem 0;
-  background-color: #0a1931;
-  color: #ffffff;
+  background-color: #f2e7dc;
+  color: #0a1931;
+  position: relative;
+  z-index: 2;
 }
 
 #main-competitions .competitions-title {
@@ -391,6 +433,22 @@ input:focus {
   font-size: 1.25rem;
   color: #0a1931;
   text-transform: uppercase;
+}
+
+#main-competitions .competitions-pict {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
+}
+
+#main-competitions .competitions-icon {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  width: 325px;
+  max-width: 100%;
 }
 
 #main-leaderboard {

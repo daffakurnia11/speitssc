@@ -59,24 +59,48 @@
             <h3 class="text-center mt-5 mt-md-0">See our upcoming events!</h3>
             <div class="row">
               <div class="col-sm-6">
-                <div class="events mx-auto my-3">
-
-                </div>
+                <a href="">
+                  <div class="events mx-auto my-3">
+                    <img src="/img/event/online-company-day.jpg" class="events-img" alt="">
+                    <div class="events-content">
+                      <span class="events-date">September 25th, 2021</span>
+                      <h4 class="events-name">Online Company Day</h4>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div class="col-sm-6">
-                <div class="events mx-auto my-3">
-
-                </div>
+                <a href="">
+                  <div class="events mx-auto my-3">
+                    <img src="/img/event/softskills-course.jpg" class="events-img" alt="">
+                    <div class="events-content">
+                      <span class="events-date">September 25th, 2021</span>
+                      <h4 class="events-name">Softskills Course</h4>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div class="col-sm-6">
-                <div class="events mx-auto my-3">
-
-                </div>
+                <a href="">
+                  <div class="events mx-auto my-3">
+                    <img src="/img/event/company-visit.jpg" class="events-img" alt="">
+                    <div class="events-content">
+                      <span class="events-date">September 25th, 2021</span>
+                      <h4 class="events-name">Company Visit (inSPEct)</h4>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div class="col-sm-6">
-                <div class="events mx-auto my-3">
-
-                </div>
+                <a href="">
+                  <div class="events mx-auto my-3">
+                    <img src="/img/event/finesse-series.jpg" class="events-img" alt="">
+                    <div class="events-content">
+                      <span class="events-date">September 25th, 2021</span>
+                      <h4 class="events-name">FINESSE Series</h4>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -252,9 +276,20 @@
 
     {{-- Members in Competition --}}
     <section id="main-competitions">
-      <div class="container">
-        <h2 class="competitions-title">Members in<br>Competitions</h2>
-        <a href="" class="competitions-button">See Competitions</a>
+      <div class="container competitions">
+        <div class="col-lg-9">
+          <h2 class="competitions-title">Members in<br>Competitions</h2>
+          <a href="/competitions/fracture-fluid-design" class="competitions-button">See Competitions</a>
+          <div class="row mt-5 mx-auto" style="max-width: 730px">
+            <div class="col-md-6 px-3">
+              <img src="/img/competitions/other1.jpg" class="my-3 competitions-pict" alt="">
+            </div>
+            <div class="col-md-6 px-3">
+              <img src="/img/competitions/other2.jpg" class="my-3 competitions-pict" alt="">
+            </div>
+          </div>
+        </div>
+        <img src="/img/main-competition.png" class="competitions-icon" alt="">
       </div>
     </section>
     {{-- End of Members in Competition --}}
