@@ -28,7 +28,7 @@ use App\Http\Controllers\Admin\ShortlinkController;
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 Route::get('/blog', [PagesController::class, 'blog']);
-Route::get('/aboutus', [PagesController::class, 'aboutus']);
+Route::get('/about', [PagesController::class, 'aboutus']);
 
 // Competitions Routing
 Route::prefix('competitions')->group(function () {
@@ -70,6 +70,9 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/admin/create', [AdminController::class, 'create']);
   Route::post('/admin', [AdminController::class, 'store']);
   Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
+
+  Route::get('/renewal', [DashboardController::class, 'renewal']);
+  Route::get('/point', [DashboardController::class, 'point']);
 });
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

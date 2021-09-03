@@ -10,7 +10,7 @@ class Profile extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['member_id', 'fullname', 'student_number', 'batch', 'faculty', 'major', 'phone', 'line_id'];
+    protected $fillable = ['member_id', 'fullname', 'student_number', 'batch', 'faculty', 'major', 'phone', 'status', 'line_id'];
 
     public function user()
     {

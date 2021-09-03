@@ -1,6 +1,6 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 01-09-2021 ||
+<strong>Last Update</strong> : 03-09-2021 ||
 <strong>Last Deploy</strong> : 30-08-2021
 </p>
 
@@ -97,9 +97,12 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 
 ##### On Going
 
--   [ ] Main Page
 -   [ ] Article Management
--   [ ] Member Points System
+-   [ ] Main Page
+
+##### 3 September 2021
+
+-   [x] Member Points System
 
 ##### 30 August 2021
 

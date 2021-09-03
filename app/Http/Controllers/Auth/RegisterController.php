@@ -9,6 +9,7 @@ use App\Mail\WelcomeMail;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\File;
+use App\Models\Point;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
@@ -46,6 +47,7 @@ class RegisterController extends Controller
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
             // Inserting Data
+            Profile::where('student_number', $request->student_number)->update(['status' => 1]);
             $profileId = Profile::firstWhere('student_number', $request->student_number)->id;
 
             $userData['password'] = Hash::make($userData['password']);
@@ -56,6 +58,9 @@ class RegisterController extends Controller
                 'user_id'       => $userId,
                 'payment'       => $paymentImage,
                 'screenshot'    => $screenshotImage
+            ]);
+            Point::create([
+                'user_id'       => $userId
             ]);
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
@@ -111,6 +116,7 @@ class RegisterController extends Controller
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
             // Inserting Data
+            $profileData['status'] = 1;
             $profileId = Profile::create($profileData)->id;
 
             $userData['password'] = Hash::make($userData['password']);
@@ -121,6 +127,9 @@ class RegisterController extends Controller
                 'user_id'       => $userId,
                 'payment'       => $paymentImage,
                 'screenshot'    => $screenshotImage
+            ]);
+            Point::create([
+                'user_id'       => $userId
             ]);
 
             $request->payment->move(public_path('files/payment'), $paymentImage);

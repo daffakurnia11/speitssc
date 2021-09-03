@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Shortlink::class);
     }
+
+    public function point()
+    {
+        return $this->hasOne(Point::class);
+    }
 }

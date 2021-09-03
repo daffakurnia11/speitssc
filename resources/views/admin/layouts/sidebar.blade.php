@@ -81,6 +81,22 @@
             </p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="/dashboard/renewal" class="nav-link {{ Request::is('dashboard/renewal') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-user-friends"></i>
+            <p>
+              Renewal Data
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard/point" class="nav-link {{ Request::is('dashboard/point') ? 'active' : '' }}">
+            <i class="nav-icon fas fa-star"></i>
+            <p>
+              Member Points
+            </p>
+          </a>
+        </li>
 
       </ul>
     </nav>
