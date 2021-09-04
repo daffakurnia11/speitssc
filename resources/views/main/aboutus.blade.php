@@ -29,13 +29,13 @@
             <h1 class="one-piece">Who We Are</h1>
             <p class="header-desc fs-5">
               The Society of Petroleum Engineers (SPE) is a non-profit professional association whose more  than 158,000 members in 143 countries are engaged in oil and gas exploration and production.<br>
-              SPE is a key resource for technical knowledge providing publications, events, training courses, and online resources.<br>
-            </p>
-            <p class="header-desc fs-5">
+              SPE is a key resource for technical knowledge providing publications, events, training courses, and online resources.
+              <br>
               Society of Petroleum Engineers Institut Teknologi Sepuluh Nopember Student Chapter (SPE ITS SC) itself was established in 2011. This organization aims to elevate understanding of the world’s energy sources to each one of its elements by exposing them, starts from the basic knowledge until the advanced technologies and recent developments in the industries. SPE ITS SC intents to become the centerpiece of energy, specifically in the oil and gas industry, where our work is demonstrated professionally are proven internationally through unceasing professional competence.
+              <br>
+              <img src="/img/handsign.png" class="signature">
             </p>
           </div>
-          <img src="/img/handsign.png" class="signature">
         </div>
       </div>
     </header>
