@@ -204,7 +204,7 @@
                   Being a member of SPE ITS SC is the best decision I’ve ever made. At first, I didn’t know where to begin to learn about oil and gas, but SPE ITS SC provided me with everything that I needed. I didn’t just learn “what” the oil and gas industry is – “how” and “why” also became much clearer and I eventually gained enough courage to become a delegate, participating in some competitions. But it wasn’t just about the knowledge. The main benefits came from participating in many SPE ITS SC events such as company visits, soft skill courses, and many more. And we can even meet a lot of exciting new people to expand relations!
                 </p>
                 <p class="text-end">
-                  <strong>- Safira Khairunnisa, Engineering Phyiscs 2019</strong>​
+                  <strong>- Safira Khairunnisa, Engineering Phyiscs 2020</strong>​
                 </p>
                 <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
                 <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
@@ -216,7 +216,7 @@
                   When I was a freshman, SPE ITS SC became my first place to develop myself and I am so grateful for that. SPE ITS SC shows me the beauty of research and scientific competition that becomes my main interest. At first, I thought SPE ITS SC just provided knowledge, but as the time goes by, this organization also encourage me to join the competition, enhance my soft skills, and also experience. By being a member of SPE ITS SC, I get lots of benefits from their events such as science course, soft skill course, and competition 101. So, If you are interested in the oil and gas sector or even just want to expand your relation, want to enhance your soft skills, and broaden your knowledge, don't wait for another second to join SPE ITS SC!
                 </p>
                 <p class="text-end">
-                  <strong>- Adiv Gayu</strong>​
+                  <strong>- Adiv Gayu, Ocean Engineering 2019</strong>​
                 </p>
                 <img src="svg/quotes-left.svg" class="testimonials-quotes" alt="">
                 <img src="svg/quotes-right.svg" class="testimonials-quotes" alt="">
@@ -227,7 +227,7 @@
       </div>
       <div class="boc-section">
         <div class="container">
-          <h3 class="testimonials-section ms-auto">Board of Committee</h3>
+          <h3 class="testimonials-section ms-auto">Alumni SPE ITS SC</h3>
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6">
               <div class="testimonials-content mx-2 mb-4">
@@ -297,26 +297,23 @@
     {{-- Leaderboard --}}
     <section id="main-leaderboard">
       <div class="container-fluid leaderboard">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
             <h2 class="leaderboard-title ms-5 ms-lg-0">Leaderboard</h2>
           </div>
           <div class="col-lg-7 col-xl-8 order-2 order-lg-1">
             <div class="container leaderboard-content">
-              <div class="leaderboard-list ms-auto d-flex justify-content-between flex-column flex-sm-row">
-                <div class="leaderboard-name flex-fill">
-                  <span class="float-start">1</span>                
-                  <p class="ms-2 text-center my-0">Daffa Kurnia Fatah</p>
+              @foreach ($users as $user)
+                  
+                <div class="leaderboard-list ms-auto d-flex justify-content-between flex-column flex-sm-row">
+                  <div class="leaderboard-name flex-fill">
+                    <span class="float-start">{{ $loop->iteration }}</span>                
+                    <p class="ms-2 text-center my-0">{{ $user->user->name }}</p>
+                  </div>
+                  <p class="leaderboard-points m-0 text-center">{{ $user->point }} pts</p>                
                 </div>
-                <p class="leaderboard-points m-0 text-center">1000 pts</p>                
-              </div>
-              <div class="leaderboard-list ms-auto d-flex justify-content-between flex-column flex-sm-row">
-                <div class="leaderboard-name flex-fill">
-                  <span class="float-start">2</span>                
-                  <p class="ms-2 text-center my-0">Annisa Septyana Ningrum</p>
-                </div>
-                <p class="leaderboard-points m-0 text-center">500 pts</p>                
-              </div>
+
+              @endforeach
             </div>
           </div>
         </div>

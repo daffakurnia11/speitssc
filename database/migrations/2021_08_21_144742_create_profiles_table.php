@@ -21,7 +21,7 @@ class CreateProfilesTable extends Migration
             $table->string('faculty');
             $table->string('major');
             $table->string('phone');
-            $table->integer('status')->default(0);
+            $table->string('status')->default('New Member');
             $table->string('line_id');
             $table->dateTime('deleted_at')->nullable();
             $table->timestamps();

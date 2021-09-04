@@ -23,7 +23,7 @@ class DashboardController extends Controller
     public function renewal()
     {
         return view('admin.renewal', [
-            'users'         => Profile::whereNotNull('member_id')->get()
+            'users'         => Profile::where('status', '!=', 'New Member')->get()
         ]);
     }
 

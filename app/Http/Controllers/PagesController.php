@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Profile;
+use App\Models\Point;
 
 class PagesController extends Controller
 {
     public function landing()
     {
-        return view('main.index');
+        return view('main.index', [
+            'users' => Point::orderByDesc('point')->limit(10)->get()
+        ]);
     }
 
     public function member()

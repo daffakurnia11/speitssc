@@ -47,7 +47,7 @@ class RegisterController extends Controller
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
             // Inserting Data
-            Profile::where('student_number', $request->student_number)->update(['status' => 1]);
+            Profile::where('student_number', $request->student_number)->update(['status' => 'Renew']);
             $profileId = Profile::firstWhere('student_number', $request->student_number)->id;
 
             $userData['password'] = Hash::make($userData['password']);
@@ -116,7 +116,6 @@ class RegisterController extends Controller
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
             // Inserting Data
-            $profileData['status'] = 1;
             $profileId = Profile::create($profileData)->id;
 
             $userData['password'] = Hash::make($userData['password']);

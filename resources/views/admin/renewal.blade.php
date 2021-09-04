@@ -54,13 +54,7 @@
                 <td class="text-nowrap">{{ $user->batch }}</td>
                 <td class="text-nowrap">{{ $user->faculty }}</td>
                 <td class="text-nowrap">{{ $user->major }}</td>
-                <td>
-                  @if ($user->status === 1)
-                      Activated
-                  @else
-                      Not Active
-                  @endif
-                </td>
+                <td>{{ $user->status }}</td>
               </tr>
               @endforeach
             </tbody>
