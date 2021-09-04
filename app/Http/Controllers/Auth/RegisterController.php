@@ -116,6 +116,7 @@ class RegisterController extends Controller
             $screenshotImage = $request->username . '-screenshot.' . $request->screenshot->extension();
 
             // Inserting Data
+            $profileData['status'] = 'New Member';
             $profileId = Profile::create($profileData)->id;
 
             $userData['password'] = Hash::make($userData['password']);
