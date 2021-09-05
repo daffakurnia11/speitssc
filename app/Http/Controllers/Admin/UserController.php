@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\File;
+use App\Models\Point;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -87,10 +88,12 @@ class UserController extends Controller
     {
         $profile = Profile::firstWhere('id', $user->profile_id);
         $file = File::firstWhere('user_id', $user->id);
+        $point = Point::firstWhere('user_id', $user->id);
 
         $file->delete();
         $profile->delete();
         $user->delete();
+        $point->delete();
 
         return redirect('/dashboard/user');
     }
