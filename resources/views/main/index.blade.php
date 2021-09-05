@@ -228,7 +228,7 @@
       <div class="boc-section">
         <div class="container">
           <h3 class="testimonials-section ms-auto">Alumni SPE ITS SC</h3>
-          <div class="row justify-content-center">
+          <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="testimonials-content mx-2 mb-4">
                 <p class="text-justify testimonials-said">

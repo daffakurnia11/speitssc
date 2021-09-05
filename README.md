@@ -1,7 +1,7 @@
 <p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 04-09-2021 ||
-<strong>Last Deploy</strong> : 04-08-2021
+<strong>Last Update</strong> : 05-09-2021 ||
+<strong>Last Deploy</strong> : 05-08-2021
 </p>
 
 ## Technologies

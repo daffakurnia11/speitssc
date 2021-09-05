@@ -59,30 +59,44 @@ class PagesController extends Controller
 
     public function fracture_fluid_design()
     {
-        return view('main.competitions.fracture_fluid_design');
+        return view('main.competitions.fracture_fluid_design', [
+            'page_name'     => 'Fracture Fluid Design'
+        ]);
     }
     public function paper()
     {
-        return view('main.competitions.paper');
+        return view('main.competitions.paper', [
+            'page_name'     => 'Paper'
+        ]);
     }
     public function smart()
     {
-        return view('main.competitions.smart');
+        return view('main.competitions.smart', [
+            'page_name'     => 'Smart'
+        ]);
     }
     public function case_study()
     {
-        return view('main.competitions.case_study');
+        return view('main.competitions.case_study', [
+            'page_name'     => 'Case Study'
+        ]);
     }
     public function business_case()
     {
-        return view('main.competitions.business_case');
+        return view('main.competitions.business_case', [
+            'page_name'     => 'Business Case'
+        ]);
     }
     public function oil_rig_design()
     {
-        return view('main.competitions.oil_rig_design');
+        return view('main.competitions.oil_rig_design', [
+            'page_name'     => 'Oil Rig Design'
+        ]);
     }
     public function stock_trading()
     {
-        return view('main.competitions.stock_trading');
+        return view('main.competitions.stock_trading', [
+            'page_name'     => 'Stock Trading'
+        ]);
     }
 }
