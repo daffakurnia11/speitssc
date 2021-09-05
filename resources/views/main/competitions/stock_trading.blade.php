@@ -15,7 +15,7 @@
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-6 header-content text-center text-lg-start">
         <h1 class="header-title mb-4">Stock Trading Competitions</h1>
-        <p class="header-desc">Our Petrolida’s signature since we are the first and the only body to ever conduct this type of competition since 2018 across Asia Pacific</p>
+        <p class="header-desc">A stock market related competition that is one of our Petrolida’s signature and distinguishes us from other SPE Student Chapter competition events.</p>
       </div>
       <i class="fas fa-3x fa-chevron-circle-left"></i>
       <i class="fas fa-3x fa-chevron-circle-right"></i>
@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Stock Trading Competition is a competition that challenges participants in obtaining the highest profit from online trading and giving their arguments and analysis regarding Indonesia’s stock market. Each team which consists of 2 members must pass several stages such as Online Trading and Focused Group Discussion (FGD). 
+            Stock Trading Competition is a competition that challenges participants in obtaining the highest profit from online trading and giving their arguments and analysis regarding Indonesia’s stock market. Each team which consists of 2 members must pass several stages such as Online Trading and Focused Group Discussion (FGD).  
           </p>
         </div>
       </div>

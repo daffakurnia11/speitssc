@@ -74,15 +74,15 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Oil Rig Design Competition is a competition that challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible oil rig platform for a specific offshore oil field. Each team which consists of 4 to 5 members must pass the project explanation/blueprint selection (preliminary stage), make a 3D video of their semi-submersible platform, and attend the presentation day (final stage).
+            Oil Rig Design Competition is a competition that challenges participants to combine their engineering sense and creative innovations in designing a semi-submersible oil rig platform for a specific offshore oil field. Each team which consists of 4 to 5 members must pass the project explanation/blueprint selection (preliminary stage), make a 3D video of their semi-submersible platform, and attend the presentation day (final stage). 
           </p>
           <p class="content-desc">SPE ITS SC’s achievements:</p>
           <ol class="content-list">
-            <li>BOREYES 2021 by SPE UNPAD SC (1st Winner, 3rd Winner, Favorite Winner of Oil Rig Design Competition)</li>
-            <li>OGIP 2021 by SPE UPNVY SC (Favorite Winner of Oil Rig Design Competition)</li>
-            <li>PETROLIDA 2020 by SPE ITS SC (2nd Winner, Favorite Winner of Oil Rig Design Competition)</li>
-            <li>BOREYES 2020 by SPE UNPAD SC (Favorite Winner of Oil Rig Design Competition)</li>
-            <li>PELANTAR 2018 by UiTM Shah Alam Malaysia (2nd Winner of Oil Rig Design Competition)</li>
+            <li> BOREYES 2021 by SPE UNPAD SC (1st Winner, 3rd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+            <li> OGIP 2021 by SPE UPNVY SC (Favorite Winner of Oil Rig Design Competition)</li>
+            <li> PETROLIDA 2020 by SPE ITS SC (2nd Winner, Favorite Winner of Oil Rig Design Competition)</li>
+            <li> BOREYES 2020 by SPE UNPAD SC (Favorite Winner of Oil Rig Design Competition)</li>
+            <li> PELANTAR 2018 by UiTM Shah Alam Malaysia (2nd Winner of Oil Rig Design Competition)</li>
           </ol>
         </div>
       </div>

@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Business Case Competition is a competition that challenges participants in determining the best strategy for a specific business-related case in order to adapt to current trend change or to maintain current business model and strategy. Each team which consists of 3 members must pass several competition stages in order to win.
+            Business Case Competition is a competition that challenges participants in determining the best strategy for a specific business-related case in order to adapt to current trend change or to maintain current business model and strategy. Each team which consists of 3 members must pass several competition stages in order to win. 
           </p>
         </div>
       </div>

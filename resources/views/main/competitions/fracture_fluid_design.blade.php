@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-9">
           <p class="content-paragraph">
-            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner.
+            Fracturing Fluid Design Competition is a competition that challenges participants in finding the perfect mixture of base fluids, chemicals, and proppants according to the given case. Each team which consists of 3 members then presents their fracturing fluid mixture in front of judges. The most optimal mixture, both on the performance and the economic aspect, would be the winner. 
           </p>
         </div>
         <div class="col-lg-3 text-center">

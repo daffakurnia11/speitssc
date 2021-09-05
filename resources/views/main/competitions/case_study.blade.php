@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Case Study Competition is a multi-aspect competition that challenges participants to solve a specific case in the oil and gas industry. Participants have to view the given case from several aspects like effectiveness, efficiency, economic, environment, social, etc. Each team which consists of 3 to 4 members (according to the competition rules and regulations) must pass the essay or abstract selection (preliminary stage), make a project report to solve the final case, and attend the presentation day (final stage) in order to win. By participating in Case Study Competition, you will gain new skills like problem-solving, critical-thinking, public speaking, etc.
+            Case Study Competition is a multi-aspect competition that challenges participants to solve a specific case in the oil and gas industry. Participants have to view the given case from several aspects like effectiveness, efficiency, economic, environment, social, etc. Each team which consists of 3 to 4 members (according to the competition rules and regulations) must pass the essay or abstract selection (preliminary stage), make a project report to solve the final case, and attend the presentation day (final stage) in order to win. By participating in Case Study Competition, you will gain new skills like problem-solving, critical-thinking, public speaking, etc.  
           </p>
         </div>
         {{--
@@ -81,14 +81,14 @@
         --}}
         <p class="content-desc">SPE ITS SC’s achievements:</p>
         <ol class="content-list">
-          <li>BOREYES 2021 by SPE UNPAD SC (2nd Winner of Case Study Competition)</li>
-          <li>PGD UI 2021 by Chemical Engineering Universitas Indonesia (3rd Winner of International Case Study Competition)</li>
-          <li>OGIP 2021 by SPE UPNVY SC (3rd Winner of Geothermal Case Study Competition)</li>
-          <li>PETROLIDA 2020 by SPE ITS SC (3rd Winner of Case Study Competition)</li>
-          <li>APTA Industry Delve by SPE University of Petroleum and Energy Studies SC, India (1st Winner of Business Case Competition)</li>
-          <li>SPEEDFEST 2020 by SPE UPN SC (2nd Winner of Case Study Competition)</li>
-          <li>IPFEST 2020 by SPE ITB SC (2nd Winner of Business Case Competition)</li>
-          <li>PETROFEST 2019 by SPE Java Section (2nd Winner of Case Study Competition)</li>
+          <li> BOREYES 2021 by SPE UNPAD SC (2nd Winner of Case Study Competition)</li>
+          <li> PGD UI 2021 by Chemical Engineering Universitas Indonesia (3rd Winner of International Case Study Competition)</li>
+          <li> OGIP 2021 by SPE UPNVY SC (3rd Winner of Geothermal Case Study Competition)</li>
+          <li> PETROLIDA 2020 by SPE ITS SC (3rd Winner of Case Study Competition)</li>
+          <li> APTA Industry Delve by SPE University of Petroleum and Energy Studies SC, India (1st Winner of Business Case Competition)</li>
+          <li> SPEEDFEST 2020 by SPE UPN SC (2nd Winner of Case Study Competition)</li>
+          <li> IPFEST 2020 by SPE ITB SC (2nd Winner of Business Case Competition)</li>
+          <li> PETROFEST 2019 by SPE Java Section (2nd Winner of Case Study Competition)</li>
         </ol>
       </div>
     </div>

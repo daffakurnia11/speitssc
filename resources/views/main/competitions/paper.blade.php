@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Paper Competition is a competition that challenges participants to apply their knowledge in the oil and gas industry and their ability in conducting scientific research in order to bring new and intriguing innovations for the energy industry. Each team which consists of 3 members must pass the abstract selection (preliminary stage), make a paper based on the submitted abstract, and attend the presentation day (final stage) in order to win.
+            Paper Competition is a competition that challenges participants to apply their knowledge in the oil and gas industry and their ability in conducting scientific research in order to bring new and intriguing innovations for the energy industry. Each team which consists of 3 members must pass the abstract selection (preliminary stage), make a paper based on the submitted abstract, and attend the presentation day (final stage) in order to win. 
           </p>
         </div>
         {{--
@@ -81,13 +81,13 @@
         --}}
         <p class="content-desc">SPE ITS SC’s achievements:</p>
         <ol class="content-list">
-          <li>PETROLIDA 2021 by SPE ITS SC (2nd Winner of Paper Competition)</li>
-          <li>BOREYES 2021 by SPE UNPAD SC (Favorite Winner of Paper & Poster Competition)</li>
-          <li>PETROLIDA 2020 by SPE ITS SC (3rd Winner of Paper Competition)</li>
-          <li>APECX 2020 by SPE UGM SC (Best Poster of Paper & Poster Competition)</li>
-          <li>SPE University of Petroleum and Energy Studies SC 2019, India (1st Winner in of Paper Competition Category Exploration, 1st Winner of Paper Competition Category Health Safety Environment, 2nd Winner of Paper Competition Category Reservoir, 3rd Winner of Paper Competition Category Production)</li>
-          <li>SPE Petroleum-Gas University of Ploiesti SC 2019, Romania (1st Winner of Paper & Poster Competition)</li>
-          <li>Oil & Gas Horizons XI, Russia (1st Winner of Paper Competition)</li>
+          <li> PETROLIDA 2021 by SPE ITS SC (2nd Winner of Paper Competition)</li>
+          <li> BOREYES 2021 by SPE UNPAD SC (Favorite Winner of Paper & Poster Competition)</li>
+          <li> PETROLIDA 2020 by SPE ITS SC (3rd Winner of Paper Competition)</li>
+          <li> APECX 2020 by SPE UGM SC (Best Poster of Paper & Poster Competition)</li>
+          <li> SPE University of Petroleum and Energy Studies SC 2019, India (1st Winner in of Paper Competition Category Exploration, 1st Winner of Paper Competition Category Health Safety Environment, 2nd Winner of Paper Competition Category Reservoir, 3rd Winner of Paper Competition Category Production)</li>
+          <li> SPE Petroleum-Gas University of Ploiesti SC 2019, Romania (1st Winner of Paper & Poster Competition)</li>
+          <li> Oil & Gas Horizons XI, Russia (1st Winner of Paper Competition)</li>
         </ol>
       </div>
     </div>

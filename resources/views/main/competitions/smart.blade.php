@@ -71,7 +71,7 @@
       <div class="row align-items-center">
         <div class="col-lg-12">
           <p class="content-paragraph">
-            Smart Competition is a quick-fire rounds competition that challenges participants’ knowledge in the technical and non-technical aspects of the oil and gas industry. Topic of the questions covers exploration, drilling, production, offshore, and trivia. Each team which consists of 3 members must pass the preliminary, semi-final, and final round in order to win.
+            Smart Competition is a quick-fire rounds competition that challenges participants’ knowledge in the technical and non-technical aspects of the oil and gas industry. Topic of the questions covers exploration, drilling, production, offshore, and trivia. Each team which consists of 3 members must pass the preliminary, semi-final, and final round in order to win.  
           </p>
         </div>
         {{--
@@ -81,11 +81,11 @@
         --}}
         <p class="content-desc">SPE ITS SC’s achievements:</p>
         <ol class="content-list">
-          <li>PETROLIDA 2021 by SPE ITS SC (3rd Winner of Smart Competition)</li>
-          <li>BOREYES 2021 by SPE UNPAD SC (3rd Winner of Smart Competition)</li>
-          <li>INCEPTION 2020 by SPE UNDIP SC (3rd Winner of Smart Competition)</li>
-          <li>PI FAIR 2019 by SPE Universitas Trisakti SC (3rd Winner of Smart Competition)</li>
-          <li>APECX 2019 by SPE UGM SC (3rd Winner of Smart Competition)</li>
+          <li> PETROLIDA 2021 by SPE ITS SC (3rd Winner of Smart Competition)</li>
+          <li> BOREYES 2021 by SPE UNPAD SC (3rd Winner of Smart Competition)</li>
+          <li> BOREYES 2021 by SPE UNPAD SC (3rd Winner of Smart Competition)</li>
+          <li> PI FAIR 2019 by SPE Universitas Trisakti SC (3rd Winner of Smart Competition)</li>
+          <li> APECX 2019 by SPE UGM SC (3rd Winner of Smart Competition)</li>
         </ol>
       </div>
     </div>
