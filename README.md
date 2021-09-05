@@ -99,6 +99,10 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 
 -   [ ] Article Management
 
+##### 5 September 2021
+
+-   [x] Fixing Bugs and Views
+
 ##### 3 September 2021
 
 -   [x] Main Page

@@ -110,7 +110,7 @@
     {{-- End of Upcoming Events --}}
 
     {{-- Blogs --}}
-    <section id="main-blogs">
+    {{-- <section id="main-blogs">
       <div class="container my-5">
         <h2 class="blogs-header text-center my-4 fw-bolder mx-auto">Stay Informed with Our Blog</h2>
         <div class="row">
@@ -146,7 +146,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
     {{-- End of Blogs --}}
 
     {{-- Become a Member --}}
@@ -297,7 +297,7 @@
     {{-- Leaderboard --}}
     <section id="main-leaderboard">
       <div class="container-fluid leaderboard">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
             <h2 class="leaderboard-title ms-5 ms-lg-0">Leaderboard</h2>
           </div>
