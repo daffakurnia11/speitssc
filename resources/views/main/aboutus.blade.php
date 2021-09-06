@@ -52,17 +52,17 @@
     {{-- End of Tagline --}}
 
     {{-- Team-wrap --}}
-    <section id="team-wrap" class="main-header">
+    <section id="team-wrap" class="about-header">
       <div class="container d-flex align-items-center flex-column">
         <div class="row align-items-center">
           <div class="col-md-7 px-5 px-md-0">
-            <h2 class="top-wrapper-title">Vision</h2>
+            <h2 class="top-wrapper-title">Vision <hr class="tw-line"></h2>
             <p class="header-desc fs-5 row-aligns-item-right">
              Advance SPE ITS SC as the finest platform to ingrain global progressive impact through oil and gas 
              industry endeavors in a sustainable manner that elevates knowledge, professionalism, and integrity, while improving relations with members, stakeholders, and communities.<br>
           </div>
-          <div class="col-md-7 px-5 px-md-0">
-            <h2 class="top-wrapper-title">Mission</h2>
+          <div class="col-md-7 px-5 px-md-0"> 
+            <h2 class="top-wrapper-title">Mission <hr class="tw-line"></h2>
             </p>
             <p class="header-desc fs-5 row-aligns-item-right">
               1. Facilitate and enhance a complete comprehension and exposure of the oil and gas industry, serving as anaccurate career preparation for members and boards.<br>
@@ -73,13 +73,19 @@
               6. Increase community involvement through conducting social responsibilities.<br>
             </p>
           </div>
-          <section id="organigram" class= "container">
-          <img src="/img/organigram.png">
-          </section>
         </div>
       </div>
     </section>
     {{-- End of Team-wrap --}}
+
+    {{-- Organigram --}}
+    <section id="organigram" class="org">
+      <div>
+        <h1 class="timorg">ORGANIGRAM</h1>
+        <img src="/img/organ0A1931.png" class="imorg">
+      </div>
+    </section>
+    {{-- End of Organigram --}}
 
     {{-- Achievements --}}
       <section id="achievements" class="">
