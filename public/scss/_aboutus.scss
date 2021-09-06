@@ -24,11 +24,12 @@
         position: relative;
     }
     .signature {
+        position: relative;
         width: 150px;
         height: 62px;
     }
 }
-// End of About Header
+// End of Main Header
 
 // Top Wrappers
 #top-wrappers {
@@ -36,14 +37,16 @@
     background-size: cover;
     background-position: center;
     .container {
-        min-height: 525px;
+        padding: 200px 0px 100px 0;
     }
     .top-wrapper-title {
+        display: flexbox;
         font-family: $font-lato;
         font-size: 5.25rem;
         font-weight: 700;
         color: $text-white;
-        padding-bottom: 30px;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 }
 // End of Top Wrappers
@@ -85,34 +88,61 @@
         position: relative;
         top: 0px;
     }
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    .tw-line {
+        width: 695px;
+        height: 3px;
+        background-color: $text-white;
+    }
 }
 // End of Top Wrappers
 
 // Organigram
 #organigram {
-    position: relative;
-    top: 80px;
     background: #0a1931;
     background-size: cover;
     background-position: center;
-    .img {
-        width: auto;
-        height: auto;
+    .timorg {
+        display: flexbox;
+        font-family: $font-lato;
+        font-size: 5.25rem;
+        font-weight: 700;
+        color: $text-white;
+        padding-bottom: 30px;
+        text-align: center;
     }
-    .container {
-        min-height: 525px;
+    .imorg {
+        display: block;
+        margin: 0 auto;
     }
 }
 // End of Organigram
 
 //Achievements
 #achievements {
-    position: fixed;
+    background-size: cover;
+    background-position: center;
     .achievements-title {
+        display: flexbox;
         font-family: $font-lato;
         font-size: 5.25rem;
         font-weight: 700;
         color: $text-primary;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .left-box {
+        position: relative;
+    }
+    .left-box p {
+        position: absolute;
+        top: 44%;
+        width: 100%;
+        color: $text-white;
     }
 }
 //End of Achievements
@@ -144,13 +174,28 @@ footer {
     #top-wrappers {
         .top-wrapper-title {
             font-size: 3rem;
+            line-height: 36px;
+        }
+    }
+    #team-wrap {
+        .row {
+            flex: auto;
+            font-size: 3rem;
+            line-height: 36px;
         }
     }
 }
 @media screen and (max-width: 576px) {
-    .main-header {
+    .about-header {
         .row {
             padding: 2rem 0;
+        }
+        .header-logo {
+            width: 80%;
+        }
+        .one-piece {
+            margin-top: 20px;
+            position: center;
         }
     }
     footer {
