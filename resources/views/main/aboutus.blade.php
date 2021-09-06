@@ -11,9 +11,9 @@
 @section('content')
 
     {{-- top-wrapper --}}
-    <section id="top-wrappers" class="">
+    <section id="top-wrappers" class="about-header">
       <div class="container position-relative d-flex align-items-center">
-        <h2 class="top-wrapper-title flex-fill text-center">About Us</h2>
+        <h1 class="top-wrapper-title flex-fill text-center">About Us</h1>
       </div>
     </section>
     {{-- End of top-wrapper --}}
@@ -33,6 +33,8 @@
               <br>
               Society of Petroleum Engineers Institut Teknologi Sepuluh Nopember Student Chapter (SPE ITS SC) itself was established in 2011. This organization aims to elevate understanding of the world’s energy sources to each one of its elements by exposing them, starts from the basic knowledge until the advanced technologies and recent developments in the industries. SPE ITS SC intents to become the centerpiece of energy, specifically in the oil and gas industry, where our work is demonstrated professionally are proven internationally through unceasing professional competence.
               <br>
+            </p>  
+            <p>
               <img src="/img/handsign.png" class="signature">
             </p>
           </div>
@@ -88,21 +90,19 @@
     {{-- End of Organigram --}}
 
     {{-- Achievements --}}
-      <section id="achievements" class="">
-
-        <h2 class="achievements-title flex-fill text-center">OUR ACHIEVEMENTS</h2>
+      <section id="achievements" class="achieve">
+        <div>
+          <h2 class="achievements-title">OUR ACHIEVEMENTS</h2>
+        </div>
         
-        <div class="v5_472">
-          <div class="v5_301"></div>
-          <div class="v5_539">
+        <div class="achievement-boxes">
 
-            <div class="v5_473">
-              </div><div class="v5_474"></div>
-              <div class="v5_477"></div>
-              <div class="v5_478"></div>
-              <span class="v5_479">SPE ITS Student Chapter has earned the Gold Standard Designation for 2015, in Recognition of its  exceptional programs in Industry Engagement, Operations and Planning, Community Involvement,  Professional Development and Innovation</span>
-              <span class="v5_480">SPE Gold Standard Designation 2015, SPE International, June 2015</span>
-              <div class="name"></div>
+            <div class="1st-box">
+              <div class="left-box">
+                <img src="img/left-box.png">
+                <p>SPE ITS Student Chapter has earned the Gold Standard Designation for 2015, in Recognition of its  exceptional programs in Industry Engagement, Operations and Planning, Community Involvement,  Professional Development and Innovation</p>
+              </div>
+                <p>SPE Gold Standard Designation 2015, SPE International, June 2015<p>
             </div>
 
             <div class="v5_541">
