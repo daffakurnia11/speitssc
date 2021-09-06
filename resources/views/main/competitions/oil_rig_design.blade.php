@@ -100,10 +100,10 @@
           <img src="/img/competitions/oil-rig-design/ordc2.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/oil-rig-design/ordc3.jpg" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc6.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-3 col-md-6 my-3 text-center">
-          <img src="/img/competitions/oil-rig-design/ordc4.jpg" class="gallery-pict" alt="">
+          <img src="/img/competitions/oil-rig-design/ordc7.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

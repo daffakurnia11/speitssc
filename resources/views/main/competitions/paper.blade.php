@@ -97,14 +97,17 @@
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 my-3 text-center">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
           <img src="/img/competitions/paper/paper1.jpg" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
           <img src="/img/competitions/paper/paper2.jpg" class="gallery-pict" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 my-3 text-center">
+        <div class="col-lg-3 col-md-6 my-3 text-center">
           <img src="/img/competitions/paper/paper3.jpg" class="gallery-pict" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 my-3 text-center">
+          <img src="/img/competitions/paper/paper4.jpeg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>

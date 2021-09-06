@@ -83,13 +83,13 @@
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/competitions/business-case/business_case0.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/competitions/business-case/business_case1.jpg" class="gallery-pict" alt="">
         </div>
         <div class="col-lg-4 col-md-6 my-3 text-center">
-          <img src="/img/competition-header.jpg" class="gallery-pict" alt="">
+          <img src="/img/competitions/business-case/business_case2.jpg" class="gallery-pict" alt="">
         </div>
       </div>
     </div>
