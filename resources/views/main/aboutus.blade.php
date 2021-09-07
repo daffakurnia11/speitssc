@@ -91,19 +91,126 @@
 
     {{-- Achievements --}}
       <section id="achievements" class="achieve">
+      <div class="container">
         <div>
           <h2 class="achievements-title">OUR ACHIEVEMENTS</h2>
         </div>
         
         <div class="achievement-boxes">
+          <div class="row left">
+            <div class="col-sm-12 box-left">
+              <div class="row">
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-left">
+                </div>
+                <div class="col-10 px-4">
+                  <h1 class="box-title-left">SPE Gold Standard Designation 2015, SPE International, June 2015<hr class="box-line-left"></h1>
+                  <p class="box-desc-left">SPE ITS Student Chapter has earned the Gold Standard Designation for 2015, in Recognition of its  exceptional programs in Industry Engagement, Operations and Planning, Community Involvement,  Professional Development and Innovation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row right">
+            <div class="col-sm-12 box-right">
+              <div class="row">
+                <div class="col-10 px-4">
+                  <h1 class="box-title-right">SPE Asia Pacific SPE Student Conference 2018<hr class="box-line-right"></h1>
+                  <p class="box-desc-right">SPE ITS Student Chapter has earned the privilege to host the APSC Event,  which is the only student chapter in Indonesia that have done it
+                  </p>
+                </div>
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-right">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row left">
+            <div class="col-12 box-left">
+              <div class="row">
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-left">
+                </div>
+                <div class="col-10 px-4">
+                  <h1 class="box-title-right">SPE Asia Pacific SPE Student Conference 2016<hr class="box-line-left"></h1>
+                  <p class="box-desc-right">SPE ITS Student Chapter has earned APSC Event, which was the first time in Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row right">
+            <div class="col-12 box-right">
+              <div class="row">
+                <div class="col-10 px-4">
+                  <h1 class="box-title-right">SPE Outstanding Student Chapter (OSC) Award 2018 , SPE International.<hr class="box-line-right"></h1>
+                  <p class="box-desc-right">SPE ITS Student Chapter has earned the Outstanding Student Chapter Award for 2018,  The Outstanding Student Chapter Award is the highest honor a chapter can receive. In  recognition of its exceptional programs in Industry Engagement, Operations and  Planning, Community Involvement, Professional Development and Innovation
+                  </p>
+                </div>
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-right">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row left">
+            <div class="col-12 box-left">
+              <div class="row">
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-left">
+                </div>
+                <div class="col-10 px-4">
+                  <h1 class="box-title-left">SPE Gold Standard Designation 2016, SPE International. June 2016<hr class="box-line-left"></h1>
+                  <p class="box-desc-left">SPE ITS Student Chapter has earned the Gold Standard Designation for 2016, in Recognition of its  exceptional programs in Industry Engagement, Operations and Planning, Community Involvement,  Professional Development and Innovation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row right">
+            <div class="col-12 box-right">
+              <div class="row">
+                <div class="col-10 px-4">
+                  <h1 class="box-title-right">SPE Excellence Student Chapter Award 2019, 2020,2021  SPE International.<hr class="box-line-right"></h1>
+                  <p class="box-desc-right">SPE ITS Student Chapter has earned the Excellence Student Chapter Award for 2020, in  Recognition of its exceptional programs in Industry Engagement, Operations and  Planning, Communinty Involvement, Professional Development and Innovation</p>
+                </div>
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-right">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row left">
+            <div class="col-12 box-left">
+              <div class="row">
+                <div class="col-1">
+                  <img src="img/achievement.png" alt="achievement" class="logo-achievement-left">
+                </div>
+                <div class="col-10 px-4">
+                  <h1 class="box-title-left">SPE Outstanding Student Chapter (OSC) Award, SPE International. June 2017<hr class="box-line-left"></h1>
+                  <p class="box-desc-left">SPE ITS Student Chapter has earned the Outstanding Student Chapter Award for 2017, in  Recognition of its exceptional programs in Industry Engagement, Operations and  Planning, Communinty Involvement, Professional Development and Innovation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          --}}
+          
 
-            <div class="1st-box">
+
+         
+      
+        </div>
+  
+
+            {{--
+            <div class="box">
               <div class="left-box">
-                <img src="img/left-box.png">
+                <img src="img/achievement.png">
                 <p>SPE ITS Student Chapter has earned the Gold Standard Designation for 2015, in Recognition of its  exceptional programs in Industry Engagement, Operations and Planning, Community Involvement,  Professional Development and Innovation</p>
               </div>
                 <p>SPE Gold Standard Designation 2015, SPE International, June 2015<p>
             </div>
+            
 
             <div class="v5_541">
               <div class="v5_482"></div>
@@ -165,7 +272,9 @@
                 <div class="name"></div>
               </div>
             </div>
-        </section>
+            --}}
+      </div>
+      </section>
     {{-- End of Achievements --}}
     
 

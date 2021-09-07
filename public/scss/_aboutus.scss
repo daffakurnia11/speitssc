@@ -36,6 +36,7 @@
     background: url(../img/imagestaffs.png);
     background-size: cover;
     background-position: center;
+    max-width: 100%;
     .container {
         padding: 200px 0px 100px 0;
     }
@@ -135,7 +136,8 @@
         padding-top: 30px;
         text-align: center;
     }
-    .left-box {
+
+    /*.left-box {
         position: relative;
     }
     .left-box p {
@@ -143,6 +145,76 @@
         top: 44%;
         width: 100%;
         color: $text-white;
+    }
+    */
+    .box-left {
+        background-color: #111840;
+        height: 143px;
+        width: 573px;
+        padding: 10px;
+        border-radius: 15px 0px 0px 15px;
+        //clip-path: polygon(526px 0, 573px 71.5px, 526px 143px, 0 143px, 0 0);
+    }
+    .box-right {
+        background-color: #111840;
+        height: 143px;
+        width: 573px;
+        padding: 10px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .box-title-left {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+    .box-title-right {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+    .box-desc-left {
+        color: white;
+        font-family: Lato;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: justified;
+    }
+    .box-desc-right {
+        color: white;
+        font-family: Lato;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: justified;
+    }
+    .box-line-left {
+        width: 436px;
+        height: 3px;
+        background-color: $text-white;
+    }
+    .box-line-right {
+        width: 436px;
+        height: 3px;
+        background-color: $text-white;
+    }
+    .right {
+        justify-content: right;
+        text-align: right;
+    }
+    .left {
+        justify-content: left;
+        text-align: left;
     }
 }
 //End of Achievements
