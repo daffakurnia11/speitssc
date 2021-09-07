@@ -1525,6 +1525,30 @@ footer .footer-desc {
   text-align: left;
 }
 
+#achievements .text-info {
+  margin-top: 5rem;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #111840;
+}
+
+.information {
+  margin: 10rem 0;
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 footer .row {
   padding: 6rem 0;
 }

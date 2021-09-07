@@ -90,7 +90,7 @@
     {{-- End of Organigram --}}
 
     {{-- Achievements --}}
-      <section id="achievements" class="achieve">
+    <section id="achievements" class="achieve">
       <div class="container">
         <div>
           <h2 class="achievements-title">OUR ACHIEVEMENTS</h2>
@@ -193,14 +193,23 @@
               </div>
             </div>
           </div>
-          --}}
-          
-
-
-         
-      
         </div>
-  
+      </div>
+    </section>
+  {{-- End of Achievements --}}
+
+  {{--Section Information--}}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="information text-center">More info about our achievements: spe.org</h2>
+        </div>
+      </div>
+    </div>
+
+  {{--End of Sectionn--}}
+
+
 
             {{--
             <div class="box">
@@ -273,9 +282,7 @@
               </div>
             </div>
             --}}
-      </div>
-      </section>
-    {{-- End of Achievements --}}
+    
     
 
 @endsection
