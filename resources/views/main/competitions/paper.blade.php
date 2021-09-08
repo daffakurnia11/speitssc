@@ -96,7 +96,7 @@
   <section id="competitions-gallery" style="background: linear-gradient(90deg, rgba(242, 231, 220, 0.32) 0%, #F2E7DC 23.58%, #F2E7DC 79.31%, rgba(242, 231, 220, 0.32) 100%);">
     <div class="container gallery">
       <h2 class="text-center gallery-title text-uppercase">Gallery</h2>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center align-items-center">
         <div class="col-lg-3 col-md-6 my-3 text-center">
           <img src="/img/competitions/paper/paper1.jpg" class="gallery-pict" alt="">
         </div>

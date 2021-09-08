@@ -282,10 +282,10 @@
           <a href="/competitions/fracture-fluid-design" class="competitions-button">See Competitions</a>
           <div class="row mt-5 mx-auto" style="max-width: 730px">
             <div class="col-md-6 px-3">
-              <img src="/img/competitions/1. Members in Competitions" class="my-3 competitions-pict" alt="">
+              <img src="/img/competitions/members-in-competition1.jpg" class="my-3 competitions-pict" alt="">
             </div>
             <div class="col-md-6 px-3">
-              <img src="/img/competitions/2. Members in Competitions" class="my-3 competitions-pict" alt="">
+              <img src="/img/competitions/members-in-competition2.jpg" class="my-3 competitions-pict" alt="">
             </div>
           </div>
         </div>

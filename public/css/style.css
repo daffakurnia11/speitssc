@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
 }
 
@@ -172,7 +171,6 @@ input:focus {
   left: 0;
   width: 100%;
   padding: 0.5rem 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-45.35%, rgba(255, 255, 255, 0.37)), to(#ffffff));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) -45.35%, #ffffff 100%);
 }
 
@@ -224,8 +222,7 @@ input:focus {
   width: 250px;
   max-width: 100%;
   height: 150px;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #main-blogs .blogs-summary .blogs-pict {
@@ -289,6 +286,8 @@ input:focus {
 
 #testimonials {
   color: #0a1931;
+  position: relative;
+  z-index: 3;
 }
 
 #testimonials .testimonials-title {
@@ -305,23 +304,19 @@ input:focus {
 #testimonials .member-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #f2e7dc;
   font-weight: bold;
   font-size: 2rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .member-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #f2e7dc;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -329,8 +324,6 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .member-section .testimonials-content {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -355,23 +348,19 @@ input:focus {
 #testimonials .boc-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #ffffff;
   font-weight: bold;
   font-size: 2rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .boc-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -379,8 +368,6 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .boc-section .testimonials-content {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -441,8 +428,7 @@ input:focus {
 #main-competitions .competitions-button {
   padding: 1rem 3rem;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 4rem;
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -452,11 +438,10 @@ input:focus {
 }
 
 #main-competitions .competitions-pict {
-  width: 300px;
+  width: 350px;
   max-width: 100%;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
 }
 
 #main-competitions .competitions-icon {
@@ -470,7 +455,7 @@ input:focus {
 
 #main-leaderboard {
   background-color: #f2e7dc;
-  padding: 2.25rem 0;
+  padding: 0 0 2.25rem;
   min-height: 100vh;
   color: #ffffff;
   position: relative;
@@ -510,8 +495,7 @@ input:focus {
   padding: 1rem 3.25rem;
   background-color: #0a1931;
   border-radius: 3rem;
-  -webkit-box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
   max-width: 800px;
 }
 
@@ -531,14 +515,10 @@ input:focus {
   opacity: 0;
   bottom: 20px;
   right: 30px;
-  -webkit-animation-name: scrollToTop;
-          animation-name: scrollToTop;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: scrollToTop;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #scroll-to-top .scroll-button {
@@ -546,36 +526,17 @@ input:focus {
   background-color: #0a1931;
   padding: 10px 13px;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
-          box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 #scroll-to-top .scroll-button:hover {
-  -webkit-box-shadow: 0 0px 15px #0101013f;
-          box-shadow: 0 0px 15px #0101013f;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  box-shadow: 0 0px 15px #0101013f;
+  transform: translateY(-10px);
   background-position: 100% 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-}
-
-@-webkit-keyframes scrollToTop {
-  0% {
-    bottom: -20px;
-    opacity: 0;
-  }
-  50% {
-    bottom: 40px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 20px;
-  }
 }
 
 @keyframes scrollToTop {
@@ -634,8 +595,6 @@ footer .footer-desc {
   #upcoming-events .upcoming-events-title {
     font-family: "Lato", sans-serif;
     font-size: 3.5rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
   }
@@ -772,8 +731,7 @@ footer .footer-desc {
   content: "";
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -929,8 +887,7 @@ footer .footer-desc {
 #registerInfo .info-benefit ul .fas {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: -2rem;
 }
 
@@ -1158,7 +1115,6 @@ footer .footer-desc {
 }
 
 #competitions-menu ul.competitions-list li.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, #ffffff));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
 }
 
@@ -1230,8 +1186,7 @@ footer .footer-desc {
 
 #competitions-gallery .gallery-pict {
   border-radius: 2.25rem;
-  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
   width: 275px;
   max-width: 100%;
 }
@@ -1335,9 +1290,7 @@ footer .footer-desc {
   font-size: 5.25rem;
   font-weight: 700;
   color: #ffffff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -1382,12 +1335,8 @@ footer .footer-desc {
 }
 
 #team-wrap .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #team-wrap .tw-line {
@@ -1398,8 +1347,6 @@ footer .footer-desc {
 
 #organigram {
   background: #0a1931;
-  background-size: cover;
-  background-position: center;
 }
 
 #organigram .timorg {
@@ -1409,12 +1356,10 @@ footer .footer-desc {
   font-weight: 700;
   color: #ffffff;
   padding-bottom: 30px;
-  text-align: center;
 }
 
-#organigram .imorg {
-  display: block;
-  margin: 0 auto;
+#organigram .org-img {
+  overflow-x: scroll;
 }
 
 #achievements {
@@ -1512,16 +1457,12 @@ footer .footer-desc {
 }
 
 #achievements .right {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
   text-align: right;
 }
 
 #achievements .left {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   text-align: left;
 }
 
@@ -1575,9 +1516,7 @@ footer .footer-desc {
     line-height: 36px;
   }
   #team-wrap .row {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
+    flex: auto;
     font-size: 3rem;
     line-height: 36px;
   }

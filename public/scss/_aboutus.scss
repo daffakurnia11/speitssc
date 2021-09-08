@@ -104,8 +104,7 @@
 // Organigram
 #organigram {
     background: #0a1931;
-    background-size: cover;
-    background-position: center;
+    // overflow-x: scroll;
     .timorg {
         display: flexbox;
         font-family: $font-lato;
@@ -113,11 +112,9 @@
         font-weight: 700;
         color: $text-white;
         padding-bottom: 30px;
-        text-align: center;
     }
-    .imorg {
-        display: block;
-        margin: 0 auto;
+    .org-img {
+        overflow-x: scroll;
     }
 }
 // End of Organigram

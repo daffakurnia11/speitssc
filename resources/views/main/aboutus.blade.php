@@ -82,9 +82,11 @@
 
     {{-- Organigram --}}
     <section id="organigram" class="org">
-      <div>
+      <div class="container text-center">
         <h1 class="timorg">ORGANIGRAM</h1>
-        <img src="/img/organ0A1931.png" class="imorg">
+        <div class="org-img">
+          <img src="/img/organ0A1931.png" class="imorg">
+        </div>
       </div>
     </section>
     {{-- End of Organigram --}}

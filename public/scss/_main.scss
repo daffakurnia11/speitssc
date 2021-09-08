@@ -187,6 +187,8 @@
 // Testimonials
 #testimonials {
     color: $text-primary;
+    position: relative;
+    z-index: 3;
     .testimonials-title {
         padding: 4.25rem 0 0;
         font-family: $font-lato;
@@ -290,7 +292,7 @@
             text-transform: uppercase;
         }
         &-pict {
-            width: 300px;
+            width: 350px;
             max-width: 100%;
             border-radius: 1.5rem;
             box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
@@ -310,7 +312,7 @@
 // Leaderboard
 #main-leaderboard {
     background-color: #f2e7dc;
-    padding: 2.25rem 0;
+    padding: 0 0 2.25rem;
     min-height: 100vh;
     color: $text-white;
     position: relative;
