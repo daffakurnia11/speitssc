@@ -8,6 +8,7 @@ use App\Models\Profile;
 use App\Models\File;
 use App\Models\Point;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -96,5 +97,15 @@ class UserController extends Controller
         $point->delete();
 
         return redirect('/dashboard/user');
+    }
+
+    public function resetpass(User $user)
+    {
+        $newPassword = Hash::make($user->profile->student_number);
+        User::where('id', $user->id)->update([
+            'password'  => $newPassword
+        ]);
+
+        return redirect("/dashboard/user/$user->id")->with('resetSuccess', 'The Password has been reseted! Please contact the member');
     }
 }

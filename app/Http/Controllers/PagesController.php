@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Point;
+use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
 {
@@ -54,7 +55,34 @@ class PagesController extends Controller
         User::where('profile_id', $profileId)->update($userData);
         Profile::where('id', $profileId)->update($profileData);
 
-        return redirect('/profile');
+        $user = User::firstWhere('id', auth()->user()->id);
+        return redirect('/profile')->with('message', "Your Profile has been updated! Thank you, $user->name");
+    }
+
+    public function changepass(Request $request)
+    {
+        $request->validate(
+            [
+                'oldpass'       => 'required|password',
+                'password1'     => 'required|min:8',
+                'password2'     => 'required|min:8|same:password1',
+            ],
+            [
+                'oldpass.required' => 'The old password field is required!',
+                'password1.required' => 'The new password field is required!',
+                'password1.min' => 'The new password must be at least 8 characters.',
+                'password2.required' => 'The repeat password field is required!',
+                'password2.min' => 'The new password must be at least 8 characters.',
+                'password2.same' => 'The password does not match!'
+            ]
+        );
+        $profileId = auth()->user()->profile_id;
+        User::where('profile_id', $profileId)->update([
+            'password'  => Hash::make($request['password1'])
+        ]);
+
+        $user = User::firstWhere('id', auth()->user()->id);
+        return redirect('/profile')->with('message', "Your Password has been changed! Thank you and please try to login again, $user->name");
     }
 
     public function fracture_fluid_design()

@@ -20,7 +20,14 @@
         </div>
       </div>
 
-      <form action="" method="POST">
+      @if (session()->has('message'))
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('message') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      @endif
+
+      <form action="" method="POST" class="pb-5">
         @csrf
         @method('PUT')
         {{-- Personal Information --}}
@@ -183,6 +190,49 @@
           </div>
         </div>
         <button class="float-end update-button">Update Profile!</button>
+      </form>
+
+      <form action="/changepass" method="POST">
+        @csrf
+        @method('PUT')
+        {{-- Password Configuration --}}
+        <h3 class="mt-4 profile-info">Password Configuration</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="mb-3">
+              <label for="oldpass" class="form-label">Old Password</label>
+              <input type="password" name="oldpass" id="oldpass" class="form-control @error('oldpass') is-invalid @enderror" placeholder="Enter your old password">
+              @error('oldpass')
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+              @enderror
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="mb-3">
+              <label for="password1" class="form-label">New Password</label>
+              <input type="password" name="password1" id="password1" class="form-control @error('password1') is-invalid @enderror" placeholder="Enter your new password">
+              @error('password1')
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+              @enderror
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="mb-3">
+              <label for="password2" class="form-label">Repeat Password</label>
+              <input type="password" name="password2" id="password2" class="form-control @error('password2') is-invalid @enderror" placeholder="Enter your new password again">
+              @error('password2')
+                <div class="invalid-feedback">
+                  {{ $message }}
+                </div>
+              @enderror
+            </div>
+          </div>
+        </div>
+        <button class="float-end update-button">Update Password!</button>
       </form>
     </div>
   </section>

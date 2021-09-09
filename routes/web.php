@@ -43,6 +43,7 @@ Route::prefix('competitions')->group(function () {
 // End of Competitions Routing
 Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
 Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
+Route::put('/changepass', [PagesController::class, 'changepass'])->middleware(['auth', 'checkRole:Member']);
 
 // RegisterController
 Route::get('/member/new', [RegisterController::class, 'new_member'])->middleware('guest');
@@ -65,6 +66,8 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::resource('shortlink', ShortlinkController::class);
 
   Route::resource('user', UserController::class);
+
+  Route::put('/resetpass/{user:id}', [UserController::class, 'resetpass']);
 
   Route::get('/admin', [AdminController::class, 'index']);
   Route::get('/admin/create', [AdminController::class, 'create']);

@@ -24,6 +24,15 @@
   <!-- Main content -->
   <div class="content">
     <div class="container-fluid">
+
+      @if (session()->has('resetSuccess'))
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+          {{ session('resetSuccess') }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      @endif
       
       <div class="row">
         <div class="col-lg-6">
@@ -131,6 +140,20 @@
                 </div>
                 <div class="col-sm-9">
                   {{ $user->email }}
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm-3">
+                  <strong>Password</strong>
+                  <strong class="float-right">:</strong>
+                </div>
+                <div class="col-sm-9">
+                  <form action="/dashboard/resetpass/{{ $user->id }}" method="POST" class="d-inline">
+                    @csrf
+                    @method('PUT')
+                    <button type="submit" class="font-weight-bold btn p-0">Click to reset password!</button>
+                  </form>
                 </div>
               </div>
               
