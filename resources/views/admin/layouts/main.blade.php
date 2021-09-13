@@ -13,9 +13,19 @@
   <link rel="stylesheet" href="{{ asset('vendor/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
   <link rel="stylesheet" href="{{ asset('vendor/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
   <link rel="stylesheet" href="{{ asset('vendor/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{ asset('vendor/summernote/summernote-bs4.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
   <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
+  <style>
+    .note-editor.note-frame.card {
+      margin-bottom: 0;
+    }
+    .note-insert, .note-view, .note-table {
+      display: none;
+    }
+  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -56,6 +66,8 @@
 <script src="{{ asset('vendor/datatables-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('vendor/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+<!-- Summernote -->
+<script src="{{ asset('vendor/summernote/summernote-bs4.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('js/adminlte.min.js') }}"></script>
 <!-- Page specific script -->
@@ -65,12 +77,12 @@
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "excel", "pdf", "colvis"]
     }).buttons().container().appendTo('#shortlinkList_wrapper .col-md-6:eq(0)');
-  });
-  $(function () {
     $("#memberList").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#memberList_wrapper .col-md-6:eq(0)');
+    // Summernote
+    $('#summernote').summernote()
   });
 </script>
 </body>

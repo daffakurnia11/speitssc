@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Point::class);
     }
+
+    public function article()
+    {
+        return $this->hasMany(Article::class);
+    }
 }

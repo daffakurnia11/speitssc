@@ -125,6 +125,41 @@
           </ul>
         </li>
 
+        {{-- Article Menu --}}
+        <li class="nav-item {{ (Request::is('dashboard/articles') or Request::is('dashboard/article') or Request::is('dashboard/article/create')) ? 'menu-open' : '' }}">
+          <a class="nav-link">
+            <p>
+              ARTICLES
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/articles" class="nav-link {{ Request::is('dashboard/articles') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-fw fa-copy"></i>
+                <p>
+                  Articles List
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/article" class="nav-link {{ Request::is('dashboard/article') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-fw fa-file-alt"></i>
+                <p>
+                  My Article
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/article/create" class="nav-link {{ Request::is('dashboard/article/create') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-fw fa-plus"></i>
+                <p>
+                  Create New Article
+                </p>
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
