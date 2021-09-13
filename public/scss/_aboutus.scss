@@ -285,6 +285,14 @@ footer {
         }
         .tw-line {
             width: 300px;
+            max-width: 60%;
+            display: block;
+        }
+    }
+    #organigram {
+        .timorg {
+            font-size: 4rem;
+            display: block;
         }
     }
 }
@@ -299,6 +307,7 @@ footer {
         .one-piece {
             margin-top: 20px;
             position: center;
+            margin-bottom: -20px;
         }
     }
     footer {
