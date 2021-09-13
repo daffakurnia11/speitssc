@@ -20,7 +20,7 @@
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="aboutMenu">
             <li><a class="dropdown-item" href="/about">About Us</a></li>
-            <li><a class="dropdown-item" href="">Our Members</a></li>
+            {{-- <li><a class="dropdown-item" href="">Our Members</a></li> --}}
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -28,19 +28,16 @@
             SPE Events
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="eventMenu">
-            <li><a class="dropdown-item" href="">Events</a></li>
+            {{-- <li><a class="dropdown-item" href="">Events</a></li> --}}
             <li><a class="dropdown-item" href="/competitions/fracture-fluid-design">Competition</a></li>
-            <li><a class="dropdown-item" href="">Petrolida</a></li>
+            <li><a class="dropdown-item" href="http://petrolida.its.ac.id/" target="_blank">Petrolida</a></li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Merch</a>
-        </li>
         {{-- <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="">Merch</a>
         </li> --}}
         @auth          
           <li class="nav-item dropdown">

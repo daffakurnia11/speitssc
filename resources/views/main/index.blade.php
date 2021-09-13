@@ -299,7 +299,7 @@
       <div class="container-fluid leaderboard">
         <div class="row">
           <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
-            <h2 class="leaderboard-title ms-5 ms-lg-0">Leaderboard</h2>
+            <h2 class="leaderboard-title ms-5 ms-lg-0">Member Points</h2>
           </div>
           <div class="col-lg-7 col-xl-8 order-2 order-lg-1">
             <div class="container leaderboard-content">

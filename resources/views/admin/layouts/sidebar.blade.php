@@ -31,71 +31,98 @@
           </a>
         </li>
 
+        {{-- Administrator Menu --}}
         @if (auth()->user()->role == 'Dev')
-        {{-- Admin Menu --}}
-        <li class="nav-header">ADMINISTRATOR</li>
-        <li class="nav-item">
-          <a href="/dashboard/admin" class="nav-link {{ Request::is('dashboard/admin') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-user-shield"></i>
+        <li class="nav-item {{ (Request::is('dashboard/admin') or Request::is('dashboard/admin/create')) ? 'menu-open' : '' }}">
+          <a class="nav-link">
             <p>
-              Admins List
+              ADMINISTRATOR
+              <i class="right fas fa-angle-left"></i>
             </p>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="/dashboard/admin/create" class="nav-link {{ Request::is('dashboard/admin/create') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-user-plus"></i>
-            <p>
-              Add New Admin
-            </p>
-          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/admin" class="nav-link {{ Request::is('dashboard/admin') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-user-shield"></i>
+                <p>
+                  Admins List
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/admin/create" class="nav-link {{ Request::is('dashboard/admin/create') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-user-plus"></i>
+                <p>
+                  Add New Admin
+                </p>
+              </a>
+            </li>
+          </ul>
         </li>
         @endif
 
         {{-- Short Link Menu --}}
-        <li class="nav-header">SHORT LINK</li>
-        <li class="nav-item">
-          <a href="/dashboard/shortlink" class="nav-link {{ Request::is('dashboard/shortlink') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-link"></i>
+        <li class="nav-item {{ (Request::is('dashboard/shortlink') or Request::is('dashboard/shortlink/create')) ? 'menu-open' : '' }}">
+          <a class="nav-link">
             <p>
-              Short Links List
+              SHORT LINK
+              <i class="right fas fa-angle-left"></i>
             </p>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="/dashboard/shortlink/create" class="nav-link {{ Request::is('dashboard/shortlink/create') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-plus"></i>
-            <p>
-              Create Link
-            </p>
-          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/shortlink" class="nav-link {{ Request::is('dashboard/shortlink') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-link"></i>
+                <p>
+                  Short Links List
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/shortlink/create" class="nav-link {{ Request::is('dashboard/shortlink/create') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-plus"></i>
+                <p>
+                  Create Link
+                </p>
+              </a>
+            </li>
+          </ul>
         </li>
 
         {{-- Member Menu --}}
-        <li class="nav-header">MEMBER</li>
-        <li class="nav-item">
-          <a href="/dashboard/user" class="nav-link {{ Request::is('dashboard/user') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-users"></i>
+        <li class="nav-item {{ (Request::is('dashboard/user') or Request::is('dashboard/renewal') or Request::is('dashboard/point')) ? 'menu-open' : '' }}">
+          <a class="nav-link">
             <p>
-              Members List
+              MEMBER
+              <i class="right fas fa-angle-left"></i>
             </p>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="/dashboard/renewal" class="nav-link {{ Request::is('dashboard/renewal') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-user-friends"></i>
-            <p>
-              Renewal Data
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="/dashboard/point" class="nav-link {{ Request::is('dashboard/point') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-star"></i>
-            <p>
-              Member Points
-            </p>
-          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/user" class="nav-link {{ Request::is('dashboard/user') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Members List
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/renewal" class="nav-link {{ Request::is('dashboard/renewal') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-user-friends"></i>
+                <p>
+                  Renewal Data
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/point" class="nav-link {{ Request::is('dashboard/point') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-star"></i>
+                <p>
+                  Member Points
+                </p>
+              </a>
+            </li>
+          </ul>
         </li>
 
       </ul>
