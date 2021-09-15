@@ -27,7 +27,7 @@
           </div>
           <div class="col-md-7 px-5 px-md-0">
             <h1 class="one-piece">Who We Are</h1>
-            <p class="header-desc fs-5">
+            <p class="header-desc fs-5" style="text-align: justify">
               The Society of Petroleum Engineers (SPE) is a non-profit professional association whose more  than 158,000 members in 143 countries are engaged in oil and gas exploration and production.<br>
               SPE is a key resource for technical knowledge providing publications, events, training courses, and online resources.
               <br>
@@ -59,7 +59,7 @@
         <div class="row align-items-center">
           <div class="col-md-7 px-5 px-md-0">
             <h2 class="top-wrapper-title">Vision <hr class="tw-line"></h2>
-            <p class="header-desc fs-5 row-aligns-item-right">
+            <p class="header-desc fs-5 row-aligns-item-right" style="text-align: justify">
              Advance SPE ITS SC as the finest platform to ingrain global progressive impact through oil and gas 
              industry endeavors in a sustainable manner that elevates knowledge, professionalism, and integrity, while improving relations with members, stakeholders, and communities.<br>
           </div>
@@ -67,7 +67,7 @@
             <h2 class="top-wrapper-title">Mission <hr class="tw-line"></h2>
             </p>
             <p class="header-desc fs-5 row-aligns-item-right">
-              <ol class="header-desc">
+              <ol class="header-desc"  style="text-align: justify"> 
                 <li>Facilitate and enhance a complete comprehension and exposure of the oil and gas industry, serving as anaccurate career preparation for members and boards.</li>
                 <li>Stimulate personal development through organizational experience that polishes professionalism and competence.</li>
                 <li>Guide and facilitate our delegates in preparation of oil and gas related competitions locally and internationally.</li>
