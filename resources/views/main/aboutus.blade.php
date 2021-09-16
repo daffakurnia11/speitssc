@@ -10,7 +10,7 @@
 
 @section('content')
 
-    {{-- top-wrapper --}}
+    {{-- top-wrapper --}} 
     <section id="top-wrappers" class="about-header">
       <div class="container position-relative d-flex align-items-center">
         <h1 class="top-wrapper-title flex-fill text-center">About Us</h1>
@@ -54,17 +54,47 @@
     {{-- End of Tagline --}}
 
     {{-- Team-wrap --}}
+    <section id="visi-misi">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row row-visi">
+              <div class="col-md-7 px-5 px-md-0">
+                <h1 class="title-visi-misi">VISION<hr class="underline"></h1>
+                <p class="desc-visi-misi">Advance SPE ITS SC as the finest platform to ingrain global progressive impact through oil and gas industry endeavors in a sustainable manner that elevates knowledge, professionalism, and integrity, while improving relations with members, stakeholders, and communities.</p>
+              </div>
+            </div>
+            <div class="row row-visi">
+              <div class="col-md-7 px-5 px-md-0">
+                <h1 class="title-visi-misi">MISSION<hr class="underline"></h1>
+                <p>
+                  <ol class="desc-visi-misi" style="text-align: justify"> 
+                    <li>Facilitate and enhance a complete comprehension and exposure of the oil and gas industry, serving as anaccurate career preparation for members and boards.</li>
+                    <li>Stimulate personal development through organizational experience that polishes professionalism and competence.</li>
+                    <li>Guide and facilitate our delegates in preparation of oil and gas related competitions locally and internationally.</li>
+                    <li>Improve relations with companies, stakeholders, communities, SPE International, SPE Java, and other SPE Student Chapters.</li>
+                    <li>Create and maintain a favorable and collaborative working environment that is conducive to progress and productivity.</li>
+                    <li>Increase community involvement through conducting social responsibilities.</li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{--
     <section id="team-wrap" class="about-header">
       <div class="container d-flex align-items-center flex-column">
         <div class="row align-items-center">
           <div class="col-md-7 px-5 px-md-0">
-            <h2 class="top-wrapper-title">Vision <hr class="tw-line"></h2>
+            <h2 class="top-wrapper-title">VISION <hr class="tw-line"></h2>
             <p class="header-desc fs-5 row-aligns-item-right" style="text-align: justify">
              Advance SPE ITS SC as the finest platform to ingrain global progressive impact through oil and gas 
              industry endeavors in a sustainable manner that elevates knowledge, professionalism, and integrity, while improving relations with members, stakeholders, and communities.<br>
           </div>
           <div class="col-md-7 px-5 px-md-0"> 
-            <h2 class="top-wrapper-title">Mission <hr class="tw-line"></h2>
+            <h2 class="top-wrapper-title">MISSION <hr class="tw-line"></h2>
             </p>
             <p class="header-desc fs-5 row-aligns-item-right">
               <ol class="header-desc"  style="text-align: justify"> 
@@ -80,14 +110,19 @@
         </div>
       </div>
     </section>
+    --}}
     {{-- End of Team-wrap --}}
 
     {{-- Organigram --}}
     <section id="organigram" class="org">
-      <div class="container text-center">
-        <h1 class="timorg">ORGANIGRAM</h1>
-        <div class="org-img">
-          <img src="/img/organ0A1931.png" class="imorg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="timorg">ORGANIGRAM</h1>
+            <div class="org-img">
+              <img src="/img/organ0A1931.png" class="imorg">
+            </div>
+          </div>
         </div>
       </div>
     </section>

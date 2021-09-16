@@ -68,18 +68,47 @@
 }
 // End of Tagline
 
-// Team Wrappers
-#team-wrap {
-    background: $text-primary;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    .container {
-        min-height: 205px;
+//Visi-Misi
+#visi-misi {
+    background-color: $text-primary;
+    .row-visi {
+        margin-top: 50px;
+        justify-content: space-around;
     }
+    .title-visi-misi {
+        color: white;
+        font-family: Lato;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 62px;
+        letter-spacing: 0em;
+    }
+    .underline {
+        width: 695px;
+        max-width: 100%;
+        height: 3px;
+        background-color: $text-white;
+    }
+    .desc-visi-misi {
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: justify;
+    }
+}
+
+// Team Wrappers
+/*#team-wrap {
+    background: $text-primary;
+    
     .top-wrapper-title {
         font-family: $font-lato;
-        font-size: 5.25rem;
+        font-size: 48px;
         font-weight: 700;
         color: $text-white;
         left: 191px;
@@ -88,6 +117,13 @@
         color: $text-white;
         position: relative;
         top: 0px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
     }
     .row {
         display: flex;
@@ -99,24 +135,36 @@
         height: 3px;
         background-color: $text-white;
     }
-}
+}*/
 // End of Top Wrappers
 
 // Organigram
 #organigram {
     background: $text-primary;
     margin-top: -1px;
-    // overflow-x: scroll;
+    //overflow-x: scroll;
     .timorg {
-        display: flexbox;
+        /*display: flexbox;
         font-family: $font-lato;
-        font-size: 5.25rem;
+        font-size: 48px;
         font-weight: 700;
         color: $text-white;
-        padding-bottom: 30px;
+        padding-bottom: 30px;*/
+
+        font-family: Lato;
+        color: white;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 62px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
     .org-img {
         overflow-x: auto;
+        text-align: center;
     }
 }
 // End of Organigram
@@ -252,6 +300,14 @@ footer {
             line-height: 36px;
         }
     }
+    #visi-misi {
+        .title-visi-misi {
+            font-size: 2em;
+        }
+        .desc-visi-misi {
+            font-size: 1em;
+        }
+    }
     #team-wrap {
         .container {
             justify-content: center;
@@ -273,8 +329,8 @@ footer {
     }
     #organigram {
         .timorg {
-            font-size: 4rem;
             display: block;
+            font-size: 2em;
         }
     }
     #achievements {
