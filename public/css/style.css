@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
 }
 
@@ -14,6 +13,7 @@
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -172,7 +172,6 @@ input:focus {
   left: 0;
   width: 100%;
   padding: 0.5rem 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-45.35%, rgba(255, 255, 255, 0.37)), to(#ffffff));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) -45.35%, #ffffff 100%);
 }
 
@@ -224,8 +223,7 @@ input:focus {
   width: 250px;
   max-width: 100%;
   height: 150px;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #main-blogs .blogs-summary .blogs-pict {
@@ -307,23 +305,19 @@ input:focus {
 #testimonials .member-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #f2e7dc;
   font-weight: bold;
   font-size: 2rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .member-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #f2e7dc;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -331,8 +325,6 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .member-section .testimonials-content {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -357,23 +349,19 @@ input:focus {
 #testimonials .boc-section .testimonials-section {
   margin: 2rem 0.75rem;
   padding: 0.75rem 2.25rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Lato", sans-serif;
   background: #ffffff;
   font-weight: bold;
   font-size: 2rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.75rem;
 }
 
 #testimonials .boc-section .testimonials-content {
   padding: 4rem 2.5rem;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   min-height: 450px;
   position: relative;
@@ -381,8 +369,6 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   #testimonials .boc-section .testimonials-content {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
   }
 }
@@ -443,8 +429,7 @@ input:focus {
 #main-competitions .competitions-button {
   padding: 1rem 3rem;
   background: #ffffff;
-  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 4rem;
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -457,8 +442,7 @@ input:focus {
   width: 350px;
   max-width: 100%;
   border-radius: 1.5rem;
-  -webkit-box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.25);
 }
 
 #main-competitions .competitions-icon {
@@ -512,8 +496,7 @@ input:focus {
   padding: 1rem 3.25rem;
   background-color: #0a1931;
   border-radius: 3rem;
-  -webkit-box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
   max-width: 800px;
 }
 
@@ -533,14 +516,10 @@ input:focus {
   opacity: 0;
   bottom: 20px;
   right: 30px;
-  -webkit-animation-name: scrollToTop;
-          animation-name: scrollToTop;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: scrollToTop;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #scroll-to-top .scroll-button {
@@ -548,36 +527,17 @@ input:focus {
   background-color: #0a1931;
   padding: 10px 13px;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
-          box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
   color: #ffffff;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 #scroll-to-top .scroll-button:hover {
-  -webkit-box-shadow: 0 0px 15px #0101013f;
-          box-shadow: 0 0px 15px #0101013f;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  box-shadow: 0 0px 15px #0101013f;
+  transform: translateY(-10px);
   background-position: 100% 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-}
-
-@-webkit-keyframes scrollToTop {
-  0% {
-    bottom: -20px;
-    opacity: 0;
-  }
-  50% {
-    bottom: 40px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 20px;
-  }
 }
 
 @keyframes scrollToTop {
@@ -636,8 +596,6 @@ footer .footer-desc {
   #upcoming-events .upcoming-events-title {
     font-family: "Lato", sans-serif;
     font-size: 3.5rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
   }
@@ -774,8 +732,7 @@ footer .footer-desc {
   content: "";
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -931,8 +888,7 @@ footer .footer-desc {
 #registerInfo .info-benefit ul .fas {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: -2rem;
 }
 
@@ -1160,7 +1116,6 @@ footer .footer-desc {
 }
 
 #competitions-menu ul.competitions-list li.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, #ffffff));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
 }
 
@@ -1232,8 +1187,7 @@ footer .footer-desc {
 
 #competitions-gallery .gallery-pict {
   border-radius: 2.25rem;
-  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
   width: 275px;
   max-width: 100%;
 }
@@ -1337,9 +1291,7 @@ footer .footer-desc {
   font-size: 5.25rem;
   font-weight: 700;
   color: #ffffff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -1359,7 +1311,7 @@ footer .footer-desc {
 }
 
 #team-wrap {
-  background: #111840;
+  background: #0a1931;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1384,22 +1336,20 @@ footer .footer-desc {
 }
 
 #team-wrap .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #team-wrap .tw-line {
   width: 695px;
+  max-width: 100%;
   height: 3px;
   background-color: #ffffff;
 }
 
 #organigram {
-  background: #111840;
+  background: #0a1931;
+  margin-top: -1px;
 }
 
 #organigram .timorg {
@@ -1412,111 +1362,20 @@ footer .footer-desc {
 }
 
 #organigram .org-img {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 #achievements {
-  background-color: #111840;
-  background-size: cover;
-  background-position: center;
-  /*.left-box {
-        position: relative;
-    }
-    .left-box p {
-        position: absolute;
-        top: 44%;
-        width: 100%;
-        color: $text-white;
-    }
-    */
-  /*
-    .box-left {
-        background-color: #111840;
-        height: 143px;
-        width: 573px;
-        padding: 10px;
-        border-radius: 15px 0px 0px 15px;
-        //clip-path: polygon(526px 0, 573px 71.5px, 526px 143px, 0 143px, 0 0);
-    }
-    .box-right {
-        background-color: #111840;
-        height: 143px;
-        width: 573px;
-        padding: 10px;
-        border-radius: 0px 15px 15px 0px;
-    }
-    .box-title-left {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-        color: #ffffff;
-    }
-    .box-title-right {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
-        color: #ffffff;
-    }
-    .box-desc-left {
-        color: white;
-        font-family: Lato;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: justified;
-    }
-    .box-desc-right {
-        color: white;
-        font-family: Lato;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 12px;
-        letter-spacing: 0em;
-        text-align: justified;
-    }
-    .box-line-left {
-        width: 436px;
-        height: 3px;
-        background-color: $text-white;
-    }
-    .box-line-right {
-        width: 436px;
-        height: 3px;
-        background-color: $text-white;
-    }
-    .right {
-        justify-content: right;
-        text-align: right;
-    }
-    .left {
-        justify-content: left;
-        text-align: left;
-    }
-    .text-info {
-        margin-top: 5rem;
-        font-family: Lato;
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
-        background: rgba(17, 24, 64, 1);
-    }
-    */
+  background-color: #0a1931;
+  margin-top: -1px;
 }
 
 #achievements .header {
-  background: linear-gradient(271.42deg, #111840 0%, rgba(255, 255, 255, 0.5) 96.95%);
-  margin-top: 150px;
-  height: 114px;
+  background: linear-gradient(271.42deg, #0a1931 0%, rgba(255, 255, 255, 0.5) 96.95%);
+  min-height: 114px;
+  min-width: 600px;
+  max-width: 48vw;
+  padding-right: 3.5rem;
 }
 
 #achievements .header-title-achievement {
@@ -1525,35 +1384,27 @@ footer .footer-desc {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 62px;
   letter-spacing: 0em;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 250px;
 }
 
 #achievements .row-achievement {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 25px;
+  justify-content: space-around;
 }
 
 #achievements .box {
   background-color: #1f285a;
-  height: 263px;
-  width: 535px;
+  min-height: 263px;
+  max-width: 535px;
   left: 90px;
   top: 4307px;
   border-radius: 20px;
-  margin-top: 25px;
-  -webkit-box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 25px 1rem;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #achievements .box-inform {
-  background-color: #111840;
+  background-color: #0a1931;
   height: 263px;
   width: 535px;
   left: 90px;
@@ -1572,7 +1423,6 @@ footer .footer-desc {
   letter-spacing: 0em;
   text-align: left;
   padding: 20px;
-  margin-right: 30px;
 }
 
 #achievements .desc {
@@ -1585,7 +1435,6 @@ footer .footer-desc {
   letter-spacing: 0em;
   text-align: justify;
   padding: 0px 20px;
-  margin-right: 30px;
 }
 
 .information {
@@ -1640,9 +1489,7 @@ footer .footer-desc {
     line-height: 36px;
   }
   #team-wrap .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     top: 50%;
     /* IMPORTANT */
     left: 20%;
@@ -1656,13 +1503,19 @@ footer .footer-desc {
     width: 50%;
   }
   #team-wrap .tw-line {
-    width: 300px;
+    width: auto;
     max-width: 60%;
     display: block;
   }
   #organigram .timorg {
     font-size: 4rem;
     display: block;
+  }
+  #achievements .header {
+    min-width: 100%;
+  }
+  #achievements .header-title-achievement {
+    font-size: 36px;
   }
 }
 
@@ -1671,12 +1524,20 @@ footer .footer-desc {
     padding: 2rem 0;
   }
   .about-header .header-logo {
-    width: 80%;
+    width: 60%;
+    margin: 20px;
   }
   .about-header .one-piece {
     margin-top: 20px;
     position: center;
     margin-bottom: -20px;
+  }
+  #achievements .header {
+    min-width: 100%;
+    min-height: 60px;
+  }
+  #achievements .header-title-achievement {
+    font-size: 30px;
   }
   footer .footer-logo {
     width: 80%;
