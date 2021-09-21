@@ -114,6 +114,39 @@
 
             </div>
           </div>
+
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Detail SPE International Member</h3>
+            </div>
+            <div class="card-body">
+              
+              @if ($user->file->member_slip)
+                <div class="row">
+                  <div class="col-sm-3">
+                    <strong>Member ID</strong>
+                    <strong class="float-right">:</strong>
+                  </div>
+                  <div class="col-sm-9">
+                    {{ $user->profile->member_id }}
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-3">
+                    <strong>Invoice</strong>
+                    <strong class="float-right">:</strong>
+                  </div>
+                  <div class="col-sm-9">
+                    <a href="{{ asset('/files/member_slip/' . $user->file->member_slip) }}" target="_blank">See the invoice</a>
+                  </div>
+                </div>
+              @else
+                This member has not joined SPE International Member.
+              @endif
+
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-6">

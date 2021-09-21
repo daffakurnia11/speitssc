@@ -122,6 +122,14 @@
                 </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="/dashboard/member" class="nav-link {{ Request::is('dashboard/member') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-id-card"></i>
+                <p>
+                  Member Status
+                </p>
+              </a>
+            </li>
           </ul>
         </li>
 

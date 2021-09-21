@@ -22,15 +22,22 @@ class DashboardController extends Controller
 
     public function renewal()
     {
-        return view('admin.renewal', [
+        return view('admin.member.renewal', [
             'users'         => Profile::where('status', '!=', 'New Member')->get()
         ]);
     }
 
     public function point()
     {
-        return view('admin.point', [
+        return view('admin.member.point', [
             'points'        => Point::all()
+        ]);
+    }
+
+    public function member()
+    {
+        return view('admin.member.international', [
+            'members'       => User::where('role', 'Member')->get()
         ]);
     }
 }

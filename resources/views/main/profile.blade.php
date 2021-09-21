@@ -34,7 +34,7 @@
         @csrf
         @method('PUT')
         <h3 class="mt-4 profile-info">Member ID</h3>
-        @if (auth()->user()->profile->member_id)
+        @if (auth()->user()->file->member_slip)
           <p>Thank you for submitting your member id. Print your Member Card now!</p>
           <div class="mt-3">
             <a href="/membercard/{{ auth()->user()->profile->student_number }}" target="_blank" class="print-button">Print Member Card!</a>
@@ -44,7 +44,7 @@
             <div class="col-sm-6">
               <div class="mb-3">
                 <label class="form-label">SPE Member ID</label>
-                <input type="text" class="form-control" name="member_id" placeholder="Drop your Member ID" value="{{ auth()->user()->profile->member_id }}">
+                <input type="text" class="form-control" name="member_id" placeholder="Drop your Member ID" value="{{ old('member_id') }}">
                 @error('member_id')
                 <small class="text-danger">
                   {{ $message }}
@@ -54,7 +54,7 @@
             </div>
             <div class="col-sm-6">
               <div class="mb-3">
-                <label class="form-label">Screenshot SPE Member Slip</label>
+                <label class="form-label">Invoice SPE Member</label>
                 <div class="input-group">
                   <input type="file" class="form-control" name="member_slip" id="inputGroupFile01">
                 </div>

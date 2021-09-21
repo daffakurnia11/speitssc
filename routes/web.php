@@ -69,6 +69,9 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::resource('shortlink', ShortlinkController::class);
 
   Route::resource('user', UserController::class);
+  Route::get('/renewal', [DashboardController::class, 'renewal']);
+  Route::get('/point', [DashboardController::class, 'point']);
+  Route::get('/member', [DashboardController::class, 'member']);
 
   Route::put('/resetpass/{user:id}', [UserController::class, 'resetpass']);
 
@@ -76,9 +79,6 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/admin/create', [AdminController::class, 'create']);
   Route::post('/admin', [AdminController::class, 'store']);
   Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
-
-  Route::get('/renewal', [DashboardController::class, 'renewal']);
-  Route::get('/point', [DashboardController::class, 'point']);
 
   Route::resource('article', ArticleController::class);
 
