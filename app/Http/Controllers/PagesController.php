@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Point;
+use App\Models\File;
 use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
@@ -88,14 +89,27 @@ class PagesController extends Controller
     public function memberidupdate(Profile $profile, Request $request)
     {
         $request->validate([
-            'member_id' => 'required'
+            'member_id'     => 'required',
+            'member_slip'   => 'required|mimes:JPG,jpg,pdf|max:2048',
         ]);
 
-        $user = auth()->user()->name;
-        $profile->update([
-            'member_id' => $request->member_id
-        ]);
-        return redirect('/profile')->with('message', "Your Member ID has been updated! Thank you, $user");
+        if ($request->hasFile('member_slip')) {
+            $memberslipImage = auth()->user()->username . '-memberslip.' . $request->member_slip->extension();
+
+            $id = auth()->user()->id;
+
+            $profile->update([
+                'member_id' => $request->member_id
+            ]);
+            File::where('user_id', $id)->update([
+                'member_slip'   => $memberslipImage
+            ]);
+
+            $request->member_slip->move(public_path('files/member_slip'), $memberslipImage);
+
+            $user = auth()->user()->name;
+            return redirect('/profile')->with('message', "Your Member ID has been updated! Thank you, $user");
+        }
     }
 
     public function membercard(Profile $profile)

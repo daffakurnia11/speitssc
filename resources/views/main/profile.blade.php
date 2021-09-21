@@ -30,29 +30,46 @@
       </div>
       @endif
 
-      <form action="/memberidupdate/{{ auth()->user()->profile->student_number }}" method="POST">
+      <form action="/memberidupdate/{{ auth()->user()->profile->student_number }}" method="POST" enctype="multipart/form-data" class="pb-5">
         @csrf
         @method('PUT')
         <h3 class="mt-4 profile-info">Member ID</h3>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="input-group">
-              <input type="text" class="form-control" name="member_id" placeholder="Drop your Member ID" value="{{ auth()->user()->profile->member_id }}">
-              <button class="btn btn-primary" type="submit" style="background-color: #0a1931; border-color: #0a1931;">Submit!</button>
-            </div>
-            @error('member_id')
-              <small class="text-danger">
-                {{ $message }}
-              </small>
-            @enderror
-
-            @if (auth()->user()->profile->member_id)
-            <div class="mt-3">
-              <a href="/membercard/{{ auth()->user()->profile->student_number }}" target="_blank" class="print-button">Print Member Card!</a>
-            </div>
-            @endif
+        @if (auth()->user()->profile->member_id)
+          <p>Thank you for submitting your member id. Print your Member Card now!</p>
+          <div class="mt-3">
+            <a href="/membercard/{{ auth()->user()->profile->student_number }}" target="_blank" class="print-button">Print Member Card!</a>
           </div>
-        </div>
+        @else
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">SPE Member ID</label>
+                <input type="text" class="form-control" name="member_id" placeholder="Drop your Member ID" value="{{ auth()->user()->profile->member_id }}">
+                @error('member_id')
+                <small class="text-danger">
+                  {{ $message }}
+                </small>
+                @enderror
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">Screenshot SPE Member Slip</label>
+                <div class="input-group">
+                  <input type="file" class="form-control" name="member_slip" id="inputGroupFile01">
+                </div>
+                @error('member_slip')
+                <small class="text-danger">
+                  {{ $message }}
+                </small>
+                @enderror
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="float-end update-button">Update Member!</button>
+          </div>
+        @endif
       </form>
 
       <form action="" method="POST" class="pb-5">

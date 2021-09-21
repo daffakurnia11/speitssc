@@ -18,6 +18,7 @@ class CreateFilesTable extends Migration
             $table->foreignId('user_id');
             $table->string('payment');
             $table->string('screenshot');
+            $table->string('member_slip')->nullable();
             $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
