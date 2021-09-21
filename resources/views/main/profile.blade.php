@@ -17,6 +17,9 @@
         <div class="ms-4">
           <h1 class="profile-name">{{ auth()->user()->name }}</h1>
           <h2 class="profile-desc">{{ auth()->user()->profile->major }}, {{ auth()->user()->profile->batch }}</h2>
+          @if (auth()->user()->profile->member_id)
+            <p>Member ID : <strong>{{ auth()->user()->profile->member_id }}</strong></p>
+          @endif
         </div>
       </div>
 
@@ -26,6 +29,31 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
       @endif
+
+      <form action="/memberidupdate/{{ auth()->user()->profile->student_number }}" method="POST">
+        @csrf
+        @method('PUT')
+        <h3 class="mt-4 profile-info">Member ID</h3>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="input-group">
+              <input type="text" class="form-control" name="member_id" placeholder="Drop your Member ID" value="{{ auth()->user()->profile->member_id }}">
+              <button class="btn btn-primary" type="submit" style="background-color: #0a1931; border-color: #0a1931;">Submit!</button>
+            </div>
+            @error('member_id')
+              <small class="text-danger">
+                {{ $message }}
+              </small>
+            @enderror
+
+            @if (auth()->user()->profile->member_id)
+            <div class="mt-3">
+              <a href="/membercard/{{ auth()->user()->profile->student_number }}" target="_blank" class="print-button">Print Member Card!</a>
+            </div>
+            @endif
+          </div>
+        </div>
+      </form>
 
       <form action="" method="POST" class="pb-5">
         @csrf

@@ -45,6 +45,8 @@ Route::prefix('competitions')->group(function () {
 Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
 Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
 Route::put('/changepass', [PagesController::class, 'changepass'])->middleware(['auth', 'checkRole:Member']);
+Route::put('/memberidupdate/{profile:student_number}', [PagesController::class, 'memberidupdate'])->middleware(['auth', 'checkRole:Member']);
+Route::get('/membercard/{profile:student_number}', [PagesController::class, 'membercard'])->middleware(['auth', 'checkRole:Member']);
 
 // RegisterController
 Route::get('/member/new', [RegisterController::class, 'new_member'])->middleware('guest');

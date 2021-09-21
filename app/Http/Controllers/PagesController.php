@@ -85,6 +85,24 @@ class PagesController extends Controller
         return redirect('/profile')->with('message', "Your Password has been changed! Thank you and please try to login again, $user->name");
     }
 
+    public function memberidupdate(Profile $profile, Request $request)
+    {
+        $request->validate([
+            'member_id' => 'required'
+        ]);
+
+        $user = auth()->user()->name;
+        $profile->update([
+            'member_id' => $request->member_id
+        ]);
+        return redirect('/profile')->with('message', "Your Member ID has been updated! Thank you, $user");
+    }
+
+    public function membercard(Profile $profile)
+    {
+        return view('main.member_card');
+    }
+
     public function fracture_fluid_design()
     {
         return view('main.competitions.fracture_fluid_design', [

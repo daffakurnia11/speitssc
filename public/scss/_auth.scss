@@ -139,6 +139,11 @@
     .profile-img {
         width: 150px;
     }
+    .print-button {
+        @include button-blue-rounded();
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
     .update-button {
         @include button-blue-rounded();
         font-size: 1.25rem;
