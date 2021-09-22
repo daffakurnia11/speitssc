@@ -10,22 +10,43 @@ use App\Models\User;
 use App\Models\Profile;
 use App\Models\File;
 use App\Models\Point;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+    public function deadline()
+    {
+        return Carbon::create(2021, 9, 27, 0, 0, 0);
+    }
+
     public function renewal_member()
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         return view('auth.renewal_member');
     }
 
     public function renewal()
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         return view('auth.renewal');
     }
 
     public function renewal_store(Request $request)
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         // Validating
         $profileData = $request->validate([
             'student_number' => 'required|max:191|exists:profiles'
@@ -72,16 +93,31 @@ class RegisterController extends Controller
 
     public function new_member()
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         return view('auth.new_member');
     }
 
     public function register()
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         return view('auth.register');
     }
 
     public function member_store(Request $request)
     {
+        $timenow = Carbon::now();
+
+        if ($this->deadline()->lessThan($timenow)) {
+            return view('auth.close_regis');
+        }
         // Validating
         $profileData = $request->validate([
             'student_number'    => 'required|max:15|unique:profiles',
