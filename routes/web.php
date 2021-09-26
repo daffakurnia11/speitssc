@@ -1,14 +1,18 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
-use App\Http\Controllers\Admin\ArticleController;
+
 use App\Http\Controllers\Auth\AuthController;
-use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Auth\RegisterController;
+
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ShortlinkController;
+use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,9 +85,10 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
 
   Route::resource('article', ArticleController::class);
-
   Route::get('/articles', [ArticleController::class, 'all']);
   Route::get('/article/publish/{article:slug}', [ArticleController::class, 'publish']);
+
+  Route::resource('post', PostController::class);
 });
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

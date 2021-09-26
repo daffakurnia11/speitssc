@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="{{ asset('vendor/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('vendor/summernote/summernote-bs4.min.css') }}">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="{{ asset('vendor/owlcarousel/dist/assets/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('vendor/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
   <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
@@ -68,10 +71,22 @@
 <script src="{{ asset('vendor/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 <!-- Summernote -->
 <script src="{{ asset('vendor/summernote/summernote-bs4.min.js') }}"></script>
+<!-- Owl Carousel -->
+<script src="{{ asset('vendor/owlcarousel/dist/owl.carousel.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('js/adminlte.min.js') }}"></script>
 <!-- Page specific script -->
 <script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      items: 1,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true
+    });
+  });
   $(function () {
     $("#shortlinkList").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,

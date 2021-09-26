@@ -168,6 +168,34 @@
             </li>
           </ul>
         </li>
+
+        {{-- Post Menu --}}
+        <li class="nav-item {{ (Request::is('dashboard/post') or Request::is('dashboard/post/create')) ? 'menu-open' : '' }}">
+          <a class="nav-link">
+            <p>
+              POSTS
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/post" class="nav-link {{ Request::is('dashboard/post') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-fw fa-copy"></i>
+                <p>
+                  Posts List
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/post/create" class="nav-link {{ Request::is('dashboard/post/create') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-fw fa-plus"></i>
+                <p>
+                  Create New Post
+                </p>
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
