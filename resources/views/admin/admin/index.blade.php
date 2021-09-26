@@ -50,7 +50,7 @@
                   <form action="/dashboard/admin/{{ $user->id }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-sm btn-danger" style="border-color: none"><i class="fas fa-fw fa-trash"></i></button>
+                    <button type="submit" class="btn btn-sm btn-danger" style="border-color: none" onclick="return confirm('Are you sure to remove the user?');"><i class="fas fa-fw fa-trash"></i></button>
                   </form>
                 </td>
               </tr>

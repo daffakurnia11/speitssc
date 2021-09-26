@@ -64,7 +64,7 @@
                     @method('DELETE')
                     <a href="/{{ $link->short }}" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-fw fa-eye"></i></a>
                     <a href="/dashboard/shortlink/{{ $link->id }}/edit" class="btn btn-sm btn-success"><i class="fas fa-fw fa-pencil-alt"></i></a>
-                    <button type="submit" class="btn btn-sm btn-danger" style="border-color: none"><i class="fas fa-fw fa-trash"></i></button>
+                    <button type="submit" class="btn btn-sm btn-danger" style="border-color: none" onclick="return confirm('Are you sure to remove the link?');"><i class="fas fa-fw fa-trash"></i></button>
                   </form>
                 </td>
               </tr>
