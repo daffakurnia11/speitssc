@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-warning bg-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="" class="brand-link">
+  <a href="/dashboard" class="brand-link">
     <img src="/img/logo_yellow.png" alt="SPE ITS SC Logo" class="brand-image">
     <span class="brand-text">SPE ITS SC Admin</span>
   </a>
@@ -14,7 +14,7 @@
         <img src="/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">{{ auth()->user()->name }}</a>
+        <a href="/dashboard/admin/{{ auth()->user()->id }}/edit" class="d-block">{{ auth()->user()->name }}</a>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
 
         {{-- Administrator Menu --}}
         @if (auth()->user()->role == 'Dev')
-        <li class="nav-item {{ (Request::is('dashboard/admin') or Request::is('dashboard/admin/create')) ? 'menu-open' : '' }}">
+        <li class="nav-item {{ (Request::is('dashboard/admin') or Request::is('dashboard/admin/*')) ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               ADMINISTRATOR
@@ -54,6 +54,14 @@
                 <i class="nav-icon fas fa-user-plus"></i>
                 <p>
                   Add New Admin
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/admin/request" class="nav-link {{ Request::is('dashboard/admin/request') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-user-check"></i>
+                <p>
+                  Admin Request
                 </p>
               </a>
             </li>

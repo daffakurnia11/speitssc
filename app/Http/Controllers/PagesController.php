@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Profile;
 use App\Models\Point;
 use App\Models\File;
+use App\Models\Post;
 use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
@@ -157,6 +158,13 @@ class PagesController extends Controller
     {
         return view('main.competitions.stock_trading', [
             'page_name'     => 'Stock Trading'
+        ]);
+    }
+
+    public function funfacts()
+    {
+        return view('main.test', [
+            'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
     }
 }

@@ -20,6 +20,7 @@ class RegisterController extends Controller
         return Carbon::create(2021, 9, 27, 0, 0, 0);
     }
 
+    // RENEWAL INFORMATION
     public function renewal_member()
     {
         $timenow = Carbon::now();
@@ -30,6 +31,7 @@ class RegisterController extends Controller
         return view('auth.renewal_member');
     }
 
+    // RENEWAL REGISTRATION FORM
     public function renewal()
     {
         $timenow = Carbon::now();
@@ -40,6 +42,7 @@ class RegisterController extends Controller
         return view('auth.renewal');
     }
 
+    // RENEWAL DATA STORE
     public function renewal_store(Request $request)
     {
         $timenow = Carbon::now();
@@ -91,6 +94,7 @@ class RegisterController extends Controller
         return redirect('/login')->with('success', 'Registration success! Please login!');
     }
 
+    // NEW MEMBER INFORMATION
     public function new_member()
     {
         $timenow = Carbon::now();
@@ -101,6 +105,7 @@ class RegisterController extends Controller
         return view('auth.new_member');
     }
 
+    // NEW MEMBER REGISTRATION FORM
     public function register()
     {
         $timenow = Carbon::now();
@@ -111,6 +116,7 @@ class RegisterController extends Controller
         return view('auth.register');
     }
 
+    // NEW MEMBER DATA STORE
     public function member_store(Request $request)
     {
         $timenow = Carbon::now();

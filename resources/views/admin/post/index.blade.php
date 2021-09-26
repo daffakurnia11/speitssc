@@ -64,9 +64,9 @@
                           <div class="owl-stage-outer">
                             <div class="owl-stage">
                               @foreach ($images as $image)
-                              <div class="owl-item">
-                                <img src="/img/post/{{ $image }}" class="w-100" alt="">
-                              </div>
+                                <div class="owl-item">
+                                  <img src="/img/post/{{ $image }}" class="w-100" alt="">
+                                </div>
                               @endforeach
                             </div>
                           </div>

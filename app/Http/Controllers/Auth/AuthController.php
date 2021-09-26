@@ -22,17 +22,32 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
+            // Member Validation
+            if (auth()->user()->role == 'Member') {
+                $request->session()->regenerate();
+
+                return redirect()->intended('/');
+            }
+
             // Admin Validation
-            if (auth()->user()->role != 'Member') {
+            if (auth()->user()->role == 'Dev') {
                 $request->session()->regenerate();
 
                 return redirect()->intended('/dashboard');
             }
-            // Member Validation
-            else {
+
+            // Admin Validation
+            if (auth()->user()->role == 'Admin') {
                 $request->session()->regenerate();
 
-                return redirect()->intended('/');
+                return redirect()->intended('/dashboard');
+            }
+
+            // Admin Requesting Validation
+            if (auth()->user()->role == 'Requesting') {
+                $request->session()->invalidate();
+
+                return redirect('/login')->with('loginError', 'You have been requested! Please contact Developer!');
             }
         }
 

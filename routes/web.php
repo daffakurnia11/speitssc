@@ -66,8 +66,22 @@ Route::get('/login', [AuthController::class, 'login'])->middleware('guest')->nam
 Route::post('/login', [AuthController::class, 'authenticate']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
+Route::get('/IWantToBeAdmin', [AdminController::class, 'admin_request']);
+Route::post('/requestadmin', [AdminController::class, 'admin_store']);
+
 // Admin Routes
+Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev'])->group(function () {
+  Route::get('/admin', [AdminController::class, 'index']);
+  Route::get('/admin/create', [AdminController::class, 'create']);
+  Route::post('/admin', [AdminController::class, 'store']);
+  Route::delete('/admin/{user:id}', [AdminController::class, 'destroy']);
+  Route::get('/admin/request', [AdminController::class, 'request']);
+  Route::patch('/admin/acceptrequest/{user:id}', [AdminController::class, 'acceptrequest']);
+});
 Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(function () {
+  Route::get('/admin/{user:id}/edit', [AdminController::class, 'edit']);
+  Route::patch('/admin/{user:id}', [AdminController::class, 'update']);
+  Route::patch('/admin/changepass/{user:id}', [AdminController::class, 'changepass']);
   Route::get('/', [DashboardController::class, 'index']);
 
   Route::resource('shortlink', ShortlinkController::class);
@@ -76,13 +90,7 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/renewal', [DashboardController::class, 'renewal']);
   Route::get('/point', [DashboardController::class, 'point']);
   Route::get('/member', [DashboardController::class, 'member']);
-
   Route::put('/resetpass/{user:id}', [UserController::class, 'resetpass']);
-
-  Route::get('/admin', [AdminController::class, 'index']);
-  Route::get('/admin/create', [AdminController::class, 'create']);
-  Route::post('/admin', [AdminController::class, 'store']);
-  Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
 
   Route::resource('article', ArticleController::class);
   Route::get('/articles', [ArticleController::class, 'all']);
