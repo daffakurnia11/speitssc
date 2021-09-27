@@ -70,6 +70,7 @@
         @endif
 
         {{-- Short Link Menu --}}
+        <li class="nav-header mt-3">UTILITIES</li>
         <li class="nav-item {{ (Request::is('dashboard/shortlink') or Request::is('dashboard/shortlink/create')) ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
@@ -98,7 +99,8 @@
         </li>
 
         {{-- Member Menu --}}
-        <li class="nav-item {{ (Request::is('dashboard/user') or Request::is('dashboard/renewal') or Request::is('dashboard/point')) ? 'menu-open' : '' }}">
+        <li class="nav-header mt-3">MEMBER MANAGEMENT</li>
+        <li class="nav-item {{ (Request::is('dashboard/user') or Request::is('dashboard/renewal') or Request::is('dashboard/point') or Request::is('dashboard/member')) ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               MEMBER
@@ -142,6 +144,7 @@
         </li>
 
         {{-- Article Menu --}}
+        <li class="nav-header mt-3">CONTENT MANAGEMENT</li>
         <li class="nav-item {{ (Request::is('dashboard/articles') or Request::is('dashboard/article') or Request::is('dashboard/article/create')) ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>

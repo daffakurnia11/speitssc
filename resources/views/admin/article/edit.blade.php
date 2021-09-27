@@ -83,10 +83,7 @@
                 <select class="form-control @error('category') is-invalid @enderror" name="category">
                   <option disabled>--Choose the category--</option>
                   <option value="Petroknowledge" {{ $article->category == 'Petroknowledge' ?? 'selected' }}>Petroknowledge</option>
-                  <option value="Seize Your Sunday" {{ $article->category == 'Seize Your Sunday' ?? 'selected' }}>Seize Your Sunday</option>
                   <option value="Petronews" {{ $article->category == 'Petronews' ?? 'selected' }}>Petronews</option>
-                  <option value="Fun Facts" {{ $article->category == 'Fun Facts' ?? 'selected' }}>Fun Facts</option>
-                  <option value="Journalism" {{ $article->category == 'Journalism' ?? 'selected' }}>Journalism</option>
                 </select>
                 @error('category')
                   <div class="invalid-feedback">

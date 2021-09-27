@@ -82,10 +82,7 @@
                 <select class="form-control @error('category') is-invalid @enderror" name="category">
                   <option disabled selected>--Choose the category--</option>
                   <option value="Petroknowledge">Petroknowledge</option>
-                  <option value="Seize Your Sunday">Seize Your Sunday</option>
                   <option value="Petronews">Petronews</option>
-                  <option value="Fun Facts">Fun Facts</option>
-                  <option value="Journalism">Journalism</option>
                 </select>
                 @error('category')
                   <div class="invalid-feedback">

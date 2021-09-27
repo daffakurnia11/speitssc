@@ -1,7 +1,7 @@
-<p align="center"><a href="https://speitssc.org/" target="_blank"><img src="./public/img/logo.png" width="300"></a></p>
+<p align="center"><a href="https://speitssc.org/" target="_blank"><img src="/public/img/logo.png" width="300"></a></p>
 <p align="center">
-<strong>Last Update</strong> : 05-09-2021 ||
-<strong>Last Deploy</strong> : 05-08-2021
+<strong>Last Update</strong> : 27-09-2021 ||
+<strong>Last Deploy</strong> : 27-08-2021
 </p>
 
 ## Technologies
@@ -95,9 +95,32 @@ Please do some configurations in `settings.json` of Live Sass Compiler extension
 
 This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
 
-##### On Going
+##### 26 September 2021
 
--   [ ] Article Management
+-   [x] Post Management (for Fun Facts and Seize Your Sunday category)
+
+##### 22 September 2021
+
+-   [x] Close Member Registration Timer
+
+##### 21 September 2021
+
+-   [x] International Member Registration
+-   [x] Member ID Submission SPE International
+-   [x] Printable Member Card
+
+##### 17 September 2021
+
+-   [x] Fixing <strong>About Us</strong> page
+-   [x] Complete Main Page
+
+##### 13 September 2021
+
+-   [x] Article Management (for Petroknowledge and Petronews category)
+
+##### 9 September 2021
+
+-   [x] Reset and Change Password for Member
 
 ##### 5 September 2021
 
@@ -105,7 +128,7 @@ This repository was created for <a href="https://speitssc.org/" target="_blank">
 
 ##### 3 September 2021
 
--   [x] Main Page
+-   [x] Create <strong>Competition</strong> page
 -   [x] Member Points System
 
 ##### 30 August 2021
