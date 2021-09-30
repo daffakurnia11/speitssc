@@ -57,19 +57,19 @@
           </div>
           <div class="col-md-7">
             <h3 class="text-center mt-5 mt-md-0">See our upcoming events!</h3>
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-sm-6">
-                <a href="">
+                <a href="https://drive.google.com/file/d/1fu3z5_UG-EPOWsBOYjlt9Vwy3pv1RZQ3/view" target="_blank">
                   <div class="events mx-auto my-3">
-                    <img src="/img/event/online-company-day.jpg" class="events-img" alt="">
+                    <img src="/img/event/petrolida-oprec.jpg" class="events-img" alt="">
                     <div class="events-content">
-                      <span class="events-date">September 25th, 2021</span>
-                      <h4 class="events-name">Online Company Day</h4>
+                      <span class="events-date">October 2nd, 2021</span>
+                      <h4 class="events-name">Petrolida Recruitment</h4>
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="col-sm-6">
+              {{-- <div class="col-sm-6">
                 <a href="">
                   <div class="events mx-auto my-3">
                     <img src="/img/event/softskills-course.jpg" class="events-img" alt="">
@@ -101,7 +101,7 @@
                     </div>
                   </div>
                 </a>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>
