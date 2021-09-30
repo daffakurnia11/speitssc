@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="{{ asset('vendor/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('vendor/summernote/summernote-bs4.min.css') }}">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="{{ asset('vendor/toastr/toastr.min.css') }}">
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="{{ asset('vendor/owlcarousel/dist/assets/owl.carousel.min.css') }}">
   <link rel="stylesheet" href="{{ asset('vendor/owlcarousel/dist/assets/owl.theme.default.min.css') }}">
@@ -54,6 +56,7 @@
 
 <!-- jQuery -->
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('vendor/bootstrap4/js/bootstrap.bundle.min.js') }}"></script>
 <!-- DataTables  & Plugins -->
@@ -71,6 +74,8 @@
 <script src="{{ asset('vendor/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 <!-- Summernote -->
 <script src="{{ asset('vendor/summernote/summernote-bs4.min.js') }}"></script>
+<!-- SweetAlert2 -->
+<script src="{{ asset('vendor/toastr/toastr.min.js') }}"></script>
 <!-- Owl Carousel -->
 <script src="{{ asset('vendor/owlcarousel/dist/owl.carousel.min.js') }}"></script>
 <!-- AdminLTE App -->
@@ -85,6 +90,27 @@
       autoplay: true,
       autoplayTimeout: 2000,
       autoplayHoverPause: true
+    });
+
+    $(".btn-submit").click(function(e){
+      e.preventDefault();
+
+      let id = $(this).data('member');
+      let point = $('.score-' + id).val();
+
+      $.ajax({
+        type:'PUT',
+        url:"/dashboard/updatePoint/" + id,
+        data:{point:point, _token: '{{csrf_token()}}'},
+        cache: false,
+        success:function(data){
+          $(document).Toasts('create', {
+            class: 'bg-warning',
+            title: 'Point Updated!',
+            body: data.name + '\'s point has been updated to ' + data.point
+          })
+        }
+      });
     });
   });
   $(function () {

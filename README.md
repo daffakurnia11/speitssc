@@ -95,6 +95,15 @@ Please do some configurations in `settings.json` of Live Sass Compiler extension
 
 This repository was created for <a href="https://speitssc.org/" target="_blank">SPE ITS Student Chapter 2020/2021</a> that consists of these following features :
 
+##### 1 October 2021
+
+-   [x] Member's Point Management System
+
+##### 30 September 2021
+
+-   [x] Dynamic Title on Browser Tab
+-   [x] Announcing New Upcoming Event on Homepage
+
 ##### 26 September 2021
 
 -   [x] Post Management (for Fun Facts and Seize Your Sunday category)

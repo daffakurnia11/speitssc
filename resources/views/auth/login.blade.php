@@ -1,5 +1,7 @@
 @extends('templates.main')
 
+@section('title', 'Login')
+
 @section('content')
     
   <section id="authContent" class="d-flex justify-content-center align-items-center">

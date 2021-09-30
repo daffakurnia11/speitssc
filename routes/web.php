@@ -92,6 +92,8 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/member', [DashboardController::class, 'member']);
   Route::put('/resetpass/{user:id}', [UserController::class, 'resetpass']);
 
+  Route::put('/updatePoint/{point:id}', [DashboardController::class, 'updatePoint']);
+
   Route::resource('article', ArticleController::class);
   Route::get('/articles', [ArticleController::class, 'all']);
   Route::get('/article/publish/{article:slug}', [ArticleController::class, 'publish']);
