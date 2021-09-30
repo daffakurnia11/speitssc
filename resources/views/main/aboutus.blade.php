@@ -8,6 +8,8 @@
   @include('templates.footer')
 @endsection
 
+@section('title', 'About Us')
+    
 @section('content')
 
     {{-- top-wrapper --}} 

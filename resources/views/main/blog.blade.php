@@ -7,7 +7,7 @@
 @section('footer')
     @include('templates.footer')
 @endsection
-
+@section('title', 'Blog')
 @section('content')
 
     {{--Header--}}

@@ -8,6 +8,8 @@
   @include('templates.footer')
 @endsection
 
+@section('title', 'Fracture Fluid Design')
+
 @section('content')
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #FFD955 37.5%, rgba(255, 255, 255, 0) 100%);">

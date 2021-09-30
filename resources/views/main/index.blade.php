@@ -14,6 +14,8 @@
   </section>
 @endsection
 
+@section('title', 'Home')
+
 @section('content')
     
     {{-- Header --}}
