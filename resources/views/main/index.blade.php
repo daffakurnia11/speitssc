@@ -65,7 +65,7 @@
                   <div class="events mx-auto my-3">
                     <img src="/img/event/petrolida-oprec.jpg" class="events-img" alt="">
                     <div class="events-content">
-                      <span class="events-date">October 2nd, 2021</span>
+                      <span class="events-date">October 10<sup>th</sup>, 2021</span>
                       <h4 class="events-name">Petrolida Recruitment</h4>
                     </div>
                   </div>
