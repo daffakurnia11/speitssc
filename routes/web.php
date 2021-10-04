@@ -32,7 +32,6 @@ use App\Http\Controllers\Admin\PostController;
 
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
-Route::get('/blog', [PagesController::class, 'blog']);
 Route::get('/about', [PagesController::class, 'aboutus']);
 
 // Competitions Routing
@@ -98,5 +97,13 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
 
   Route::resource('post', PostController::class);
 });
+
+//Article
+Route::get('/blog', [PagesController::class, 'blog']);
+Route::get('/blog/{article:slug}', [PagesController::class, 'petroknowledge'])->middleware('auth');
+Route::get('/petronews', [PagesController::class, 'petronews']);
+Route::get('/petronews_article/{article:slug}', [PagesController::class, 'petronews_article'])->middleware('auth');
+
+
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

@@ -8,6 +8,7 @@ use App\Models\Profile;
 use App\Models\Point;
 use App\Models\File;
 use App\Models\Post;
+use App\Models\Article;
 use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
@@ -26,7 +27,9 @@ class PagesController extends Controller
 
     public function blog()
     {
-        return view('main.blog');
+        return view('main.blog', [
+            'articles' => Article::where('category', 'Petroknowledge')->get()
+        ]);
     }
 
     public function edit()
@@ -167,4 +170,25 @@ class PagesController extends Controller
             'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
     }
+
+    public function petronews()
+    {
+        return view('main.petronews', [
+            'articles' => Article::where('category', 'Petronews')->get()
+        ]);
+    }
+
+    public function petroknowledge()
+    {
+        return view('main.petroknowledge', [
+            'articles' => Article::where('category', 'Petroknowledge')->get()
+        ]);
+    }
+    public function petronews_article()
+    {
+        return view('main.petronews_article', [
+            'articles' => Article::where('category', 'Petronews')->get()
+        ]);
+    }
+    
 }

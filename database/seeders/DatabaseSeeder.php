@@ -24,5 +24,16 @@ class DatabaseSeeder extends Seeder
         $user->role     = 'Dev';
 
         $user->save();
+
+        $user = new User;
+
+        $user->name     = 'Anugrah Cahya Kautsar';
+        $user->username = 'anugrahck';
+        $user->password = Hash::make('qwerty1234');
+        $user->role     = 'Dev';
+
+        $user->save();
+
+        
     }
 }
