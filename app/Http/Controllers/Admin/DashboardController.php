@@ -9,14 +9,21 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Point;
+use App\Models\Article;
+use App\Models\Post;
 
 class DashboardController extends Controller
 {
     public function index()
     {
         return view('admin.dashboard', [
-            'members'       => User::where('role', 'Member')->count(),
-            'shortlinks'    => Shortlink::all()->count()
+            'members'           => User::where('role', 'Member')->count(),
+            'articles'          => Article::all()->count(),
+            'posts'             => Post::all()->count(),
+            'shortlinks'        => Shortlink::all()->count(),
+
+            'petroknowledge'    => Article::where('category', 'Petroknowledge')->orderBy('published_at', 'desc')->limit(5)->get(),
+            'petronews'         => Article::where('category', 'Petronews')->orderBy('published_at', 'desc')->limit(5)->get(),
         ]);
     }
 

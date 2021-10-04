@@ -33,7 +33,7 @@
 
         {{-- Administrator Menu --}}
         @if (auth()->user()->role == 'Dev')
-        <li class="nav-item {{ (Request::is('dashboard/admin') or Request::is('dashboard/admin/*')) ? 'menu-open' : '' }}">
+        <li class="nav-item {{ Request::is('dashboard/admin*') ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               ADMINISTRATOR
@@ -71,7 +71,7 @@
 
         {{-- Short Link Menu --}}
         <li class="nav-header mt-3">UTILITIES</li>
-        <li class="nav-item {{ (Request::is('dashboard/shortlink') or Request::is('dashboard/shortlink/create')) ? 'menu-open' : '' }}">
+        <li class="nav-item {{ Request::is('dashboard/shortlink*') ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               SHORT LINK
@@ -145,7 +145,7 @@
 
         {{-- Article Menu --}}
         <li class="nav-header mt-3">CONTENT MANAGEMENT</li>
-        <li class="nav-item {{ (Request::is('dashboard/articles') or Request::is('dashboard/article') or Request::is('dashboard/article/create')) ? 'menu-open' : '' }}">
+        <li class="nav-item {{ (Request::is('dashboard/articles') or Request::is('dashboard/article*')) ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               ARTICLES
@@ -181,7 +181,7 @@
         </li>
 
         {{-- Post Menu --}}
-        <li class="nav-item {{ (Request::is('dashboard/post') or Request::is('dashboard/post/create')) ? 'menu-open' : '' }}">
+        <li class="nav-item {{ Request::is('dashboard/post*') ? 'menu-open' : '' }}">
           <a class="nav-link">
             <p>
               POSTS
