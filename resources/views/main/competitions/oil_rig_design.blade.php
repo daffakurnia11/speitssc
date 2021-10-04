@@ -13,7 +13,7 @@
 @section('content')
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #D0E8F2 37.5%, rgba(255, 255, 255, 0) 100%);">
-    <img class="background-header" src="/img/competitions/oil-rig-design/3. Header Oil Rig Design Competition.jpg"  alt="">
+    <img class="background-header" src="/img/competitions/header/HeaderOilRigDesignCompetition.jpg"  alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-5 header-content text-center text-lg-start">
         <h1 class="header-title mb-4">Oil Rig Design

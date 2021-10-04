@@ -13,7 +13,7 @@
 @section('content')
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #FFC890 37.5%, rgba(255, 255, 255, 0) 100%);">
-    <img class="background-header" src="/img/competitions/stock-trading/7. Header Stock Trading Competition.jpg" alt="">
+    <img class="background-header" src="/img/competitions/header/HeaderStockTradingCompetition.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-6 header-content text-center text-lg-start">
         <h1 class="header-title mb-4">Stock Trading Competitions</h1>

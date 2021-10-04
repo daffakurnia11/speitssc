@@ -13,7 +13,7 @@
     
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #83AFB8 37.5%, rgba(255, 255, 255, 0) 100%);">
-    <img class="background-header" src="/img/competitions/business-case/6. Header Business Case Competition.jpg" alt="">
+    <img class="background-header" src="/img/competitions/header/HeaderBusinessCaseCompetition.jpg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-7 header-content text-center text-lg-start">
         <h1 class="header-title mb-4">Business Case Competitions</h1>
