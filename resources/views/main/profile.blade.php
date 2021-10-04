@@ -8,6 +8,8 @@
     @include('templates.footer')
 @endsection
 
+@section('title', 'Member ID')
+
 @section('content')
 
   <section id="editProfile">

@@ -8,6 +8,8 @@
   @include('templates.footer')
 @endsection
 
+@section('title', 'Stock Trading')
+
 @section('content')
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #FFC890 37.5%, rgba(255, 255, 255, 0) 100%);">

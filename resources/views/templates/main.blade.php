@@ -14,7 +14,7 @@
     {{-- Favicon --}}
     <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 
-    <title>SPE ITS Student Chapter</title>
+    <title>SPE ITS Student Chapter | @yield('title')</title>
   </head>
   <body>
     

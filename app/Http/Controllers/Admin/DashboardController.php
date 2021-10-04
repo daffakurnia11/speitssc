@@ -40,4 +40,16 @@ class DashboardController extends Controller
             'members'       => User::where('role', 'Member')->get()
         ]);
     }
+
+    public function updatePoint(Request $request, Point $point)
+    {
+        $point->update([
+            'point' => $request->point
+        ]);
+
+        return response()->json([
+            'point' => $point->point,
+            'name'  => $point->user->name
+        ]);
+    }
 }

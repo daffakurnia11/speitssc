@@ -8,7 +8,9 @@
   @include('templates.footer')
 @endsection
 
+@section('title', 'Business Case')
 @section('content')
+    
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #83AFB8 37.5%, rgba(255, 255, 255, 0) 100%);">
     <img class="background-header" src="/img/competition-header.jpg" alt="">

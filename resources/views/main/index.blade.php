@@ -14,6 +14,8 @@
   </section>
 @endsection
 
+@section('title', 'Home')
+
 @section('content')
     
     {{-- Header --}}
@@ -57,19 +59,19 @@
           </div>
           <div class="col-md-7">
             <h3 class="text-center mt-5 mt-md-0">See our upcoming events!</h3>
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-sm-6">
-                <a href="">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwq_NX5-nwffuEtAJhN3XgMWpekJX1CTY0J5QBHN0tsFUc_Q/viewform" target="_blank">
                   <div class="events mx-auto my-3">
-                    <img src="/img/event/online-company-day.jpg" class="events-img" alt="">
+                    <img src="/img/event/petrolida-oprec.jpg" class="events-img" alt="">
                     <div class="events-content">
-                      <span class="events-date">September 25th, 2021</span>
-                      <h4 class="events-name">Online Company Day</h4>
+                      <span class="events-date">October 10<sup>th</sup>, 2021</span>
+                      <h4 class="events-name">Petrolida Recruitment</h4>
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="col-sm-6">
+              {{-- <div class="col-sm-6">
                 <a href="">
                   <div class="events mx-auto my-3">
                     <img src="/img/event/softskills-course.jpg" class="events-img" alt="">
@@ -101,7 +103,7 @@
                     </div>
                   </div>
                 </a>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>
@@ -181,7 +183,7 @@
 
     {{-- Testimonials --}}
     <section id="testimonials">
-      <h2 class="testimonials-title text-center">What They Say?</h2>
+      <h2 class="testimonials-title text-center">What Do They Say?</h2>
       <div class="member-section">
         <div class="container">
           <h3 class="testimonials-section">SPE Members</h3>
@@ -227,7 +229,7 @@
       </div>
       <div class="boc-section">
         <div class="container">
-          <h3 class="testimonials-section ms-auto">Alumni SPE ITS SC</h3>
+          <h3 class="testimonials-section ms-auto">SPE ITS SC Alumni</h3>
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="testimonials-content mx-2 mb-4">
@@ -295,7 +297,7 @@
     {{-- End of Members in Competition --}}
 
     {{-- Leaderboard --}}
-    <section id="main-leaderboard">
+    {{-- <section id="main-leaderboard">
       <div class="container-fluid leaderboard">
         <div class="row">
           <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
@@ -319,7 +321,7 @@
         </div>
       </div>
       <img src="/svg/leaderboard-icon.svg" class="leaderboard-icon" alt="">
-    </section>
+    </section> --}}
     {{-- End of Leaderboard --}}
     
 @endsection

@@ -8,6 +8,8 @@
     @include('templates.footer')
 @endsection --}}
 
+@section('title', 'Register')
+
 @section('content')
     
   <section id="registerInfo">

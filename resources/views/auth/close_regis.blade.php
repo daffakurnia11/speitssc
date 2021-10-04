@@ -1,5 +1,7 @@
 @extends('templates.main')
 
+@section('title', 'Closed Member Registration')
+
 @section('content')
     
   <section id="memberInfo" class="d-flex justify-content-center align-items-center">
