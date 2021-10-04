@@ -1,0 +1,50 @@
+/*css fun-facts */
+
+#fun-facts {
+    .title {
+        margin-top: 86px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 0.03em;
+        color: #000000;
+        .body {
+            text-align: justify;
+        }
+    }
+    .image {
+        max-width: 20rem;
+        height: auto;
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+    .fun-facts {
+        .title {
+            font-size: 2em;
+        }
+    }
+    .blog-header .blog {
+        width: 300px;
+    }
+    #fun-facts.announcement {
+        margin: 10rem 0;
+        font-size: 20px;
+    }
+    .read-more-border {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 576px) {
+    .blog-header .blog {
+        width: 250px;
+    }
+}
