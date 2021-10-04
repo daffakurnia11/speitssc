@@ -191,4 +191,19 @@ class PagesController extends Controller
         ]);
     }
     
+    #Fun Facts
+    public function funfacts()
+    {
+       return view('main.fun-facts', [
+            'posts' => Post::where('category', 'Fun Facts')->get()
+        ]);
+    }
+
+    #Seize Your Sunday
+    public function seizeyoursunday()
+    {
+        return view('main.seizeyoursunday', [
+            'posts' => Post::where('category', 'Seize Your Sunday')->get()
+        ]);
+    }
 }
