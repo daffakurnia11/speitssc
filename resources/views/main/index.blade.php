@@ -61,7 +61,7 @@
             <h3 class="text-center mt-5 mt-md-0">See our upcoming events!</h3>
             <div class="row justify-content-center">
               <div class="col-sm-6">
-                <a href="https://drive.google.com/file/d/1fu3z5_UG-EPOWsBOYjlt9Vwy3pv1RZQ3/view" target="_blank">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwq_NX5-nwffuEtAJhN3XgMWpekJX1CTY0J5QBHN0tsFUc_Q/viewform" target="_blank">
                   <div class="events mx-auto my-3">
                     <img src="/img/event/petrolida-oprec.jpg" class="events-img" alt="">
                     <div class="events-content">
@@ -183,7 +183,7 @@
 
     {{-- Testimonials --}}
     <section id="testimonials">
-      <h2 class="testimonials-title text-center">What They Say?</h2>
+      <h2 class="testimonials-title text-center">What Do They Say?</h2>
       <div class="member-section">
         <div class="container">
           <h3 class="testimonials-section">SPE Members</h3>
@@ -229,7 +229,7 @@
       </div>
       <div class="boc-section">
         <div class="container">
-          <h3 class="testimonials-section ms-auto">Alumni SPE ITS SC</h3>
+          <h3 class="testimonials-section ms-auto">SPE ITS SC Alumni</h3>
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="testimonials-content mx-2 mb-4">
@@ -297,7 +297,7 @@
     {{-- End of Members in Competition --}}
 
     {{-- Leaderboard --}}
-    <section id="main-leaderboard">
+    {{-- <section id="main-leaderboard">
       <div class="container-fluid leaderboard">
         <div class="row">
           <div class="col-lg-5 col-xl-4 order-1 order-lg-2 px-0">
@@ -321,7 +321,7 @@
         </div>
       </div>
       <img src="/svg/leaderboard-icon.svg" class="leaderboard-icon" alt="">
-    </section>
+    </section> --}}
     {{-- End of Leaderboard --}}
     
 @endsection

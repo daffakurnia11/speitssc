@@ -39,6 +39,10 @@
             <p>
               <img src="/img/handsign.png" class="signature">
             </p>
+            <p class="header-desc fs-5">
+              Dafa Bayu Putranto<br>
+              SPE ITS SC 2021/2022
+            </p>
           </div>
         </div>
       </div>
