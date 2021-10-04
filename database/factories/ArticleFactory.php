@@ -21,7 +21,7 @@ class ArticleFactory extends Factory
      */
     public function definition()
     {
-        $category = ['Petroknowledge', 'Petronews'];
+        $category = ['Petroknowledge', 'Petronews', 'Paper Review'];
         return [
             'user_id'       => mt_rand(1, 5),
             'title'         => $this->faker->sentence(mt_rand(2, 5)),

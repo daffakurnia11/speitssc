@@ -84,6 +84,7 @@
                   <option disabled>--Choose the category--</option>
                   <option value="Petroknowledge" {{ $article->category == 'Petroknowledge' ?? 'selected' }}>Petroknowledge</option>
                   <option value="Petronews" {{ $article->category == 'Petronews' ?? 'selected' }}>Petronews</option>
+                  <option value="Paper Review" {{ $article->category == 'Paper Review' ?? 'selected' }}>Paper Review</option>
                 </select>
                 @error('category')
                   <div class="invalid-feedback">

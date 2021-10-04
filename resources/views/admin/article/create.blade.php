@@ -83,6 +83,7 @@
                   <option disabled selected>--Choose the category--</option>
                   <option value="Petroknowledge">Petroknowledge</option>
                   <option value="Petronews">Petronews</option>
+                  <option value="Paper Review">Paper Review</option>
                 </select>
                 @error('category')
                   <div class="invalid-feedback">
