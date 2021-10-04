@@ -106,6 +106,8 @@ Route::get('/blog/{article:slug}', [PagesController::class, 'petroknowledge'])->
 Route::get('/petronews', [PagesController::class, 'petronews']);
 Route::get('/petronews_article/{article:slug}', [PagesController::class, 'petronews_article'])->middleware('auth');
 
-
+//Posts
+Route::get('/fun-facts', [PagesController::class, 'funfacts']);
+Route::get('/seizeyoursunday', [PagesController::class, 'seizeyoursunday']);
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);
