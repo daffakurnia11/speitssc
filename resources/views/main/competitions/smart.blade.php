@@ -13,7 +13,7 @@
 @section('content')
 
   <header id="competitions-header" style="background: linear-gradient(90deg, #C4C4C4 37.5%, rgba(255, 255, 255, 0) 100%);">
-    <img class="background-header" src="/img/competition-header.jpg" alt="">
+    <img class="background-header" src="/img/competitions/smart/4. Header Smart Competition.jpeg" alt="">
     <div class="container d-flex justify-content-center flex-column header">
       <div class="col-lg-6 header-content text-center text-lg-start">
         <h1 class="header-title mb-4">Smart Competition</h1>
