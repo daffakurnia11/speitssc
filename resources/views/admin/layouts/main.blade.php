@@ -96,7 +96,8 @@
       e.preventDefault();
 
       let id = $(this).data('member');
-      let point = $('.score-' + id).val();
+      let point = $('.point-' + id).val();
+      let score = $('.score-' + id);
 
       $.ajax({
         type:'PUT',
@@ -109,6 +110,7 @@
             title: 'Point Updated!',
             body: data.name + '\'s point has been updated to ' + data.point
           })
+          score.html(data.point);
         }
       });
     });

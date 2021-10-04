@@ -39,6 +39,7 @@
               <th>Major, Batch</th>
               <th>Student Number</th>
               <th>Point</th>
+              <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -49,11 +50,12 @@
                 <td class="text-nowrap text-center">{{ $point->user->profile->member_id }}</td>
                 <td class="text-nowrap text-center">{{ $point->user->profile->major }}, {{ $point->user->profile->batch }}</td>
                 <td class="text-nowrap text-center">{{ $point->user->profile->student_number }}</td>
+                <td class="text-nowrap text-center score-{{ $point->id }}">{{ $point->point }}</td>
                 <td class="text-nowrap text-center" width="150">
                   <form action="" method="POST">
                     <div class="input-group input-group-sm">
                       <input type="hidden" name="id" value="{{ $point->id }}">
-                      <input type="text" class="form-control score-{{ $point->id }}" name="point" value="{{ $point->point }}">
+                      <input type="text" class="form-control point-{{ $point->id }}" name="point" value="{{ $point->point }}">
                       <span class="input-group-append">
                         <button type="button" class="btn btn-primary btn-flat btn-submit toastsDefaultSuccess" data-member="{{ $point->id }}"><i class="fas fa-check"></i></button>
                       </span>
@@ -71,6 +73,7 @@
               <th>Major, Batch</th>
               <th>Student Number</th>
               <th>Point</th>
+              <th>Action</th>
             </tr>
             </tfoot>
           </table>
