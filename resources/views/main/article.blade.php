@@ -26,11 +26,11 @@
                             <p class="date-article">{{$articles->published_at}}</p>
                         </div>
                         <div class="col-md-1 justify-content-end">
-                            <img class="download_image" src="/img/unduh.png" alt="download">
+                            {{--<img class="download_image" src="/img/unduh.png" alt="download">--}}
                         </div>
                     </div>
                 </div>
-                <img class="image" src="/img/article/{{ $articles->image}}" alt="minyak bumi">
+                <img class="image-article" src="/img/article/{{ $articles->image}}" alt="minyak bumi">
                 <p class="body">{!! $articles->body!!}</p>
             </div>
         </div>

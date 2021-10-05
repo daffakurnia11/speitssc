@@ -1,0 +1,146 @@
+//Post CSS
+#list-post-seizeyoursunday {
+    padding: 4rem 0;
+    color: #0a1931;
+    .nav {
+        margin-top: 30px;
+        .nav-item {
+            padding: 2px;
+            font-size: 18px;
+            .nav-link {
+                color: black;
+                font-family: $font-lato;
+                font-size: 18px;
+                font-weight: 800;
+                padding: 2px;
+                margin-right: 50px;
+                &:hover {
+                    border-color: transparent;
+                    font-weight: bold;
+                    padding: 2px;
+                    border-bottom: 2px solid;
+                }
+                &.active {
+                    background-color: #111840;
+                    border-color: transparent transparent #111840 transparent;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    height: 35px;
+                    width: 213px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    nav {
+        padding-top: 45px;
+    }
+    nav ul {
+        color: #000000;
+        list-style: none;
+    }
+    nav ul li a {
+        width: 146px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
+    .title-seizeyoursunday {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .seizeyoursunday-article {
+        margin-bottom: 66px;
+        margin-top: 67px;
+    }
+}
+
+#list-post-funfacts {
+    padding: 4rem 0;
+    color: #0a1931;
+    .nav {
+        margin-top: 30px;
+        .nav-item {
+            padding: 2px;
+            font-size: 18px;
+            .nav-link {
+                color: black;
+                font-family: $font-lato;
+                font-size: 18px;
+                font-weight: 800;
+                padding: 2px;
+                margin-right: 50px;
+                &:hover {
+                    border-color: transparent;
+                    font-weight: bold;
+                    padding: 2px;
+                    border-bottom: 2px solid;
+                }
+                &.active {
+                    background-color: #111840;
+                    border-color: transparent transparent #111840 transparent;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    height: 35px;
+                    width: 170px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    nav {
+        padding-top: 45px;
+    }
+    nav ul {
+        color: #000000;
+        list-style: none;
+    }
+    nav ul li a {
+        width: 146px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
+    .title-funfact {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        text-align: left;
+    }
+    .funfact-article {
+        margin-bottom: 66px;
+        margin-top: 67px;
+    }
+}
+
+@media (max-width: 768px) {
+    #list-post-funfacts {
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    #list-post-seizeyoursunday {
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

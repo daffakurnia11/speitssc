@@ -1,14 +1,11 @@
 @extends('templates.main')
-
 @section('navbar')
   @include('templates.navbar')
 @endsection
-
 @section('footer')
-    @include('templates.footer')
+  @include('templates.footer')
 @endsection
 @section('title', 'Petronews')
-
 @section('content')
     {{--Header--}}
     <header class="blog-header">
@@ -38,10 +35,10 @@
               <a class="nav-link mx-auto" href="/paper-review" data-toggle="tab" role="tab">PAPER REVIEW</a>
             </li>
             <li class="nav-item mx-3" role="presentation">
-              <a class="nav-link mx-auto" href="#" data-toggle="tab" role="tab">SEIZE YOUR SUNDAY</a>
+              <a class="nav-link mx-auto" href="/seizeyoursunday" data-toggle="tab" role="tab">SEIZE YOUR SUNDAY</a>
             </li>
             <li class="nav-item mx-3" role="presentation">
-              <a class="nav-link mx-auto" href="#" data-toggle="tab" role="tab">FUN FACTS</a>
+              <a class="nav-link mx-auto" href="/fun-facts" data-toggle="tab" role="tab">FUN FACTS</a>
             </li>
           </ul>
           @foreach ($articles as $article)
@@ -77,8 +74,8 @@
               <li><a href="/petroknowledge">PETROKNOWLEDGE</a></li> 
               <li><a href="#">PETRONEWS</a></li>
               <li><a href="/paper-review">PAPER REVIEW</a></li>
-              <li><a href="#">SEIZE YOUR SUNDAY</a></li>
-              <li><a href="#">FUNFACT</a></li>
+              <li><a href="/seizeyoursunday">SEIZE YOUR SUNDAY</a></li>
+              <li><a href="/fun-facts">FUNFACT</a></li>
             </ul>
           </nav>
         </div>

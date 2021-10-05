@@ -4,7 +4,7 @@
     //margin-left: 290px;
     //margin-right: 290px;
     .title {
-        margin-top: 86px;
+        margin-top: 60px;
         font-family: Lato;
         font-style: normal;
         font-weight: 800;
@@ -18,9 +18,8 @@
         text-align: justify;
     }
     .name-user {
+        margin-left: -25px;
         font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
         line-height: 19px;
         color: #111840;
@@ -29,31 +28,25 @@
         margin-top: 14px;
         margin-bottom: 34px;
     }
+    .image-article {
+        max-width: 850px;
+        height: 587px;
+    }
 }
 
 @media (max-width: 768px) {
-    .image {
-        max-width: 100%;
-        height: auto;
-    }
     .petroknowledge {
+        margin-top: 0px;
         .title {
             font-size: 2em;
         }
-    }
-    .blog-header .blog {
-        width: 300px;
-    }
-    #petroknowledge .announcement {
-        margin: 10rem 0;
-        font-size: 20px;
-    }
-    .read-more-border {
-        margin-bottom: 15px;
-    }
-}
-@media (max-width: 576px) {
-    .blog-header .blog {
-        width: 250px;
+        .name-user {
+            margin-top: 5px;
+            margin-left: 0;
+        }
+        .image-article {
+            width: 100%;
+            height: auto;
+        }
     }
 }

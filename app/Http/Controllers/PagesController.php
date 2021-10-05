@@ -195,7 +195,7 @@ class PagesController extends Controller
     #Fun Facts
     public function funfacts()
     {
-       return view('main.fun-facts', [
+        return view('main.fun-facts', [
             'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
     }

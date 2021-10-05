@@ -1914,7 +1914,7 @@ footer .footer-desc {
 
 /*css petroknowledge */
 .petroknowledge .title {
-  margin-top: 86px;
+  margin-top: 60px;
   font-family: Lato;
   font-style: normal;
   font-weight: 800;
@@ -1930,9 +1930,8 @@ footer .footer-desc {
 }
 
 .petroknowledge .name-user {
+  margin-left: -25px;
   font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #111840;
@@ -1943,29 +1942,25 @@ footer .footer-desc {
   margin-bottom: 34px;
 }
 
+.petroknowledge .image-article {
+  max-width: 850px;
+  height: 587px;
+}
+
 @media (max-width: 768px) {
-  .image {
-    max-width: 100%;
-    height: auto;
+  .petroknowledge {
+    margin-top: 0px;
   }
   .petroknowledge .title {
     font-size: 2em;
   }
-  .blog-header .blog {
-    width: 300px;
+  .petroknowledge .name-user {
+    margin-top: 5px;
+    margin-left: 0;
   }
-  #petroknowledge .announcement {
-    margin: 10rem 0;
-    font-size: 20px;
-  }
-  .read-more-border {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .blog-header .blog {
-    width: 250px;
+  .petroknowledge .image-article {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -2126,6 +2121,167 @@ footer .footer-desc {
 @media (max-width: 576px) {
   .blog-header .blog {
     width: 250px;
+  }
+}
+
+#list-post-seizeyoursunday {
+  padding: 4rem 0;
+  color: #0a1931;
+}
+
+#list-post-seizeyoursunday .nav {
+  margin-top: 30px;
+}
+
+#list-post-seizeyoursunday .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#list-post-seizeyoursunday .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#list-post-seizeyoursunday .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#list-post-seizeyoursunday .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 213px;
+  border-radius: 0px;
+}
+
+#list-post-seizeyoursunday nav {
+  padding-top: 45px;
+}
+
+#list-post-seizeyoursunday nav ul {
+  color: #000000;
+  list-style: none;
+}
+
+#list-post-seizeyoursunday nav ul li a {
+  width: 146px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+#list-post-seizeyoursunday .title-seizeyoursunday {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+#list-post-seizeyoursunday .seizeyoursunday-article {
+  margin-bottom: 66px;
+  margin-top: 67px;
+}
+
+#list-post-funfacts {
+  padding: 4rem 0;
+  color: #0a1931;
+}
+
+#list-post-funfacts .nav {
+  margin-top: 30px;
+}
+
+#list-post-funfacts .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#list-post-funfacts .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#list-post-funfacts .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#list-post-funfacts .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 170px;
+  border-radius: 0px;
+}
+
+#list-post-funfacts nav {
+  padding-top: 45px;
+}
+
+#list-post-funfacts nav ul {
+  color: #000000;
+  list-style: none;
+}
+
+#list-post-funfacts nav ul li a {
+  width: 146px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+#list-post-funfacts .title-funfact {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+#list-post-funfacts .funfact-article {
+  margin-bottom: 66px;
+  margin-top: 67px;
+}
+
+@media (max-width: 768px) {
+  #list-post-funfacts .image {
+    max-width: 100%;
+    height: auto;
+  }
+  #list-post-seizeyoursunday .image {
+    max-width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
