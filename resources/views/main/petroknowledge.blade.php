@@ -7,20 +7,83 @@
 @section('footer')
     @include('templates.footer')
 @endsection
-
+@section('title', 'Petroknowledge')
 @section('content')
 
-{{--Petroknowledge--}}
-@foreach ($articles as $article)
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12-sm col-md-8 petroknowledge">
-                <h1 class="title">{{ $article->title}}</h1>
-                <img class="image" src="/img/article/{{ $article->image}}" alt="minyak bumi">
-                <p class="body">{!! $article->body!!}</p>
+    {{--Header--}}
+    <header class="blog-header">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="row align-items-center">
+                <div class="blog">
+                    <h1 class="blog-title">Blog</h1>
+                </div>    
             </div>
         </div>
-    </div>
-@endforeach 
+    </header>
+    {{--End of Header--}}
 
+    {{--Section Petroknowledge--}}
+    <section id="petroknowledge">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <ul class="border-0 nav nav-tabs justify-content-center justify-content-xl-start" role="tablist">
+              <li class="nav-item mx-3" role="presentation">
+                <a class="nav-link mx-auto active" href="/petroknowledge" data-toggle="tab" role="tab">PETROKNOWLEDGE</a>
+              </li>
+              <li class="nav-item mx-3" role="presentation">
+                <a class="nav-link mx-auto" href="/petronews" data-toggle="tab" role="tab">PETRONEWS</a>
+              </li>
+              <li class="nav-item mx-3" role="presentation">
+                <a class="nav-link mx-auto" href="/paper-review" data-toggle="tab" role="tab">PAPER REVIEW</a>
+              </li>
+              <li class="nav-item mx-3" role="presentation">
+                <a class="nav-link mx-auto" href="#" data-toggle="tab" role="tab">SEIZE YOUR SUNDAY</a>
+              </li>
+              <li class="nav-item mx-3" role="presentation">
+                <a class="nav-link mx-auto" href="#" data-toggle="tab" role="tab">FUN FACTS</a>
+              </li> 
+          </ul>
+          @foreach ($articles as $article)
+            <div class="row petroknowledge-article">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-6-sm col-md-12">
+                    <h1 class="petroknowledge-title">{{ $article->title}}</h1>
+                  </div>
+                  <div class="col-6-sm col-md-12 ">
+                    <p class="petroknowledge-desc">{{ $article->description}}</p>
+                  </div>
+                  <div class="row justify-content-between">
+                    <div class="col-md-3">
+                      <p class="petroknowledge-date">{{ $article->published_at}}</p>
+                    </div>
+                    <div class="col-md-3 me-4">
+                      <a href="/article/{{$article->slug}}" class="btn petroknowledge-read-more">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 ">
+                  <img class="image article-logo align-middle" src="/img/article/{{ $article->image}}" alt="minyak bumi">
+              </div>
+            </div>
+          @endforeach 
+        </div>
+        <div class="col-md-3 d-none d-lg-block" style="margin-top: 30px">
+          <img class="articel-logo-spe" src="img/logo-small.png" alt="logo spe">
+          <nav>
+            <ul>
+              <li><a href="#">PETROKNOWLEDGE</a></li>
+              <li><a href="/petronews">PETRONEWS</a></li>
+              <li><a href="/paper-review">PAPER REVIEW</a></li>
+              <li><a href="#">SEIZE YOUR SUNDAY</a></li>
+              <li><a href="#">FUNFACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </section>
+    {{--End of Section Petroknowledge--}}
 @endsection

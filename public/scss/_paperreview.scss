@@ -1,65 +1,38 @@
-/*css blog */
-
-/*Header*/
-.blog-header {
-    background: url(../img/header_blog.png);
-    background-size: cover;
-    background-position: center;
-    color: #262626;
-    padding: 15rem 0;
-    .blog {
-        background-color: rgba(242, 231, 220, 1);
-        background-position: center;
-        height: 114px;
-        width: 375px;
-        border-radius: 0px;
-        .blog-title {
-            font-family: $font-lato;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 35px;
-        }
-    }
-}
-
-/*Section List*/
-.nav {
-    margin-top: 30px;
-    .nav-item {
-        padding: 2px;
-        font-size: 18px;
-        .nav-link {
-            color: black;
-            font-family: $font-lato;
-            font-size: 18px;
-            font-weight: 800;
-            padding: 2px;
-            margin-right: 50px;
-            &:hover {
-                border-color: transparent;
-                font-weight: bold;
-                padding: 2px;
-                border-bottom: 2px solid;
-            }
-            &.active {
-                background-color: #111840;
-                border-color: transparent transparent #111840 transparent;
-                text-align: center;
-                color: white;
-                font-weight: bold;
-                height: 35px;
-                width: 213px;
-                border-radius: 0px;
-            }
-        }
-    }
-}
-
 /*Section Petroknowledge*/
-#petroknowledge {
+#paper-review {
     padding: 4rem 0;
     color: #0a1931;
-
+    .nav {
+        margin-top: 30px;
+        .nav-item {
+            padding: 2px;
+            font-size: 18px;
+            .nav-link {
+                color: black;
+                font-family: $font-lato;
+                font-size: 18px;
+                font-weight: 800;
+                padding: 2px;
+                margin-right: 50px;
+                &:hover {
+                    border-color: transparent;
+                    font-weight: bold;
+                    padding: 2px;
+                    border-bottom: 2px solid;
+                }
+                &.active {
+                    background-color: #111840;
+                    border-color: transparent transparent #111840 transparent;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    height: 35px;
+                    width: 213px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
     .announcement {
         margin: 20rem 0;
         text-align: center;
@@ -69,6 +42,10 @@
         font-weight: 700;
         line-height: 29px;
         letter-spacing: 0.03em;
+    }
+    .petroknowledge-article {
+        margin-bottom: 66px;
+        margin-top: 67px;
     }
     .petroknowledge-title {
         font-family: Montserrat;
@@ -96,7 +73,6 @@
         font-size: 16px;
         letter-spacing: 0.03em;
     }
-
     .petroknowledge-read-more {
         font-family: Lato;
         font-size: 16px;
@@ -110,14 +86,12 @@
         box-sizing: border-box;
         width: 173px;
         margin-right: 10px;
-
         &:hover {
             background-color: #111840;
             color: white;
             text-decoration-color: none;
         }
     }
-
     .article-logo {
         max-width: 25%;
         display: grid;
@@ -126,7 +100,6 @@
         max-width: 20rem;
         height: auto;
     }
-
     nav {
         padding-top: 45px;
     }

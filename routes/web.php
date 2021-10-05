@@ -101,10 +101,10 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
 });
 
 //Article
-Route::get('/blog', [PagesController::class, 'blog']);
-Route::get('/blog/{article:slug}', [PagesController::class, 'petroknowledge'])->middleware('auth');
+Route::get('/petroknowledge', [PagesController::class, 'petroknowledge']);
 Route::get('/petronews', [PagesController::class, 'petronews']);
-Route::get('/petronews_article/{article:slug}', [PagesController::class, 'petronews_article'])->middleware('auth');
+Route::get('/paper-review', [PagesController::class, 'paper_review']);
+Route::get('/article/{article:slug}', [PagesController::class, 'article'])->middleware('auth');
 
 //Posts
 Route::get('/fun-facts', [PagesController::class, 'funfacts']);

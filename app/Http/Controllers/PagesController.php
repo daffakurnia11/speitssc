@@ -25,13 +25,6 @@ class PagesController extends Controller
         return view('main.member');
     }
 
-    public function blog()
-    {
-        return view('main.blog', [
-            'articles' => Article::where('category', 'Petroknowledge')->get()
-        ]);
-    }
-
     public function edit()
     {
         return view('main.profile');
@@ -164,10 +157,16 @@ class PagesController extends Controller
         ]);
     }
 
-    public function funfacts()
+    /*public function funfacts()
     {
         return view('main.test', [
             'posts' => Post::where('category', 'Fun Facts')->get()
+        ]);
+    }*/
+    public function petroknowledge()
+    {
+        return view('main.petroknowledge', [
+            'articles' => Article::where('category', 'Petroknowledge')->get()
         ]);
     }
 
@@ -178,18 +177,20 @@ class PagesController extends Controller
         ]);
     }
 
-    public function petroknowledge()
+    public function paper_review()
     {
-        return view('main.petroknowledge', [
-            'articles' => Article::where('category', 'Petroknowledge')->get()
+        return view('main.paper_review', [
+            'articles' => Article::where('category', 'Paper Review')->get()
         ]);
     }
-    public function petronews_article()
+
+    public function article(Article $article)
     {
-        return view('main.petronews_article', [
-            'articles' => Article::where('category', 'Petronews')->get()
+        return view('main.article', [
+            'articles' => Article::firstWhere('slug', $article->slug)
         ]);
     }
+
     
     #Fun Facts
     public function funfacts()
