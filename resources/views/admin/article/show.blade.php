@@ -29,6 +29,14 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">{{ $article->title }}</h3>
+              <div class="card-tools">
+                <form action="/dashboard/article/{{ $article->slug }}" method="POST">
+                  @csrf
+                  @method('DELETE')
+                  <a href="/dashboard/article/{{ $article->slug }}/edit" class="btn btn-sm btn-primary"><i class="fas fa-fw fa-pencil-alt"></i></a>
+                  <button type="submit" class="btn btn-sm btn-danger" style="border-color: none" onclick="return confirm('Are you sure to delete this article?')"><i class="fas fa-fw fa-trash"></i></button>
+                </form>
+              </div>
             </div>
             <div class="card-body">
               {!! $article->body !!}

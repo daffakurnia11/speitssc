@@ -23,14 +23,6 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
   <link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
-  <style>
-    .note-editor.note-frame.card {
-      margin-bottom: 0;
-    }
-    .note-insert, .note-view, .note-table {
-      display: none;
-    }
-  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -125,7 +117,21 @@
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#memberList_wrapper .col-md-6:eq(0)');
     // Summernote
-    $('#summernote').summernote()
+    // $('#summernote').summernote()
+    $('#summernote').summernote({
+      toolbar: [
+        // [groupName, [list of button]]
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['font', ['strikethrough', 'superscript', 'subscript']],
+        ['fontsize', ['fontsize']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['insert', ['link', 'picture', 'video']],
+      ],
+      height:400,
+      popatmouse:true
+    });
   });
 </script>
 </body>

@@ -7,6 +7,8 @@ use App\Models\Article;
 use Illuminate\Http\Request;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use Carbon\Carbon;
+use Path\To\DOMDocument;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class ArticleController extends Controller
 {
@@ -57,6 +59,33 @@ class ArticleController extends Controller
         $validated['image'] = $newImageName;
         $validated['slug'] = $slug;
         $validated['user_id'] = auth()->user()->id;
+
+        // Summernote Upload image inside Body
+        $storage = "img/article/content";
+        $dom = new \DOMDocument();
+        libxml_use_internal_errors(true);
+        $dom->loadHTML($request->body, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NOIMPLIED);
+        libxml_clear_errors();
+        $images = $dom->getElementsByTagName('img');
+        foreach ($images as $img) {
+            $src = $img->getAttribute('src');
+            if (preg_match('/data:image/', $src)) {
+                preg_match('/data:image\/(?<mime>.*?)\;/', $src, $group);
+                $mimetype = $group['mime'];
+                $fileNameContent = uniqid();
+                $fileNameContentRand = substr(md5($fileNameContent), 6, 6) . '_' . time();
+                $filepath = ("$storage/$fileNameContentRand.$mimetype");
+                $image = Image::make($src)
+                    ->encode($mimetype, 100)
+                    ->save(public_path($filepath));
+                $new_src = asset($filepath);
+                $img->removeAttribute('src');
+                $img->setAttribute('src', $new_src);
+                $img->setAttribute('class', 'img-responsive w-100');
+            }
+        }
+        $validated['body'] = $dom->saveHTML();
+        // End of Upload Image
 
         $request->image->move(public_path('img/article'), $newImageName);
 
@@ -125,6 +154,33 @@ class ArticleController extends Controller
         } else {
             $validated['published_at'] = null;
         }
+
+        // Summernote Upload image inside Body
+        $storage = "img/article/content";
+        $dom = new \DOMDocument();
+        libxml_use_internal_errors(true);
+        $dom->loadHTML($request->body, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NOIMPLIED);
+        libxml_clear_errors();
+        $images = $dom->getElementsByTagName('img');
+        foreach ($images as $img) {
+            $src = $img->getAttribute('src');
+            if (preg_match('/data:image/', $src)) {
+                preg_match('/data:image\/(?<mime>.*?)\;/', $src, $group);
+                $mimetype = $group['mime'];
+                $fileNameContent = uniqid();
+                $fileNameContentRand = substr(md5($fileNameContent), 6, 6) . '_' . time();
+                $filepath = ("$storage/$fileNameContentRand.$mimetype");
+                $image = Image::make($src)
+                    ->encode($mimetype, 100)
+                    ->save(public_path($filepath));
+                $new_src = asset($filepath);
+                $img->removeAttribute('src');
+                $img->setAttribute('src', $new_src);
+                $img->setAttribute('class', 'img-responsive w-100');
+            }
+        }
+        $validated['body'] = $dom->saveHTML();
+        // End of Upload Image
 
         $article->update($validated);
 
