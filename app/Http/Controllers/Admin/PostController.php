@@ -65,7 +65,6 @@ class PostController extends Controller
 
             $validated['image'] = implode(';', $uploaded);
             $validated['slug'] = $slug;
-            $validated['user_id'] = auth()->user()->id;
 
             Post::create($validated);
         }
