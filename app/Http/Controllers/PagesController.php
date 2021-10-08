@@ -166,31 +166,34 @@ class PagesController extends Controller
     public function petroknowledge()
     {
         return view('main.petroknowledge', [
-            'articles' => Article::where('category', 'Petroknowledge')->get()
+            'articles' => Article::where('published_at','!=', null)->where('category', 'Petroknowledge')->get()
         ]);
     }
 
     public function petronews()
     {
         return view('main.petronews', [
-            'articles' => Article::where('category', 'Petronews')->get()
+            'articles' => Article::where('published_at','!=', null)->where('category', 'Petronews')->get()
         ]);
     }
 
     public function paper_review()
     {
         return view('main.paper_review', [
-            'articles' => Article::where('category', 'Paper Review')->get()
+            'articles' => Article::where('published_at','!=', null)->where('category', 'Paper Review')->get()
         ]);
     }
 
     public function article(Article $article)
     {
+        $reader = $article->reader;
+        $article->update([
+            'reader' => $reader + 1
+        ]);
         return view('main.article', [
             'articles' => Article::firstWhere('slug', $article->slug)
         ]);
     }
-
     
     #Fun Facts
     public function funfacts()
