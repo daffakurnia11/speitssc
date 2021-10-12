@@ -2284,4 +2284,217 @@ footer .footer-desc {
     height: auto;
   }
 }
+
+/*css ff */
+/*Section Funfacts*/
+#funfacts {
+  padding: 4rem 0;
+  color: #0a1931;
+}
+
+#funfacts .nav {
+  margin-top: 30px;
+}
+
+#funfacts .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#funfacts .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#funfacts .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#funfacts .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 170px;
+  border-radius: 0px;
+}
+
+#funfacts .container-fluid {
+  margin-top: 56px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  margin-left: 250px;
+}
+
+#funfacts .posts-logo {
+  max-width: 25%;
+  display: -ms-grid;
+  display: grid;
+}
+
+#funfacts .image {
+  max-width: 20rem;
+  height: auto;
+}
+
+#funfacts nav {
+  padding-top: 45px;
+}
+
+#funfacts nav ul {
+  color: #000000;
+  list-style: none;
+}
+
+#funfacts nav ul li a {
+  width: 146px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+/*End of Fun Facts*/
+/*Responsive*/
+@media (max-width: 768px) {
+  .blog-header .blog {
+    width: 300px;
+  }
+  #funfacts .announcement {
+    margin: 10rem 0;
+    font-size: 20px;
+  }
+  .funfacts-read-more {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-header .blog {
+    width: 250px;
+  }
+}
+
+/*css blog */
+/*Section Size Your Sunday*/
+#seizeyoursunday {
+  padding: 4rem 0;
+  color: #0a1931;
+}
+
+#seizeyoursunday .nav {
+  margin-top: 30px;
+}
+
+#seizeyoursunday .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#seizeyoursunday .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#seizeyoursunday .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#seizeyoursunday .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 213px;
+  border-radius: 0px;
+}
+
+#seizeyoursunday .container-fluid {
+  margin-top: 56px;
+  min-width: 4rem;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  margin-left: 180px;
+}
+
+#seizeyoursunday .posts-logo {
+  max-width: 25%;
+  display: -ms-grid;
+  display: grid;
+}
+
+#seizeyoursunday .image {
+  max-width: 20rem;
+  height: auto;
+}
+
+#seizeyoursunday nav {
+  padding-top: 45px;
+}
+
+#seizeyoursunday nav ul {
+  color: #000000;
+  list-style: none;
+}
+
+#seizeyoursunday nav ul li a {
+  width: 146px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+/*End of Seize Your Sunday*/
+/*Responsive*/
+@media (max-width: 768px) {
+  .blog-header .blog {
+    width: 300px;
+  }
+  #seizeyoursunday .announcement {
+    margin: 10rem 0;
+    font-size: 20px;
+  }
+  .seizeyoursunday-read-more {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-header .blog {
+    width: 250px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

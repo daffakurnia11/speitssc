@@ -76,7 +76,7 @@
           <nav>
             <ul>
               <li><a href="/petroknowledge">PETROKNOWLEDGE</a></li> 
-              <li><a href="#">PETRONEWS</a></li>
+              <li><a href="/petronews">PETRONEWS</a></li>
               <li><a href="/paper-review">PAPER REVIEW</a></li>
               <li><a href="/seizeyoursunday">SEIZE YOUR SUNDAY</a></li>
               <li><a href="/fun-facts">FUNFACT</a></li>

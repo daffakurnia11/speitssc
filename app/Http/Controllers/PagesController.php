@@ -198,8 +198,8 @@ class PagesController extends Controller
     #Fun Facts
     public function funfacts()
     {
-        return view('errors.maintenance');
-        return view('main.fun-facts', [
+        //return view('errors.maintenance');
+        return view('main.funfacts', [
             'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
     }
@@ -207,7 +207,7 @@ class PagesController extends Controller
     #Seize Your Sunday
     public function seizeyoursunday()
     {
-        return view('errors.maintenance');
+        //return view('errors.maintenance');
         return view('main.seizeyoursunday', [
             'posts' => Post::where('category', 'Seize Your Sunday')->get()
         ]);

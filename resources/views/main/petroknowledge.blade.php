@@ -75,7 +75,7 @@
           <img class="articel-logo-spe" src="img/logo-small.png" alt="logo spe">
           <nav>
             <ul>
-              <li><a href="#">PETROKNOWLEDGE</a></li>
+              <li><a href="/petroknowledge">PETROKNOWLEDGE</a></li>
               <li><a href="/petronews">PETRONEWS</a></li>
               <li><a href="/paper-review">PAPER REVIEW</a></li>
               <li><a href="/seizeyoursunday">SEIZE YOUR SUNDAY</a></li>

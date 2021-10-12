@@ -33,7 +33,7 @@
                     <a class="nav-link mx-auto" href="/petronews" data-toggle="tab" role="tab">PETRONEWS</a>
                 </li>
                 <li class="nav-item mx-3" role="presentation">
-                    <a class="nav-link mx-auto active" href="#" data-toggle="tab" role="tab">PAPER REVIEW</a>
+                    <a class="nav-link mx-auto active" href="/paper-review" data-toggle="tab" role="tab">PAPER REVIEW</a>
                 </li>
                 <li class="nav-item mx-3" role="presentation">
                     <a class="nav-link mx-auto" href="/seizeyoursunday" data-toggle="tab" role="tab">SEIZE YOUR SUNDAY</a>
@@ -78,7 +78,7 @@
                 <ul>
                 <li><a href="/petroknowledge">PETROKNOWLEDGE</a></li>
                 <li><a href="/petronews">PETRONEWS</a></li>
-                <li><a href="#">PAPER REVIEW</a></li>
+                <li><a href="/paper-review">PAPER REVIEW</a></li>
                 <li><a href="/seizeyoursunday">SEIZE YOUR SUNDAY</a></li>
                 <li><a href="/fun-facts">FUNFACT</a></li>
                 </ul>
