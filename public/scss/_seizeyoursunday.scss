@@ -1,0 +1,94 @@
+/*css blog */
+
+/*Section Size Your Sunday*/
+#seizeyoursunday {
+    padding: 4rem 0;
+    color: #0a1931;
+    .nav {
+        margin-top: 30px;
+        .nav-item {
+            padding: 2px;
+            font-size: 18px;
+            .nav-link {
+                color: black;
+                font-family: $font-lato;
+                font-size: 18px;
+                font-weight: 800;
+                padding: 2px;
+                margin-right: 50px;
+                &:hover {
+                    border-color: transparent;
+                    font-weight: bold;
+                    padding: 2px;
+                    border-bottom: 2px solid;
+                }
+                &.active {
+                    background-color: #111840;
+                    border-color: transparent transparent #111840 transparent;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    height: 35px;
+                    width: 213px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    .container-fluid {
+        margin-top: 56px;
+        min-width: 4rem;
+        font-family: $font-lato;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: 0.03em;
+        margin-left: 180px;
+    }
+    .posts-logo {
+        max-width: 25%;
+        display: grid;
+    }
+    .image {
+        max-width: 20rem;
+        height: auto;
+    }
+    nav {
+        padding-top: 45px;
+    }
+    nav ul {
+        color: #000000;
+        list-style: none;
+    }
+    nav ul li a {
+        width: 146px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
+}
+/*End of Seize Your Sunday*/
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .blog-header .blog {
+        width: 300px;
+    }
+    #seizeyoursunday .announcement {
+        margin: 10rem 0;
+        font-size: 20px;
+    }
+    .seizeyoursunday-read-more {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 576px) {
+    .blog-header .blog {
+        width: 250px;
+    }
+}
