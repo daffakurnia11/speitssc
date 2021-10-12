@@ -166,21 +166,21 @@ class PagesController extends Controller
     public function petroknowledge()
     {
         return view('main.petroknowledge', [
-            'articles' => Article::where('published_at','!=', null)->where('category', 'Petroknowledge')->get()
+            'articles' => Article::where('published_at', '!=', null)->where('category', 'Petroknowledge')->get()
         ]);
     }
 
     public function petronews()
     {
         return view('main.petronews', [
-            'articles' => Article::where('published_at','!=', null)->where('category', 'Petronews')->get()
+            'articles' => Article::where('published_at', '!=', null)->where('category', 'Petronews')->get()
         ]);
     }
 
     public function paper_review()
     {
         return view('main.paper_review', [
-            'articles' => Article::where('published_at','!=', null)->where('category', 'Paper Review')->get()
+            'articles' => Article::where('published_at', '!=', null)->where('category', 'Paper Review')->get()
         ]);
     }
 
@@ -194,10 +194,11 @@ class PagesController extends Controller
             'articles' => Article::firstWhere('slug', $article->slug)
         ]);
     }
-    
+
     #Fun Facts
     public function funfacts()
     {
+        return view('errors.maintenance');
         return view('main.fun-facts', [
             'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
@@ -206,6 +207,7 @@ class PagesController extends Controller
     #Seize Your Sunday
     public function seizeyoursunday()
     {
+        return view('errors.maintenance');
         return view('main.seizeyoursunday', [
             'posts' => Post::where('category', 'Seize Your Sunday')->get()
         ]);
