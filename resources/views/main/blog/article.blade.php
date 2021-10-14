@@ -15,18 +15,13 @@
             <div class="col-12-sm col-md-8 petroknowledge">
                 <div class="row">
                     <h1 class="title">{{ $articles->title}}</h1>
-                    <div class="row detail-article">
-                        <div class="col-md-1">
-                            <img class="profile_image" src="/img/profile_user.png" alt="profile_user">
+                    <div class="detail-article d-flex justify-content-between align-items-center">
+                        <div class="author-desc">
+                            <img class="profile_image d-inline" src="/img/profile_user.png" alt="profile_user">
+                            <span class="name-user m-0 p-0">{{$articles->user->name}}</span>
                         </div>
-                        <div class="col-md-5">
-                            <p class="name-user">{{$articles->user->name}}</p>
-                        </div>
-                        <div class="col-md-5">
-                            <p class="date-article">{{$articles->published_at}}</p>
-                        </div>
-                        <div class="col-md-1 justify-content-end">
-                            {{--<img class="download_image" src="/img/unduh.png" alt="download">--}}
+                        <div class="article-date">
+                            <p class="date-article">{{$articles->published_at->diffForHumans()}}</p>
                         </div>
                     </div>
                 </div>

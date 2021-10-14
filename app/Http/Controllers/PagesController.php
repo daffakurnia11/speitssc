@@ -157,29 +157,26 @@ class PagesController extends Controller
         ]);
     }
 
-    /*public function funfacts()
-    {
-        return view('main.test', [
-            'posts' => Post::where('category', 'Fun Facts')->get()
-        ]);
-    }*/
+    #Petroknowledge
     public function petroknowledge()
     {
-        return view('main.petroknowledge', [
+        return view('main.blog.petroknowledge', [
             'articles' => Article::where('published_at', '!=', null)->where('category', 'Petroknowledge')->get()
         ]);
     }
 
+    #Petronews
     public function petronews()
     {
-        return view('main.petronews', [
+        return view('main.blog.petronews', [
             'articles' => Article::where('published_at', '!=', null)->where('category', 'Petronews')->get()
         ]);
     }
 
+    #Paper Review
     public function paper_review()
     {
-        return view('main.paper_review', [
+        return view('main.blog.paper_review', [
             'articles' => Article::where('published_at', '!=', null)->where('category', 'Paper Review')->get()
         ]);
     }
@@ -190,7 +187,7 @@ class PagesController extends Controller
         $article->update([
             'reader' => $reader + 1
         ]);
-        return view('main.article', [
+        return view('main.blog.article', [
             'articles' => Article::firstWhere('slug', $article->slug)
         ]);
     }
@@ -199,7 +196,7 @@ class PagesController extends Controller
     public function funfacts()
     {
         //return view('errors.maintenance');
-        return view('main.funfacts', [
+        return view('main.blog.funfacts', [
             'posts' => Post::where('category', 'Fun Facts')->get()
         ]);
     }
@@ -208,7 +205,7 @@ class PagesController extends Controller
     public function seizeyoursunday()
     {
         //return view('errors.maintenance');
-        return view('main.seizeyoursunday', [
+        return view('main.blog.seizeyoursunday', [
             'posts' => Post::where('category', 'Seize Your Sunday')->get()
         ]);
     }

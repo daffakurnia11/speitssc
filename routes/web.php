@@ -108,6 +108,6 @@ Route::get('/article/{article:slug}', [PagesController::class, 'article'])->midd
 
 //Posts
 Route::get('/fun-facts', [PagesController::class, 'funfacts']);
-Route::get('/seizeyoursunday', [PagesController::class, 'seizeyoursunday']);
+Route::get('/seize-your-sunday', [PagesController::class, 'seizeyoursunday']);
 
 Route::get('/{shortlink:short}', [ShortlinkController::class, 'show']);

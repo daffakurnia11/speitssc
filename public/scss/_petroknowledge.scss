@@ -2,23 +2,37 @@
 
 /*Header*/
 .blog-header {
-    background: url(../img/header_blog.png);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(
+        to right,
+        #111840 0%,
+        rgba(17, 24, 64, 0.5) 100%
+    );
     color: #262626;
     padding: 15rem 0;
-    .blog {
-        background-color: rgba(242, 231, 220, 1);
-        background-position: center;
-        height: 114px;
-        width: 375px;
-        border-radius: 0px;
-        .blog-title {
-            font-family: $font-lato;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 35px;
+    position: relative;
+    overflow: hidden;
+    .container {
+        .blog {
+            background-color: rgba(242, 231, 220, 1);
+            background-position: center;
+            height: 114px;
+            width: 375px;
+            border-radius: 0px;
+            .blog-title {
+                font-family: $font-lato;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 35px;
+            }
         }
+    }
+    .header-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
     }
 }
 
@@ -143,9 +157,15 @@
 }
 
 @media (max-width: 768px) {
-    .blog-header .blog {
-        width: 300px;
+    .blog-header {
+        .blog {
+            width: 300px;
+        }
+        .header-img {
+            width: unset;
+        }
     }
+
     #petroknowledge .announcement {
         margin: 10rem 0;
         font-size: 20px;
