@@ -1,0 +1,112 @@
+/*Section Member Team*/
+#members-team {
+    overflow: hidden;
+    .container {
+        margin-top: 66px;
+        padding-bottom: 93px;
+        background-color: rgba(10, 25, 49, 1);
+        border-radius: 40px;
+        .favorite-team {
+            h1 {
+                color: white;
+                font-family: Lato;
+                font-style: italic;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 58px;
+                padding-top: 75px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 49px;
+                text-align: center;
+            }
+            h2 {
+                margin-top: 10px;
+                font-family: Lato;
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 43px;
+                color: #ffffff;
+            }
+            p {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #ffffff;
+            }
+        }
+        .gl-team {
+            text-align: center;
+            h1 {
+                color: white;
+                font-family: Lato;
+                font-style: italic;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 58px;
+                padding-top: 75px;
+            }
+            h2 {
+                margin-top: 10px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #members-team {
+        .container {
+            border-radius: 3em;
+            .favorite-team {
+                h1 {
+                    font-size: 3em;
+                }
+            }
+            .gl-team {
+                h1 {
+                    font-size: 2.5em;
+                }
+                h2 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    #members-team {
+        .container {
+            border-radius: 1.5em;
+            .favorite-team {
+                h1 {
+                    font-size: 2em;
+                }
+                h2 {
+                    font-size: 2em;
+                }
+                p {
+                    font-size: 1.5em;
+                }
+            }
+            .gl-team {
+                h1 {
+                    font-size: 2em;
+                }
+                h2 {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
