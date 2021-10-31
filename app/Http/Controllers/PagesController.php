@@ -35,6 +35,11 @@ class PagesController extends Controller
         return view('main.aboutus');
     }
 
+    public function ourmembers()
+    {
+        return view('main.our_members');
+    }
+    
     public function store(Request $request)
     {
         $profileData = $request->validate([

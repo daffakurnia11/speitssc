@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\PostController;
 Route::get('/', [PagesController::class, 'landing']);
 Route::get('/member', [PagesController::class, 'member']);
 Route::get('/about', [PagesController::class, 'aboutus']);
+Route::get('/ourmembers', [PagesController::class, 'ourmembers']);
 
 // Competitions Routing
 Route::prefix('competitions')->group(function () {
