@@ -9,3 +9,8 @@
 @endsection
 
 @section('title', 'Our Members')
+
+
+    <section id="members-leaderboard">
+      <div></div>
+    </section>
