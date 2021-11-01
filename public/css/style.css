@@ -2593,9 +2593,6 @@ footer .footer-desc {
   #members-team .container .gl-team h1 {
     font-size: 2.5em;
   }
-  #members-team .container .gl-team h2 {
-    font-size: 3em;
-  }
 }
 
 @media (max-width: 576px) {
@@ -2615,7 +2612,7 @@ footer .footer-desc {
     font-size: 2em;
   }
   #members-team .container .gl-team h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

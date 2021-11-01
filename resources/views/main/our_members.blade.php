@@ -37,7 +37,7 @@
                 </div>
               </div>
             </div>
-            <h3>on PI FAIR 2021</h3>
+            <h2>on PI FAIR 2021</h3>
           </div>
           <div class="col-lg-3 mt-4">
             <div class="owl-carousel owl-theme owl-loaded">
@@ -51,7 +51,7 @@
                 </div>
               </div>
             </div>
-            <h3>on DERRICK 2021</h3>
+            <h2>on DERRICK 2021</h3>
           </div>
         </div>
       </div>
