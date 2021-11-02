@@ -36,6 +36,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/petroknowledge">Blog</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ourmembers">Our Members</a>
+        </li>
         {{-- <li class="nav-item">
           <a class="nav-link" href="">Merch</a>
         </li> --}}

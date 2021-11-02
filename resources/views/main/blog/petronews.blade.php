@@ -16,6 +16,7 @@
                 </div>    
             </div>
         </div>
+        <img src="/img/header_blog.png" class="header-img" alt="">
     </header>
     {{--End of Header--}}
 
