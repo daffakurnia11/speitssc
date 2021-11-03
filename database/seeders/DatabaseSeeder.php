@@ -8,6 +8,8 @@ use App\Models\Article;
 use App\Models\Post;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use PointsSeeder;
+use App\Models\Point;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,6 +20,7 @@ class DatabaseSeeder extends Seeder
          */
         public function run()
         {
+                
                 Article::factory(15)->create();
                 User::factory(3)->create();
 
@@ -69,5 +72,37 @@ class DatabaseSeeder extends Seeder
                 $post->category = 'Seize Your Sunday';
 
                 $post->save();
+
+                //Fian mengecek data
+                // $points = new Point();
+
+                // $points->user_id=1;
+                // $points->point=1000;
+                // $points->save();
+                // $points = new Point();
+        
+                // $points->user_id=2;
+                // $points->point=2000;
+                // $points->save();
+                // $points = new Point();
+        
+                // $points->user_id=3;
+                // $points->point=3000;
+                // $points->save();
+                // $points = new Point();
+        
+                // $points->user_id=4;
+                // $points->point=5000;
+                // $points->save();
+                // $points = new Point();
+        
+                // $points->user_id=5;
+                // $points->point=5000;
+                // $points->save();
+                // $points = new Point();
+        
+                // $points->user_id=6;
+                // $points->point=6000;
+                // $points->save();
         }
 }

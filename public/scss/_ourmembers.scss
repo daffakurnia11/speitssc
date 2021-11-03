@@ -64,6 +64,34 @@
     }
 }
 
+/*Section Members Leaderboard*/
+#members-leaderboard {
+    overflow: hidden;
+    .container {
+        height: 45px;
+        position: relative;
+        background: #0a1931;
+        border-radius: 0px 0px 0px 32.5px;
+        .teks {
+            color: white;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            top: 10px;
+            font-size: 30px;
+            margin-left: 78%;
+            min-height: 1em;
+        }
+        .gambar {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            right: 0;
+        }
+    }
+}
 @media (max-width: 768px) {
     #members-team {
         .container {

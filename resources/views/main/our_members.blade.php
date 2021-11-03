@@ -58,5 +58,13 @@
     </div>
   </div>
 </section>
-
+{{-- members leaderboard --}}
+<section id="members-leaderboard">
+  <div class="container">
+    <div>
+      <p class="teks">Members Leaderboard</p>
+    </div>
+    <img class="gambar" src="img/Vector.png" alt="members-leaderboard" width="300px" />
+  </div>
+</section>
 @endsection
