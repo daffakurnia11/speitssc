@@ -58,7 +58,6 @@
     </div>
   </div>
 </section>
-<<<<<<< HEAD
 {{-- members leaderboard --}}
 <section id="members-leaderboard">
   <div class="container">
@@ -67,8 +66,7 @@
     </div>
     <img class="gambar" src="img/Vector.png" alt="members-leaderboard" width="300px" />
   </div>
-=======
-
+</section>
 #Member's Articles
 <section id='members-articles'>
   <div class="col-6 px-2 box">
@@ -102,6 +100,5 @@
   @else 
     <h1 class="announcement">No Content Available</h1>
   @endif 
->>>>>>> f656b733ea6a358d78ede37532efaab3f992d10a
 </section>
 @endsection

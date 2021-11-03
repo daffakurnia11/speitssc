@@ -2584,12 +2584,15 @@ footer .footer-desc {
 }
 
 /*Section Members Leaderboard*/
+#members-leaderboard {
+  overflow: hidden;
+}
+
 #members-leaderboard .container {
   height: 45px;
   position: relative;
   background: #0a1931;
   border-radius: 0px 0px 0px 32.5px;
-  top: 10px;
 }
 
 #members-leaderboard .container .teks {
@@ -2602,7 +2605,7 @@ footer .footer-desc {
       -ms-flex-pack: center;
           justify-content: center;
   top: 10px;
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 78%;
   min-height: 1em;
 }
@@ -2611,7 +2614,7 @@ footer .footer-desc {
   position: absolute;
   top: 0;
   z-index: -1;
-  right: 0px;
+  right: 0;
 }
 
 /*Articles*/

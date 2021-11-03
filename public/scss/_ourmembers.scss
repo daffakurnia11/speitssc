@@ -64,15 +64,14 @@
     }
 }
 
-<<<<<<< HEAD
 /*Section Members Leaderboard*/
 #members-leaderboard {
-    overflow: hidden;
     .container {
         height: 45px;
         position: relative;
         background: #0a1931;
         border-radius: 0px 0px 0px 32.5px;
+        top:10px;
         .teks {
             color: white;
             font-family: Lato;
@@ -81,7 +80,7 @@
             text-align: center;
             justify-content: center;
             top: 10px;
-            font-size: 30px;
+            font-size: 25px;
             margin-left: 78%;
             min-height: 1em;
         }
@@ -89,11 +88,10 @@
             position: absolute;
             top: 0;
             z-index: -1;
-            right: 0;
+            right: 0px;
         }
     }
 }
-=======
 /*Articles*/
 #ourmembers {
     padding: 4rem 0;
@@ -157,10 +155,8 @@
             text-decoration-color: none;
         }
     }
-
 }
 
->>>>>>> f656b733ea6a358d78ede37532efaab3f992d10a
 @media (max-width: 768px) {
     #members-team {
         .container {
