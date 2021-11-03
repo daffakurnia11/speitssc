@@ -35,10 +35,14 @@ class PagesController extends Controller
         return view('main.aboutus');
     }
 
+   #Members Articles
     public function ourmembers()
     {
-        return view('main.our_members');
+        return view('main.our_members', [
+            'articles' => Article::where('published_at', '!=', null)->where('category', 'Members Article')->get()
+        ]);
     }
+    
     
     public function store(Request $request)
     {

@@ -58,6 +58,7 @@
     </div>
   </div>
 </section>
+<<<<<<< HEAD
 {{-- members leaderboard --}}
 <section id="members-leaderboard">
   <div class="container">
@@ -66,5 +67,41 @@
     </div>
     <img class="gambar" src="img/Vector.png" alt="members-leaderboard" width="300px" />
   </div>
+=======
+
+#Member's Articles
+<section id='members-articles'>
+  <div class="col-6 px-2 box">
+    <h1 class="title">Member's Article</h1>
+  </div>
+  
+  @if ($articles->isNotEmpty())
+  @foreach ($articles as $article)
+    <div class="row ourmembers-article my-4">
+      <div class="col-md-8 order-2 order-md-1">
+        <div class="row">
+          <div class="col-6-sm col-md-12">
+            <h1 class="ourmembers-title">{{ $article->title}}</h1>
+          </div>
+          <div class="col-6-sm col-md-12 ">
+            <p class="ourmembers-desc">{{ $article->description}}</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <p class="ourmembers-date p-0 m-0">{{ $article->published_at->diffForHumans()}}</p>
+            <a href="/article/{{$article->slug}}" class="btn ourmembers-read-more m-0">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 order-1 order-md-2">
+        <div class="text-center">
+          <img class="image article-logo align-middle mb-3 d-inline" src="/img/article/{{ $article->image}}" alt="minyak bumi">
+        </div>
+      </div>
+    </div>
+  @endforeach
+  @else 
+    <h1 class="announcement">No Content Available</h1>
+  @endif 
+>>>>>>> f656b733ea6a358d78ede37532efaab3f992d10a
 </section>
 @endsection
