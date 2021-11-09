@@ -4,9 +4,9 @@
   @include('templates.navbar')
 @endsection
 
-@section('footer')
+{{-- @section('footer')
   @include('templates.footer')
-@endsection
+@endsection --}}
 
 @section('title', 'Our Members')
 
@@ -94,7 +94,7 @@
 </section>
 
 
-#Member's Articles
+{{-- #Member's Articles
 <section id='ourmembers'>
   <div class="col-6 px-2 box">
     <h1 class="title">Member's Article</h1>
@@ -127,5 +127,5 @@
   @else 
     <h1 class="announcement">No Content Available</h1>
   @endif 
-</section>
+</section> --}}
 @endsection
