@@ -2589,22 +2589,19 @@ footer .footer-desc {
   position: relative;
   background: #0a1931;
   border-radius: 0px 0px 0px 32.5px;
-  top: 10px;
+  top: 20px;
 }
 
 #members-leaderboard .container .teks {
   color: white;
   font-family: Lato;
-  font-style: normal;
+  font-style: bold;
   font-weight: bold;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: right;
   top: 10px;
   font-size: 25px;
-  margin-left: 78%;
-  min-height: 1em;
+  margin-bottom: 50px;
+  padding-right: 12px;
 }
 
 #members-leaderboard .container .gambar {
@@ -2612,6 +2609,69 @@ footer .footer-desc {
   top: 0;
   z-index: -1;
   right: 0px;
+}
+
+#members-leaderboard .container .leaderboard {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+  border: solid;
+  color: #ffffff;
+  background: #0A1931;
+  margin-left: auto;
+}
+
+#members-leaderboard .container .leaderboard1 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+  border: solid;
+  color: #ffffff;
+  background: #FFC947;
+  margin-left: auto;
+}
+
+#members-leaderboard .container .leaderboard2 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+  border: solid;
+  color: #ffffff;
+  background: #D3D5D6;
+  margin-left: auto;
+}
+
+#members-leaderboard .container .leaderboard3 {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+  border: solid;
+  color: #ffffff;
+  background: #F48B29;
+  margin-left: auto;
+}
+
+#members-leaderboard .container .name {
+  font-family: Lato;
+  font-style: bold;
+  border-style: solid;
+  width: 750px;
+  height: 40px;
+  border-color: #0A1931;
+  border-radius: 7px 7px 7px 7px;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+#members-leaderboard .container .point {
+  font-family: Lato;
+  font-style: bold;
+  padding-top: 5px;
+  text-align: left;
 }
 
 /*Articles*/
@@ -2697,6 +2757,62 @@ footer .footer-desc {
   }
   #members-team .container .gl-team h1 {
     font-size: 2.5em;
+  }
+  #members-leaderboard .container {
+    height: 35px;
+    position: relative;
+    background: #0a1931;
+    border-radius: 0px 0px 0px 32.5px;
+    top: 20px;
+  }
+  #members-leaderboard .container .teks {
+    color: white;
+    font-family: Lato;
+    font-style: bold;
+    font-weight: bold;
+    text-align: right;
+    top: 10px;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+  #members-leaderboard .container .gambar {
+    position: absolute;
+    display: none;
+    width: 200px;
+    margin-right: 200px;
+  }
+  #members-leaderboard .container .leaderboard {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard1 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard2 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard3 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .name {
+    width: 300px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: center;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
   }
 }
 

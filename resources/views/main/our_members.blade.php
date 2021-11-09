@@ -65,10 +65,37 @@
       <p class="teks">Members Leaderboard</p>
     </div>
     <img class="gambar" src="img/Vector.png" alt="members-leaderboard" width="300px" />
+    {{-- Mengurutkan data mulai dari angka 1 --}}
+    <?php $counter = 1; ?> 
+    {{-- Jika dia lebih dari 3 dia akan ngeprint 0, jika tidak lebih dari sama dengan 3 dia ngeprint counter --}}
+    @foreach($points as $point)
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-1">
+        <div class="leaderboard<?php 
+          if ($counter > 3) echo '';
+          else echo $counter;
+          ?>">
+          <h5>{{ $counter++ }}</h5>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="name">
+          <h3>{{ $point->user->name }}  </h3>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="point">
+          <h3>{{ $point->point }}</h3>
+        </div>
+      </div>
+    </div>
+    @endforeach
   </div>
 </section>
+
+
 #Member's Articles
-<section id='members-articles'>
+<section id='ourmembers'>
   <div class="col-6 px-2 box">
     <h1 class="title">Member's Article</h1>
   </div>

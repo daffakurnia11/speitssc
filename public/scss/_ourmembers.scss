@@ -71,24 +71,80 @@
         position: relative;
         background: #0a1931;
         border-radius: 0px 0px 0px 32.5px;
-        top:10px;
+        top:20px;
         .teks {
             color: white;
             font-family: Lato;
-            font-style: normal;
+            font-style: bold;
             font-weight: bold;
-            text-align: center;
-            justify-content: center;
+            text-align: right;
             top: 10px;
             font-size: 25px;
-            margin-left: 78%;
-            min-height: 1em;
+            margin-bottom: 50px;
+            padding-right: 12px;
         }
         .gambar {
             position: absolute;
             top: 0;
             z-index: -1;
             right: 0px;
+        } 
+        .leaderboard{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 7px 7px 7px 7px;
+            border: solid;
+            color: #ffffff;
+            background: #0A1931;
+            margin-left: auto;
+        }
+        .leaderboard1{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 7px 7px 7px 7px;
+            border: solid;
+            color: #ffffff;
+            background: #FFC947;
+            margin-left: auto;
+        }
+        .leaderboard2{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 7px 7px 7px 7px;
+            border: solid;
+            color: #ffffff;
+            background: #D3D5D6;
+            margin-left: auto;
+        }  
+        .leaderboard3{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 7px 7px 7px 7px;
+            border: solid;
+            color: #ffffff;
+            background: #F48B29;
+            margin-left: auto;
+        } 
+        .name{
+            font-family: Lato;
+            font-style: bold;
+            border-style: solid;
+            width: 750px;
+            height: 40px;
+            border-color: #0A1931;
+            border-radius: 7px 7px 7px 7px;
+            padding-left: 10px;
+            padding-top: 2px;
+        }
+        .point{
+            font-family: Lato;
+            font-style: bold;
+            padding-top: 5px;
+            text-align: left;
         }
     }
 }
@@ -173,7 +229,67 @@
             }
         }
     }
-}
+    #members-leaderboard{
+        .container{
+            height: 35px;
+            position: relative;
+            background: #0a1931;
+            border-radius: 0px 0px 0px 32.5px;
+            top:20px;
+                .teks{
+                    color: white;
+                    font-family: Lato;
+                    font-style: bold;
+                    font-weight: bold;
+                    text-align: right;
+                    top: 10px;
+                    font-size: 17px;
+                    margin-bottom: 50px;
+                }
+                .gambar{
+                    position: absolute;
+                    display: none;
+                    width: 200px;
+                    margin-right: 200px;
+                }
+                .leaderboard{
+                    width: 27px;
+                    height: 27px;
+                }
+                .leaderboard1{
+                    width: 27px;
+                    height: 27px;
+                }
+                .leaderboard2{
+                    width: 27px;
+                    height: 27px;
+                }
+                .leaderboard3{
+                    width: 27px;
+                    height: 27px;
+                }
+                .name{
+                    width: 300px;
+                    height: 30px;
+                    h3{
+                        font-size: 1.2em;
+                        font-family: Lato;
+                        font-style: bold;
+
+                    }
+                }
+                .point{
+                    text-align: center;
+                    h3{
+                        font-size: 1.2em;
+                        font-family: Lato;
+                        font-style: bold;
+                    }
+                }
+               
+            }
+        }
+    }
 @media (max-width: 576px) {
     #members-team {
         .container {

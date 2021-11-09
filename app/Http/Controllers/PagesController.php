@@ -9,6 +9,7 @@ use App\Models\Point;
 use App\Models\File;
 use App\Models\Post;
 use App\Models\Article;
+use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
@@ -38,8 +39,12 @@ class PagesController extends Controller
    #Members Articles
     public function ourmembers()
     {
+        $points = Point::orderBy('point', 'DESC')->limit(10)->get(); #Values
+        $articles = Article::where('published_at', '!=', null)->where('category', 'Members Article')->get();
+
         return view('main.our_members', [
-            'articles' => Article::where('published_at', '!=', null)->where('category', 'Members Article')->get()
+            'articles' => $articles,
+            'points' => $points //declare
         ]);
     }
     

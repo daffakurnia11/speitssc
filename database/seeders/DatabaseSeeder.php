@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         public function run()
         {
                 
-                Article::factory(15)->create();
+                // Article::factory(15)->create();
                 User::factory(3)->create();
 
                 // Daffa User
