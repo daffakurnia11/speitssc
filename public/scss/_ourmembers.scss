@@ -213,7 +213,8 @@
     }
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     #members-team {
         .container {
             border-radius: 3em;
@@ -253,23 +254,23 @@
                 margin-right: 200px;
             }
             .leaderboard{
-                width: 27px;
-                height: 27px;
+                width: 25px;
+                height: 25px;
             }
             .leaderboard1{
-                width: 27px;
-                height: 27px;
+                width: 25px;
+                height: 25px;
             }
             .leaderboard2{
-                width: 27px;
-                height: 27px;
+                width: 25px;
+                height: 25px;
             }
             .leaderboard3{
-                width: 27px;
-                height: 27px;
+                width: 25px;
+                height: 25px;
             }
             .name{
-                width: 300px;
+                width: 285px;
                 height: 30px;
                 h3{
                     font-size: 1.2em;
@@ -279,7 +280,7 @@
                 }
             }
             .point{
-                text-align: center;
+                text-align: right;
                 h3{
                     font-size: 1.2em;
                     font-family: Lato;
@@ -290,7 +291,7 @@
     }
 }
     
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     #members-team {
         .container {
             border-radius: 1.5em;
@@ -355,7 +356,7 @@
                 height: 25px;
             }
             .name{
-                width: 275px;
+                width: 300px;
                 height: 30px;
                 h3{
                     font-size: 1.2em;
@@ -370,6 +371,71 @@
                     font-size: 1.2em;
                     font-family: Lato;
                     font-style: bold;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    #members-leaderboard{
+        .container{
+            .name{
+                width: 350px;
+                height: 30px;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+
+                }
+            }
+        }
+    }
+}
+// Responsive members-leaderboard
+@media screen and (max-width: 376px) {
+    #members-leaderboard{
+        .container{
+            .name{
+                width: 300px;
+                height: 30px;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    #members-leaderboard{
+        .container{
+            .name{
+                width: 300px;
+                height: 30px;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    #members-leaderboard{
+        .container{
+            .name{
+                width: 270px;
+                height: 30px;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+
                 }
             }
         }
