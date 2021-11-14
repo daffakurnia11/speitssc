@@ -4,9 +4,9 @@
   @include('templates.navbar')
 @endsection
 
-{{-- @section('footer')
+@section('footer')
   @include('templates.footer')
-@endsection --}}
+@endsection
 
 @section('title', 'Our Members')
 
@@ -94,26 +94,27 @@
 </section>
 
 
-{{-- #Member's Articles
-<section id='ourmembers'>
-  <div class="col-6 px-2 box">
-    <h1 class="title">Member's Article</h1>
-  </div>
-  
+{{-- #Member's Articles --}}
+<section id='members-article'>
+  <div class="container">
+    <div class="col-6 px-2 box">
+      <h1 class="teks">Members Articles</h1>
+    </div>
+  </div>  
   @if ($articles->isNotEmpty())
   @foreach ($articles as $article)
-    <div class="row ourmembers-article my-4">
-      <div class="col-md-8 order-2 order-md-1">
+    <div class="row membarticles my-4">
+      <div class="col-md-8 content order-2 order-md-1">
         <div class="row">
           <div class="col-6-sm col-md-12">
-            <h1 class="ourmembers-title">{{ $article->title}}</h1>
+            <h1 class="membarticle-title">{{ $article->title}}</h1>
           </div>
           <div class="col-6-sm col-md-12 ">
-            <p class="ourmembers-desc">{{ $article->description}}</p>
+            <p class="membarticle-desc">{{ $article->description}}</p>
           </div>
           <div class="d-flex justify-content-between align-items-center mt-4">
-            <p class="ourmembers-date p-0 m-0">{{ $article->published_at->diffForHumans()}}</p>
-            <a href="/article/{{$article->slug}}" class="btn ourmembers-read-more m-0">READ MORE</a>
+            <p class="membarticle-date p-0 m-0">{{ $article->published_at->diffForHumans()}}</p>
+            <a href="/article/{{$article->slug}}" class="btn membarticle-read-more m-0">READ MORE</a>
           </div>
         </div>
       </div>
@@ -127,5 +128,5 @@
   @else 
     <h1 class="announcement">No Content Available</h1>
   @endif 
-</section> --}}
+</section>
 @endsection
