@@ -231,11 +231,11 @@
     }
     #members-leaderboard{
         .container{
-            height: 35px;
-            position: relative;
-            background: #0a1931;
-            border-radius: 0px 0px 0px 32.5px;
-            top:20px;
+                    height: 35px;
+                    position: relative;
+                    background: #0a1931;
+                    border-radius: 0px 0px 0px 32.5px;
+                    top:20px;
                 .teks{
                     color: white;
                     font-family: Lato;
@@ -286,7 +286,6 @@
                         font-style: bold;
                     }
                 }
-               
             }
         }
     }
@@ -315,4 +314,28 @@
             }
         }
     }
+}
+@media (max-width: 320px) {
+   #members-leaderboard{
+       .container{
+            .name{
+                width: 285px;
+                height: 30px;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+
+                }
+            }
+            .point{
+                text-align: center;
+                h3{
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+                }
+            }
+        }
+   }
 }
