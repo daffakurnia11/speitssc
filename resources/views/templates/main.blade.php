@@ -47,21 +47,6 @@
           arrows:true,
           prevArrow: $('.prev-arrows'),
           nextArrow: $('.next-arrows'),
-          // responsive: [
-          // {
-          //   breakpoint: 600,
-          //   settings: {
-          //     slidesToShow: 2,
-          //     slidesToScroll: 2
-          //   }
-          // },
-          // {
-          //   breakpoint: 480,
-          //   settings: {
-          //     slidesToShow: 1,
-          //     slidesToScroll: 1
-          //   }
-          // }
         });
         $('.slick-carousel').slick({
           infinite: true,
@@ -69,13 +54,6 @@
           slidesToShow: 1,
           slidesToScroll: 1
         });
-        // $(".owl-carousel-main").owlCarousel({
-        //   loop: true,
-        //   center: true,
-        //   items: 2 ,
-        //   dots: false,
-        //   autoplay: false
-        // });
         $(".owl-carousel").owlCarousel({
           loop: true,
           items: 1,

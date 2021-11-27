@@ -26,45 +26,28 @@
       <div class="col-md-12 gl-team">
         <h1>GOOD LUCK FOR THE TEAM!</h1>
         <div class="slick-carousel-main slick-theme slick-loaded p-5">
-          
-            {{-- <div class="slick-stage"> --}}
-              <div class="slick-item">
-                <div class="slick-carousel slick-theme slick-loaded">
-                  {{-- <div class="slick-stage-outer">
-                    <div class="slick-stage"> --}}
-                      <div class="slick-item"><img src="/img/ourmembers/pifair-01.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/pifair-02.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/pifair-03.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/pifair-04.png" class="w-100" alt=""></div>
-                    {{-- </div>
-                  </div> --}}
-                </div>
-                <h2>on PI FAIR 2021</h2>
-              </div>
-            {{-- </div> --}}
-            {{-- <div class="slick-stage"> --}}
-              <div class="slick-item">
-                <div class="slick-carousel slick-theme slick-loaded">
-                  {{-- <div class="slick-stage-outer">
-                    <div class="slick-stage"> --}}
-                      <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_1.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_2.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_3.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_4.png" class="w-100" alt=""></div>
-                      <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_5.png" class="w-100" alt=""></div>
-                    {{-- </div>
-                  </div> --}}
-                </div>
-                <h2>on DERRICK 2021</h2>
-              </div>
-            {{-- </div> --}}
-          
+          <div class="slick-item">
+            <div class="slick-carousel slick-theme slick-loaded">      
+              <div class="slick-item"><img src="/img/ourmembers/pifair-01.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/pifair-02.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/pifair-03.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/pifair-04.png" class="w-100" alt=""></div>
+            </div>
+            <h2>on PI FAIR 2021</h2>
+          </div>          
+          <div class="slick-item">
+            <div class="slick-carousel slick-theme slick-loaded">                
+              <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_1.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_2.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_3.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_4.png" class="w-100" alt=""></div>
+              <div class="slick-item"><img src="/img/ourmembers/GLD_Derrick_5.png" class="w-100" alt=""></div>                 
+            </div>
+            <h2>on DERRICK 2021</h2>
+          </div>
         </div> 
-        {{-- <div class="prev-next"> --}}
-          <div class="prev-arrows"></div>
-          <div class="next-arrows"></div>
-        {{-- </div> --}}
-          
+        <div class="prev-arrows"></div>
+        <div class="next-arrows"></div>
       </div>
     </div>
   </div>
