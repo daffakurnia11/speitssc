@@ -149,9 +149,59 @@
     }
 }
 /*Articles*/
-#ourmembers {
-    padding: 4rem 0;
-    color: #0a1931;
+#members-article {
+    padding-top: 25rem;
+    .nav {
+        margin-top: 30px;
+        .nav-item {
+            padding: 2px;
+            font-size: 18px;
+            .nav-link {
+                color: black;
+                font-family: $font-lato;
+                font-size: 18px;
+                font-weight: 800;
+                padding: 2px;
+                margin-right: 50px;
+                &:hover {
+                    border-color: transparent;
+                    font-weight: bold;
+                    padding: 2px;
+                    border-bottom: 2px solid;
+                }
+                &.active {
+                    background-color: #111840;
+                    border-color: transparent transparent #111840 transparent;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    height: 35px;
+                    width: 213px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    .container {
+        height: 45px;
+        position: relative;
+        background: #0a1931;
+        border-radius: 0px 0px 0px 32.5px;
+        top: 20px;
+        transform: scaleX(-1);
+        .teks {
+            color: white;
+            font-family: Lato;
+            font-style: bold;
+            font-weight: bold;
+            text-align: right;
+            top: 10px;
+            font-size: 25px;
+            margin-bottom: 30px;
+            padding-right: 12px;
+            transform: scaleX(-1);
+        }
+    }
     .announcement {
         margin: 20rem 0;
         text-align: center;
@@ -162,11 +212,11 @@
         line-height: 29px;
         letter-spacing: 0.03em;
     }
-    .ourmembers-article {
+    .articles {
         margin-bottom: 66px;
         margin-top: 67px;
     }
-    .ourmembers-title {
+    .membarticle-title {
         font-family: Montserrat;
         font-size: 24px;
         font-style: normal;
@@ -174,8 +224,9 @@
         line-height: 29px;
         letter-spacing: 0.03em;
         text-align: left;
+        margin-left: 8rem;
     }
-    .ourmembers-desc {
+    .membarticle-desc {
         font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
@@ -185,14 +236,17 @@
         text-align: justify;
         margin-top: 5px;
         margin-right: 10px;
+        margin-left: 8rem;
     }
-    .ourmembers-date {
+    .membarticle-date {
         margin-top: 25px;
         font-family: Montserrat;
         font-size: 16px;
         letter-spacing: 0.03em;
+        text-align: justify;
+        margin-left: 8rem;
     }
-    .ourmembers-read-more {
+    .membarticle-read-more {
         font-family: Lato;
         font-size: 16px;
         font-weight: 700;
@@ -211,6 +265,34 @@
             text-decoration-color: none;
         }
     }
+    .article-logo {
+        max-width: 25%;
+        display: grid;
+    }
+    .image {
+        max-width: 20rem;
+        height: auto;
+        margin-top: 25px;
+    }
+    .content {
+        margin-top: 20px;
+    }
+    nav {
+        padding-top: 45px;
+    }
+    nav ul {
+        color: #000000;
+        list-style: none;
+    }
+    nav ul li a {
+        width: 146px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -225,6 +307,18 @@
             .gl-team {
                 h1 {
                     font-size: 2.5em;
+                }
+            }
+        }
+        #members-article {
+            .container {
+                .announcement {
+                    margin: 10rem 0;
+                    font-size: 20px;
+                }
+                .membarticle-read-more {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
                 }
             }
         }
