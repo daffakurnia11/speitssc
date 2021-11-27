@@ -4,9 +4,9 @@
   @include('templates.navbar')
 @endsection
 
-@section('footer')
+{{-- @section('footer')
   @include('templates.footer')
-@endsection
+@endsection --}}
 
 @section('title', 'Our Members')
 
