@@ -60,37 +60,55 @@
                 color: #ffffff;
             }
             img {
+                padding: 30px;
                 margin-top: 50px;
-                margin-left: 70px;
-                max-width: 80%;
+                max-width: 100%;
                 height: auto;
             }
-            .owl-carousel-main {
-                display: flex;
-                justify-content: center;
-                position: relative;
-                overflow: hidden;
+            .prev-arrows {
+                background: url("../img/ourmembers/prev-arrows.png") no-repeat;
+                float: left;
             }
-            .owl-prev {
-                left: 2%;
+            .next-arrows {
+                background: url("../img/ourmembers/next-arrows.png") no-repeat;
+                float: right;
             }
-            .owl-next {
-                right: 1.5%;
-            }
-            .owl-prev,
-            .owl-next {
-                position: absolute;
-                display: block;
+            .prev-arrows,
+            .next-arrows {
                 top: 50%;
-                width: 2%;
-                height: auto;
-                background: transparent;
-                span {
-                    width: 100%;
-                    font-size: 35px;
-                    padding: 5px;
-                }
+                z-index: 10;
+                cursor: pointer;
+                display: block;
+                height: 40px;
+                width: 40px;
             }
+
+            // .owl-carousel-main {
+            //     display: flex;
+            //     justify-content: center;
+            //     position: relative;
+            //     overflow: hidden;
+            // }
+            // .owl-prev {
+            //     left: 2%;
+            // }
+            // .owl-next {
+            //     right: 1.5%;
+            // }
+            // .owl-prev,
+            // .owl-next {
+            //     position: absolute;
+            //     display: block;
+            //     top: 50%;
+            //     width: 2%;
+            //     height: auto;
+            //     background: transparent;
+            //     span {
+            //         width: 100%;
+            //         font-size: 35px;
+            //         padding: 5px;
+            //     }
+            // }
         }
     }
 }

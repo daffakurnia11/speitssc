@@ -2583,46 +2583,30 @@ footer .footer-desc {
 }
 
 #members-team .container .gl-team img {
+  padding: 30px;
   margin-top: 50px;
-  margin-left: 70px;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
-#members-team .container .gl-team .owl-carousel-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  overflow: hidden;
+#members-team .container .gl-team .prev-arrows {
+  background: url("../img/ourmembers/prev-arrows.png") no-repeat;
+  float: left;
 }
 
-#members-team .container .gl-team .owl-prev {
-  left: 2%;
+#members-team .container .gl-team .next-arrows {
+  background: url("../img/ourmembers/next-arrows.png") no-repeat;
+  float: right;
 }
 
-#members-team .container .gl-team .owl-next {
-  right: 1.5%;
-}
-
-#members-team .container .gl-team .owl-prev,
-#members-team .container .gl-team .owl-next {
-  position: absolute;
-  display: block;
+#members-team .container .gl-team .prev-arrows,
+#members-team .container .gl-team .next-arrows {
   top: 50%;
-  width: 2%;
-  height: auto;
-  background: transparent;
-}
-
-#members-team .container .gl-team .owl-prev span,
-#members-team .container .gl-team .owl-next span {
-  width: 100%;
-  font-size: 35px;
-  padding: 5px;
+  z-index: 10;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  width: 40px;
 }
 
 /*Section Members Leaderboard*/
