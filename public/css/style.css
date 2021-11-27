@@ -2579,8 +2579,158 @@ footer .footer-desc {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
   color: #ffffff;
+}
+
+#members-team .container .gl-team img {
+  margin-top: 50px;
+  margin-left: 70px;
+  max-width: 80%;
+  height: auto;
+}
+
+#members-team .container .gl-team .owl-carousel-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#members-team .container .gl-team .owl-prev {
+  left: 2%;
+}
+
+#members-team .container .gl-team .owl-next {
+  right: 1.5%;
+}
+
+#members-team .container .gl-team .owl-prev,
+#members-team .container .gl-team .owl-next {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 2%;
+  height: auto;
+  background: transparent;
+}
+
+#members-team .container .gl-team .owl-prev span,
+#members-team .container .gl-team .owl-next span {
+  width: 100%;
+  font-size: 35px;
+  padding: 5px;
+}
+
+/*Section Members Leaderboard*/
+#members-leaderboard {
+  overflow: hidden;
+}
+
+#members-leaderboard .container {
+  height: 45px;
+  position: relative;
+  background: #0a1931;
+  border-radius: 0px 0px 0px 32.5px;
+}
+
+#members-leaderboard .container .teks {
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 10px;
+  font-size: 30px;
+  margin-left: 78%;
+  min-height: 1em;
+}
+
+#members-leaderboard .container .gambar {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+}
+
+/*Articles*/
+#ourmembers {
+  padding: 4rem 0;
+  color: #0a1931;
+}
+
+#ourmembers .announcement {
+  margin: 20rem 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
+#ourmembers .ourmembers-article {
+  margin-bottom: 66px;
+  margin-top: 67px;
+}
+
+#ourmembers .ourmembers-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+#ourmembers .ourmembers-desc {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#ourmembers .ourmembers-date {
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+#ourmembers .ourmembers-read-more {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #111840;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 173px;
+  margin-right: 10px;
+}
+
+#ourmembers .ourmembers-read-more:hover {
+  background-color: #111840;
+  color: white;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
 }
 
 @media (max-width: 768px) {

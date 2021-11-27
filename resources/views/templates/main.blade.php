@@ -36,13 +36,18 @@
     <script src="{{ asset('vendor/owlcarousel/dist/owl.carousel.min.js') }}"></script>
     <script>
       $(document).ready(function () {
+        $(".owl-carousel-main").owlCarousel({
+          items: 2 ,
+          dots: false,
+          autoplay: false
+        });
         $(".owl-carousel").owlCarousel({
           loop: true,
-          margin: 10,
           items: 1,
           autoplay: true,
           autoplayTimeout: 3000,
-          autoplayHoverPause: true
+          autoplayHoverPause: true,
+          dots: true,
         });
       });
       $('#scroll-to-top').on('click', function() {
