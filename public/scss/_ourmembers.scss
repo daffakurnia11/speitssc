@@ -410,6 +410,120 @@
     }
 }
 
+@media (max-width: 768px) {
+    #members-team {
+        .container {
+            border-radius: 3em;
+            .favorite-team {
+                h1 {
+                    font-size: 3em;
+                }
+            }
+            .gl-team {
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+        #members-article {
+            .container {
+                .announcement {
+                    margin: 10rem 0;
+                    font-size: 20px;
+                }
+                .membarticle-read-more {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    #members-leaderboard {
+        .container {
+            height: 35px;
+            position: relative;
+            background: #0a1931;
+            border-radius: 0px 0px 0px 32.5px;
+            top: 20px;
+            .teks {
+                color: white;
+                font-family: Lato;
+                font-style: bold;
+                font-weight: bold;
+                text-align: right;
+                top: 10px;
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+            .gambar {
+                position: absolute;
+                display: none;
+                width: 200px;
+                margin-right: 200px;
+            }
+            .leaderboard {
+                width: 27px;
+                height: 27px;
+            }
+            .leaderboard1 {
+                width: 27px;
+                height: 27px;
+            }
+            .leaderboard2 {
+                width: 27px;
+                height: 27px;
+            }
+            .leaderboard3 {
+                width: 27px;
+                height: 27px;
+            }
+            .name {
+                width: 300px;
+                height: 30px;
+                h3 {
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+                }
+            }
+            .point {
+                text-align: center;
+                h3 {
+                    font-size: 1.2em;
+                    font-family: Lato;
+                    font-style: bold;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    #members-team {
+        .container {
+            border-radius: 1.5em;
+            .favorite-team {
+                h1 {
+                    font-size: 2em;
+                }
+                h2 {
+                    font-size: 2em;
+                }
+                p {
+                    font-size: 1.5em;
+                }
+            }
+            .gl-team {
+                h1 {
+                    font-size: 2em;
+                }
+                h2 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 320px) {
    #members-leaderboard{
        .container{
