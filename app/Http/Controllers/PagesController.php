@@ -9,6 +9,7 @@ use App\Models\Point;
 use App\Models\File;
 use App\Models\Post;
 use App\Models\Article;
+use App\Models\Myarticle;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\Hash;
 
@@ -36,7 +37,7 @@ class PagesController extends Controller
         return view('main.aboutus');
     }
 
-   #Members Articles
+    #Members Articles
     public function ourmembers()
     {
         $points = Point::orderBy('point', 'DESC')->limit(10)->get(); #Values
@@ -47,8 +48,8 @@ class PagesController extends Controller
             'points' => $points //declare
         ]);
     }
-    
-    
+
+
     public function store(Request $request)
     {
         $profileData = $request->validate([
@@ -195,15 +196,25 @@ class PagesController extends Controller
         ]);
     }
 
-    public function article(Article $article)
+    public function article($slug)
     {
-        $reader = $article->reader;
-        $article->update([
-            'reader' => $reader + 1
-        ]);
-        return view('main.blog.article', [
-            'articles' => Article::firstWhere('slug', $article->slug)
-        ]);
+        if (Article::firstWhere('slug', $slug)) {
+            $reader = Article::firstWhere('slug', $slug)->reader;
+            Article::firstWhere('slug', $slug)->update([
+                'reader' => $reader + 1
+            ]);
+            return view('main.blog.article', [
+                'articles' => Article::firstWhere('slug', Article::firstWhere('slug', $slug)->slug)
+            ]);
+        } else if (Myarticle::firstWhere('slug', $slug)) {
+            $reader = Myarticle::firstWhere('slug', $slug)->reader;
+            Myarticle::firstWhere('slug', $slug)->update([
+                'reader' => $reader + 1
+            ]);
+            return view('main.blog.article', [
+                'articles' => Myarticle::firstWhere('slug', Myarticle::firstWhere('slug', $slug)->slug)
+            ]);
+        }
     }
 
     #Fun Facts

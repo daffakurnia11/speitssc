@@ -20,7 +20,7 @@
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="aboutMenu">
             <li><a class="dropdown-item" href="/about">About Us</a></li>
-            {{-- <li><a class="dropdown-item" href="">Our Members</a></li> --}}
+            {{-- <li><a class="dropdown-item" href="/ourmembers">Our Members</a></li> --}}
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -36,9 +36,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/petroknowledge">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/ourmembers">Our Members</a>
-        </li>
         {{-- <li class="nav-item">
           <a class="nav-link" href="">Merch</a>
         </li> --}}
@@ -51,6 +48,7 @@
               
               @if (auth()->user()->role == 'Member')
               <li><a class="dropdown-item" href="/profile"><i class="bi bi-grid"></i> Profile</a></li>
+              <li><a class="dropdown-item" href="/myarticle"><i class="bi bi-grid"></i> My Articles</a></li>
               @else
               <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-grid"></i>Admin Dashboard</a></li>
               @endif

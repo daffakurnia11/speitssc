@@ -121,15 +121,17 @@
     $('#summernote').summernote({
       toolbar: [
         // [groupName, [list of button]]
+        ['fontname', ['fontname']],
         ['style', ['bold', 'italic', 'underline', 'clear']],
         ['font', ['strikethrough', 'superscript', 'subscript']],
         ['fontsize', ['fontsize']],
         ['color', ['color']],
         ['para', ['ul', 'ol', 'paragraph']],
         ['height', ['height']],
-        ['insert', ['link', 'picture', 'video']],
+        ['insert', ['link', 'picture']],
       ],
-      height:400,
+      fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
+      height:300,
       popatmouse:true
     });
   });

@@ -3,6 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\MyarticleController;
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ShortlinkController;
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\MemberArticleController;
 use App\Http\Controllers\Admin\PostController;
 
 /*
@@ -46,11 +48,15 @@ Route::prefix('competitions')->group(function () {
   Route::get('/stock-trading', [PagesController::class, 'stock_trading']);
 });
 // End of Competitions Routing
-Route::get('/profile', [PagesController::class, 'edit'])->middleware(['auth', 'checkRole:Member']);
-Route::put('/profile', [PagesController::class, 'store'])->middleware(['auth', 'checkRole:Member']);
-Route::put('/changepass', [PagesController::class, 'changepass'])->middleware(['auth', 'checkRole:Member']);
-Route::put('/memberidupdate/{profile:student_number}', [PagesController::class, 'memberidupdate'])->middleware(['auth', 'checkRole:Member']);
-Route::get('/membercard/{profile:student_number}', [PagesController::class, 'membercard'])->middleware(['auth', 'checkRole:Member']);
+
+Route::middleware(['auth', 'checkRole:Member'])->group(function () {
+  Route::get('/profile', [PagesController::class, 'edit']);
+  Route::put('/profile', [PagesController::class, 'store']);
+  Route::put('/changepass', [PagesController::class, 'changepass']);
+  Route::put('/memberidupdate/{profile:student_number}', [PagesController::class, 'memberidupdate']);
+  Route::get('/membercard/{profile:student_number}', [PagesController::class, 'membercard']);
+  Route::resource('myarticle', MyarticleController::class);
+});
 
 // RegisterController
 Route::get('/member/new', [RegisterController::class, 'new_member'])->middleware('guest');
@@ -99,13 +105,18 @@ Route::prefix('dashboard')->middleware(['auth', 'checkRole:Dev,Admin'])->group(f
   Route::get('/article/publish/{article:slug}', [ArticleController::class, 'publish']);
 
   Route::resource('post', PostController::class);
+
+  Route::get('/member_article/published', [MemberArticleController::class, 'published']);
+  Route::resource('member_article', MemberArticleController::class)->parameters([
+    'member_article' => 'myarticle'
+  ])->except(['create', 'store']);
 });
 
 //Article
 Route::get('/petroknowledge', [PagesController::class, 'petroknowledge']);
 Route::get('/petronews', [PagesController::class, 'petronews']);
 Route::get('/paper-review', [PagesController::class, 'paper_review']);
-Route::get('/article/{article:slug}', [PagesController::class, 'article'])->middleware('auth');
+Route::get('/article/{slug}', [PagesController::class, 'article'])->middleware('auth');
 
 //Posts
 Route::get('/fun-facts', [PagesController::class, 'funfacts']);
