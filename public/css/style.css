@@ -3189,7 +3189,7 @@ footer .footer-desc {
 
 @media (max-width: 340px) {
   #members-leaderboard .container .name {
-    width: 280px;
+    width: 260px;
     height: 30px;
   }
   #members-leaderboard .container .name h3 {
