@@ -2618,7 +2618,7 @@ footer .footer-desc {
   border-radius: 7px 7px 7px 7px;
   border: solid;
   color: #ffffff;
-  background: #0A1931;
+  background: #0a1931;
   margin-left: auto;
 }
 
@@ -2629,7 +2629,7 @@ footer .footer-desc {
   border-radius: 7px 7px 7px 7px;
   border: solid;
   color: #ffffff;
-  background: #FFC947;
+  background: #ffc947;
   margin-left: auto;
 }
 
@@ -2640,7 +2640,7 @@ footer .footer-desc {
   border-radius: 7px 7px 7px 7px;
   border: solid;
   color: #ffffff;
-  background: #D3D5D6;
+  background: #d3d5d6;
   margin-left: auto;
 }
 
@@ -2651,7 +2651,7 @@ footer .footer-desc {
   border-radius: 7px 7px 7px 7px;
   border: solid;
   color: #ffffff;
-  background: #F48B29;
+  background: #f48b29;
   margin-left: auto;
 }
 
@@ -2661,7 +2661,7 @@ footer .footer-desc {
   border-style: solid;
   width: 750px;
   height: 40px;
-  border-color: #0A1931;
+  border-color: #0a1931;
   border-radius: 7px 7px 7px 7px;
   padding-left: 10px;
   padding-top: 2px;
@@ -2675,12 +2675,71 @@ footer .footer-desc {
 }
 
 /*Articles*/
-#ourmembers {
-  padding: 4rem 0;
-  color: #0a1931;
+#members-article {
+  padding-top: 60rem;
 }
 
-#ourmembers .announcement {
+#members-article .nav {
+  margin-top: 30px;
+}
+
+#members-article .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#members-article .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#members-article .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#members-article .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 213px;
+  border-radius: 0px;
+}
+
+#members-article .container {
+  height: 45px;
+  position: relative;
+  background: #0a1931;
+  border-radius: 0px 0px 0px 32.5px;
+  top: 20px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+#members-article .container .teks {
+  color: white;
+  font-family: Lato;
+  font-style: bold;
+  font-weight: bold;
+  text-align: right;
+  top: 10px;
+  font-size: 25px;
+  margin-bottom: 30px;
+  padding-right: 12px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+#members-article .announcement {
   margin: 20rem 0;
   text-align: center;
   font-family: Montserrat;
@@ -2691,12 +2750,12 @@ footer .footer-desc {
   letter-spacing: 0.03em;
 }
 
-#ourmembers .ourmembers-article {
+#members-article .articles {
   margin-bottom: 66px;
   margin-top: 67px;
 }
 
-#ourmembers .ourmembers-title {
+#members-article .membarticle-title {
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -2704,9 +2763,10 @@ footer .footer-desc {
   line-height: 29px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin-left: 8rem;
 }
 
-#ourmembers .ourmembers-desc {
+#members-article .membarticle-desc {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -2716,16 +2776,19 @@ footer .footer-desc {
   text-align: justify;
   margin-top: 5px;
   margin-right: 10px;
+  margin-left: 8rem;
 }
 
-#ourmembers .ourmembers-date {
+#members-article .membarticle-date {
   margin-top: 25px;
   font-family: Montserrat;
   font-size: 16px;
   letter-spacing: 0.03em;
+  text-align: justify;
+  margin-left: 8rem;
 }
 
-#ourmembers .ourmembers-read-more {
+#members-article .membarticle-read-more {
   font-family: Lato;
   font-size: 16px;
   font-weight: 700;
@@ -2741,11 +2804,86 @@ footer .footer-desc {
   margin-right: 10px;
 }
 
-#ourmembers .ourmembers-read-more:hover {
+#members-article .membarticle-read-more:hover {
   background-color: #111840;
   color: white;
   -webkit-text-decoration-color: none;
           text-decoration-color: none;
+}
+
+#members-article .article-logo {
+  max-width: 25%;
+  display: -ms-grid;
+  display: grid;
+}
+
+#members-article .image {
+  max-width: 20rem;
+  height: auto;
+  margin-top: 25px;
+}
+
+#members-article .content {
+  margin-top: 20px;
+}
+
+#members-article nav {
+  padding-top: 45px;
+}
+
+#members-article nav ul {
+  color: #000000;
+  list-style: none;
+}
+
+#members-article nav ul li a {
+  width: 146px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1024px) {
+  #members-leaderboard .container .gambar {
+    width: 200px;
+  }
+  #members-leaderboard .container .name {
+    width: 550px;
+    height: 50px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 780px) {
+  #members-leaderboard .container .gambar {
+    width: 200px;
+  }
+  #members-leaderboard .container .name {
+    width: 420px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2758,6 +2896,17 @@ footer .footer-desc {
   #members-team .container .gl-team h1 {
     font-size: 2.5em;
   }
+  #members-team #members-article .container .announcement {
+    margin: 10rem 0;
+    font-size: 20px;
+  }
+  #members-team #members-article .container .membarticle-read-more {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
   #members-leaderboard .container {
     height: 35px;
     position: relative;
@@ -2772,7 +2921,7 @@ footer .footer-desc {
     font-weight: bold;
     text-align: right;
     top: 10px;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
   #members-leaderboard .container .gambar {
@@ -2798,11 +2947,11 @@ footer .footer-desc {
     height: 27px;
   }
   #members-leaderboard .container .name {
-    width: 300px;
-    height: 30px;
+    width: 500px;
+    height: 35px;
   }
   #members-leaderboard .container .name h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: Lato;
     font-style: bold;
   }
@@ -2810,7 +2959,7 @@ footer .footer-desc {
     text-align: center;
   }
   #members-leaderboard .container .point h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: Lato;
     font-style: bold;
   }
@@ -2834,6 +2983,86 @@ footer .footer-desc {
   }
   #members-team .container .gl-team h2 {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 415px) {
+  #members-leaderboard .container .name {
+    width: 350px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 376px) {
+  #members-leaderboard .container .name {
+    width: 300px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 360px) {
+  #members-leaderboard .container .name {
+    width: 300px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 320px) {
+  #members-leaderboard .container .name {
+    width: 285px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
   }
 }
 /*# sourceMappingURL=style.css.map */
