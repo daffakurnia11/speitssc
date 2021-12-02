@@ -207,6 +207,34 @@
             </li>
           </ul>
         </li>
+
+        {{-- Member Article Menu --}}
+        <li class="nav-item {{ Request::is('dashboard/member_article*') ? 'menu-open' : '' }}">
+          <a class="nav-link">
+            <p>
+              MEMBER'S ARTICLE
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/dashboard/member_article" class="nav-link {{ Request::is('dashboard/member_article') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>
+                  Verifying
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard/member_article/published" class="nav-link {{ Request::is('dashboard/member_article/published') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-check-circle"></i>
+                <p>
+                  Published
+                </p>
+              </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

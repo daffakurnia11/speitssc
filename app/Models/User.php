@@ -55,12 +55,17 @@ class User extends Authenticatable
 
     public function point()
     {
-        return $this->hasOne(Point::class,'user_id');
+        return $this->hasOne(Point::class, 'user_id');
     }
 
     public function article()
     {
         return $this->hasMany(Article::class);
+    }
+
+    public function myarticle()
+    {
+        return $this->hasMany(Myarticle::class);
     }
 
     public function post()

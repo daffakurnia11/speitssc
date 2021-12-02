@@ -1925,56 +1925,57 @@ footer .footer-desc {
   }
 }
 
-/*css petroknowledge */
-.petroknowledge .title {
-  margin-top: 60px;
-  font-family: Lato;
-  font-style: normal;
+#detailArticle .article-title {
+  font-family: "Lato", sans-serif;
+  position: relative;
   font-weight: 800;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 2.75rem;
+  line-height: 3rem;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #262626;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.petroknowledge .body {
-  margin-top: 48px;
-  text-align: justify;
+#detailArticle .article-title .fas {
+  position: absolute;
+  font-size: 1.25rem;
+  top: 0;
+  right: -2rem;
 }
 
-.petroknowledge .name-user {
-  margin-left: -25px;
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 19px;
-  color: #111840;
+#detailArticle .article-author {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #0a1931;
 }
 
-.petroknowledge .detail-article {
-  margin-top: 14px;
-  margin-bottom: 34px;
+#detailArticle .article-released {
+  position: relative;
+  padding-left: 1.5rem;
+  font-family: "Lato", sans-serif;
+  color: #262626;
 }
 
-.petroknowledge .image-article {
-  max-width: 850px;
-  height: 587px;
+#detailArticle .article-released::before {
+  content: ".";
+  position: absolute;
+  top: -120%;
+  left: 5%;
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .petroknowledge {
-    margin-top: 0px;
-  }
-  .petroknowledge .title {
-    font-size: 2em;
-  }
-  .petroknowledge .name-user {
-    margin-top: 5px;
-    margin-left: 0;
-  }
-  .petroknowledge .image-article {
-    width: 100%;
-    height: auto;
-  }
+#detailArticle .article-image {
+  width: 800px;
+  max-width: 100%;
+}
+
+#detailArticle .article-button {
+  font-family: "Lato", sans-serif;
+  padding: 0.375rem 0.75rem;
+  color: #262626;
 }
 
 /*Section Petroknowledge*/
@@ -2677,6 +2678,7 @@ footer .footer-desc {
 /*Articles*/
 #members-article {
   padding-top: 60rem;
+<<<<<<< HEAD
 }
 
 #members-article .nav {
@@ -2725,6 +2727,56 @@ footer .footer-desc {
           transform: scaleX(-1);
 }
 
+=======
+}
+
+#members-article .nav {
+  margin-top: 30px;
+}
+
+#members-article .nav .nav-item {
+  padding: 2px;
+  font-size: 18px;
+}
+
+#members-article .nav .nav-item .nav-link {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 2px;
+  margin-right: 50px;
+}
+
+#members-article .nav .nav-item .nav-link:hover {
+  border-color: transparent;
+  font-weight: bold;
+  padding: 2px;
+  border-bottom: 2px solid;
+}
+
+#members-article .nav .nav-item .nav-link.active {
+  background-color: #111840;
+  border-color: transparent transparent #111840 transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 213px;
+  border-radius: 0px;
+}
+
+#members-article .container {
+  height: 45px;
+  position: relative;
+  background: #0a1931;
+  border-radius: 0px 0px 0px 32.5px;
+  top: 20px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
 #members-article .container .teks {
   color: white;
   font-family: Lato;
@@ -2846,6 +2898,7 @@ footer .footer-desc {
   letter-spacing: 0.03em;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1024px) {
   #members-leaderboard .container .gambar {
     width: 200px;
@@ -2872,20 +2925,7 @@ footer .footer-desc {
   }
   #members-leaderboard .container .name {
     width: 420px;
-    height: 30px;
-  }
-  #members-leaderboard .container .name h3 {
-    font-size: 1.2em;
-    font-family: Lato;
-    font-style: bold;
-  }
-  #members-leaderboard .container .point h3 {
-    font-size: 1.2em;
-    font-family: Lato;
-    font-style: bold;
-  }
-}
-
+=======
 @media (max-width: 768px) {
   #members-team .container {
     border-radius: 3em;
@@ -2904,9 +2944,116 @@ footer .footer-desc {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+  #members-leaderboard .container {
+    height: 35px;
+    position: relative;
+    background: #0a1931;
+    border-radius: 0px 0px 0px 32.5px;
+    top: 20px;
+  }
+  #members-leaderboard .container .teks {
+    color: white;
+    font-family: Lato;
+    font-style: bold;
+    font-weight: bold;
+    text-align: right;
+    top: 10px;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+  #members-leaderboard .container .gambar {
+    position: absolute;
+    display: none;
+    width: 200px;
+    margin-right: 200px;
+  }
+  #members-leaderboard .container .leaderboard {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard1 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard2 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .leaderboard3 {
+    width: 27px;
+    height: 27px;
+  }
+  #members-leaderboard .container .name {
+    width: 300px;
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+<<<<<<< HEAD
+=======
+  #members-leaderboard .container .point {
+    text-align: center;
+  }
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+<<<<<<< HEAD
+=======
+@media (max-width: 576px) {
+  #members-team .container {
+    border-radius: 1.5em;
+  }
+  #members-team .container .favorite-team h1 {
+    font-size: 2em;
+  }
+  #members-team .container .favorite-team h2 {
+    font-size: 2em;
+  }
+  #members-team .container .favorite-team p {
+    font-size: 1.5em;
+  }
+  #members-team .container .gl-team h1 {
+    font-size: 2em;
+  }
+  #members-team .container .gl-team h2 {
+    font-size: 1.5em;
+  }
+}
+
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
+@media (max-width: 768px) {
+  #members-team .container {
+    border-radius: 3em;
+  }
+  #members-team .container .favorite-team h1 {
+    font-size: 3em;
+  }
+  #members-team .container .gl-team h1 {
+    font-size: 2.5em;
+  }
+  #members-team #members-article .container .announcement {
+    margin: 10rem 0;
+    font-size: 20px;
+  }
+  #members-team #members-article .container .membarticle-read-more {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+<<<<<<< HEAD
 }
 
 @media (max-width: 768px) {
+=======
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
   #members-leaderboard .container {
     height: 35px;
     position: relative;
@@ -2986,9 +3133,15 @@ footer .footer-desc {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 415px) {
   #members-leaderboard .container .name {
     width: 350px;
+=======
+@media (max-width: 320px) {
+  #members-leaderboard .container .name {
+    width: 285px;
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
     height: 30px;
   }
   #members-leaderboard .container .name h3 {
@@ -2997,7 +3150,11 @@ footer .footer-desc {
     font-style: bold;
   }
   #members-leaderboard .container .point {
+<<<<<<< HEAD
     text-align: right;
+=======
+    text-align: center;
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
   }
   #members-leaderboard .container .point h3 {
     font-size: 1.2em;
@@ -3006,6 +3163,7 @@ footer .footer-desc {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 376px) {
   #members-leaderboard .container .name {
     width: 300px;
@@ -3064,5 +3222,62 @@ footer .footer-desc {
     font-family: Lato;
     font-style: bold;
   }
+=======
+#myArticle .article-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #0a1931;
+}
+
+#myArticle .article-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #0a1931;
+}
+
+#myArticle .article-published {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #0a1931;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#myArticle .article-published::before {
+  content: ".";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+#myArticle .article-button {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: justify;
+  color: #0a1931;
+  border: 1px solid #0a1931;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  padding: 0.5rem 2rem;
+}
+
+#myArticle .article-button:hover {
+  background-color: #0a1931;
+  color: #ffffff;
+}
+
+#myArticle .article-header {
+  width: 300px;
+  max-width: 100%;
+>>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
 }
 /*# sourceMappingURL=style.css.map */

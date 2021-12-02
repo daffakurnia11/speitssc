@@ -8,7 +8,7 @@
     @include('templates.footer')
 @endsection
 
-@section('title', 'Member ID')
+@section('title', 'My Profile')
 
 @section('content')
 

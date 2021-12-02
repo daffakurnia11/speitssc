@@ -1,52 +1,48 @@
-/*css petroknowledge */
-
-.petroknowledge {
-    //margin-left: 290px;
-    //margin-right: 290px;
-    .title {
-        margin-top: 60px;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 58px;
-        letter-spacing: 0.03em;
-        color: #000000;
-    }
-    .body {
-        margin-top: 48px;
-        text-align: justify;
-    }
-    .name-user {
-        margin-left: -25px;
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 19px;
-        color: #111840;
-    }
-    .detail-article {
-        margin-top: 14px;
-        margin-bottom: 34px;
-    }
-    .image-article {
-        max-width: 850px;
-        height: 587px;
-    }
-}
-
-@media (max-width: 768px) {
-    .petroknowledge {
-        margin-top: 0px;
-        .title {
-            font-size: 2em;
+#detailArticle {
+    .article {
+        &-title {
+            font-family: $font-lato;
+            position: relative;
+            font-weight: 800;
+            font-size: 2.75rem;
+            line-height: 3rem;
+            letter-spacing: 0.03em;
+            color: $text-black;
+            width: fit-content;
+            .fas {
+                position: absolute;
+                font-size: 1.25rem;
+                top: 0;
+                right: -2rem;
+            }
         }
-        .name-user {
-            margin-top: 5px;
-            margin-left: 0;
+        &-author {
+            font-family: $font-lato;
+            font-weight: bold;
+            color: $text-primary;
         }
-        .image-article {
-            width: 100%;
-            height: auto;
+        &-released {
+            position: relative;
+            padding-left: 1.5rem;
+            font-family: $font-lato;
+            color: $text-black;
+        }
+        &-released::before {
+            content: ".";
+            position: absolute;
+            top: -120%;
+            left: 5%;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        &-image {
+            width: 800px;
+            max-width: 100%;
+        }
+        &-button {
+            font-family: $font-lato;
+            padding: 0.375rem 0.75rem;
+            color: $text-black;
         }
     }
 }
