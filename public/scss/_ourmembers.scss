@@ -525,27 +525,25 @@
 }
 
 @media (max-width: 320px) {
-   #members-leaderboard{
-       .container{
-            .name{
+    #members-leaderboard {
+        .container {
+            .name {
                 width: 285px;
                 height: 30px;
-                h3{
+                h3 {
                     font-size: 1.2em;
                     font-family: Lato;
                     font-style: bold;
-
                 }
             }
-            .point{
+            .point {
                 text-align: center;
-                h3{
+                h3 {
                     font-size: 1.2em;
                     font-family: Lato;
                     font-style: bold;
                 }
             }
         }
-   }
+    }
 }
-
