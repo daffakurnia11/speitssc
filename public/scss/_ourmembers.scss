@@ -296,6 +296,60 @@
     }
 }
 // Responsive
+// Members Leaderboad Ukuran 1072px
+@media (max-width : 1075px){
+    #members-leaderboard{
+        .container{
+            .gambar{
+                width: 200px;
+            }
+            .name{
+                 width: 560px;
+                 height: 50px;
+                 h3{
+                     font-size: 2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 h3{
+                     font-size: 2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+}
+// Members Leaderboad Ukuran 1044px
+@media (max-width : 1056px){
+    #members-leaderboard{
+        .container{
+            .gambar{
+                width: 200px;
+            }
+            .name{
+                 width: 550px;
+                 height: 50px;
+                 h3{
+                     font-size: 2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 h3{
+                     font-size: 2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+}
 // Members Leaderboad Ukuran 1024px
 @media (max-width : 1024px){
     #members-leaderboard{
@@ -323,6 +377,56 @@
          }
     }
 }
+// Members Leaderboad Ukuran 805px
+@media (max-width: 992px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 420px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: left;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
+// Members Leaderboad Ukuran 782px
+@media (max-width: 790px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 420px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: left;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
 // Members Leaderboad Ukuran 780px
 @media (max-width: 780px) {
     #members-leaderboard{
@@ -436,10 +540,35 @@
                     font-family: Lato;
                     font-style: bold;
                 }
+            }
         }
     }
 }
-}
+// Members Leaderboad Ukuran 765px
+@media (max-width: 765px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 450px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: right;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
 @media (max-width: 576px) {
     #members-team {
         .container {
@@ -466,7 +595,58 @@
         }
     }
 }
-// Ukuran 411px
+// Members Leaderboad Ukuran 576px
+@media (max-width: 555px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: right;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
+// Members Leaderboad Ukuran 423px
+@media (max-width: 425px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 350px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: right;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
+
+// Members Leaderboad Ukuran 411px
 @media (max-width: 415px) {
     #members-leaderboard{
         .container{
@@ -491,7 +671,7 @@
          }
     }
  }
- // Ukuran 375px
+ // Members Leaderboad Ukuran 375px
 @media (max-width: 376px) {
     #members-leaderboard{
         .container{
@@ -516,7 +696,7 @@
          }
     }
  }
-// Ukuran 360px
+// Members Leaderboad Ukuran 360px
 @media (max-width: 360px) {
    #members-leaderboard{
        .container{
@@ -541,7 +721,32 @@
         }
    }
 }
-// Ukuran 290px
+// Members Leaderboad Ukuran 320px
+@media (max-width: 340px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 280px;
+                 height: 30px;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: right;
+                 h3{
+                     font-size: 1.2em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
+    }
+ }
+// Members Leaderboad Ukuran 290px
 @media (max-width: 290px) {
     #members-leaderboard{
         .container{

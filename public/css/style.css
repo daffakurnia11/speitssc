@@ -2847,6 +2847,46 @@ footer .footer-desc {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 1075px) {
+  #members-leaderboard .container .gambar {
+    width: 200px;
+  }
+  #members-leaderboard .container .name {
+    width: 560px;
+    height: 50px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 1056px) {
+  #members-leaderboard .container .gambar {
+    width: 200px;
+  }
+  #members-leaderboard .container .name {
+    width: 550px;
+    height: 50px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
 @media (max-width: 1024px) {
   #members-leaderboard .container .gambar {
     width: 200px;
@@ -2862,6 +2902,46 @@ footer .footer-desc {
   }
   #members-leaderboard .container .point h3 {
     font-size: 2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  #members-leaderboard .container .name {
+    width: 420px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: left;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 790px) {
+  #members-leaderboard .container .name {
+    width: 420px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: left;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
     font-family: Lato;
     font-style: bold;
   }
@@ -2966,6 +3046,26 @@ footer .footer-desc {
   }
 }
 
+@media (max-width: 765px) {
+  #members-leaderboard .container .name {
+    width: 450px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
 @media (max-width: 576px) {
   #members-team .container {
     border-radius: 1.5em;
@@ -2984,6 +3084,46 @@ footer .footer-desc {
   }
   #members-team .container .gl-team h2 {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 555px) {
+  #members-leaderboard .container .name {
+    width: px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 425px) {
+  #members-leaderboard .container .name {
+    width: 350px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
   }
 }
 
@@ -3030,6 +3170,26 @@ footer .footer-desc {
 @media (max-width: 360px) {
   #members-leaderboard .container .name {
     width: 300px;
+    height: 30px;
+  }
+  #members-leaderboard .container .name h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+  #members-leaderboard .container .point {
+    text-align: right;
+  }
+  #members-leaderboard .container .point h3 {
+    font-size: 1.2em;
+    font-family: Lato;
+    font-style: bold;
+  }
+}
+
+@media (max-width: 340px) {
+  #members-leaderboard .container .name {
+    width: 280px;
     height: 30px;
   }
   #members-leaderboard .container .name h3 {
