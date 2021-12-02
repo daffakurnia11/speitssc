@@ -541,33 +541,28 @@
         }
    }
 }
-// Ukuran 320px
-@media (max-width: 320px) {
-    #members-leaderboard {
-        .container {
-            .name {
-                width: 285px;
-                height: 30px;
-                h3 {
-                    font-size: 1.2em;
-                    font-family: Lato;
-                    font-style: bold;
-                }
-            }
-<<<<<<< HEAD
-            .point{
-                text-align: right;
-                h3{
-=======
-            .point {
-                text-align: center;
-                h3 {
->>>>>>> 170c797a3cf801cbbb18b5cf22658b0b5ed1ecab
-                    font-size: 1.2em;
-                    font-family: Lato;
-                    font-style: bold;
-                }
-            }
-        }
+// Ukuran 290px
+@media (max-width: 290px) {
+    #members-leaderboard{
+        .container{
+             .name{
+                 width: 230px;
+                 height: 30px;
+                 h3{
+                     font-size: 1em;
+                     font-family: Lato;
+                     font-style: bold;
+ 
+                 }
+             }
+             .point{
+                 text-align: right;
+                 h3{
+                     font-size: 1em;
+                     font-family: Lato;
+                     font-style: bold;
+                 }
+             }
+         }
     }
-}
+ }
