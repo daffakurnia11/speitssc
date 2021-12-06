@@ -20,7 +20,7 @@
           </a>
           <ul class="dropdown-menu w-100 text-center" aria-labelledby="aboutMenu">
             <li><a class="dropdown-item" href="/about">About Us</a></li>
-            {{-- <li><a class="dropdown-item" href="/ourmembers">Our Members</a></li> --}}
+            <li><a class="dropdown-item" href="/ourmembers">Our Members</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
