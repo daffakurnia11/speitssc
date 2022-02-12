@@ -16,7 +16,7 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('member_id')->nullable();
-            $table->string('student_number')->unique();
+            $table->string('student_number');
             $table->string('batch');
             $table->string('faculty');
             $table->string('major');

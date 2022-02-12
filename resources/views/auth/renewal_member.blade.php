@@ -16,17 +16,18 @@
       <p class="mb-0">Payment can be done by transfer to :
       </p>
       <ul class="mb-0">
-        <li><strong>BCA Bank</strong> : 7105039794 (<em>George Billy N</em>)</li>
-        <li><strong>GoPay or OVO</strong> : 087898372360 (<em>George Billy</em>)</li>
+        <li><strong>BCA Bank</strong> : 2180232641 (<em>Salsabila Putri Zani</em>)</li>
+        <li><strong>GoPay</strong> : 39358082123340027 (<em>Salsabila Putri Zani</em>)</li>
+        <li><strong>OVO</strong> : 70001082123340027 (<em>Salsabila Putri Zani</em>)</li>
       </ul>
       <p class="mb-0">Twibbon, caption, and snapgram video can be downloaded in the link as follows: <a href="https://speitssc.org/TermsforMember" target="_blank">https://speitssc.org/TermsforMember</a></p>
       <p>Member renewal fee applies for Members of SPE ITS SC 2020/2021</p>
       <p class="my-4">Don't hesitate to contact us if you need further information!</p>
       <div class="contact">
         <p class="mb-0">Contact Person :</p>
-        <a href="http://line.me/ti/p/~george.nanlohy" class="d-inline text-decoration-none"><i class="fab fa-fw fa-line"></i> George</a>
+        <a href="http://line.me/ti/p/~kevinrizqiaa" class="d-inline text-decoration-none"><i class="fab fa-fw fa-line"></i> Kevin Rizqia</a>
         <br>
-        <a href="http://line.me/ti/p/~nauvaln11" class="d-inline text-decoration-none"><i class="fab fa-fw fa-line"></i> Nauval</a>
+        <a href="http://line.me/ti/p/~salsa_space" class="d-inline text-decoration-none"><i class="fab fa-fw fa-line"></i> Salsabila Putri</a>
         <a href="/renewal" class="float-end fw-bold fs-5 text-decoration-none">Next <i class="fas fa-caret-right fa-lg ms-1"></i></a>
       </div>
     </div>
