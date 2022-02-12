@@ -89,9 +89,9 @@ class RegisterController extends Controller
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
             $request->screenshot->move(public_path('files/screenshot'), $screenshotImage);
-            Mail::to($request->email)->send(new WelcomeMail($request->name));
+            // Mail::to($request->email)->send(new WelcomeMail($request->name));
         }
-        return redirect('/login')->with('success', 'Registration success! Please login!');
+        return redirect('/login')->with('success', 'Thank you for your registration. For more information, please contact us!');
     }
 
     // NEW MEMBER INFORMATION
@@ -176,9 +176,9 @@ class RegisterController extends Controller
 
             $request->payment->move(public_path('files/payment'), $paymentImage);
             $request->screenshot->move(public_path('files/screenshot'), $screenshotImage);
-            Mail::to($request->email)->send(new WelcomeMail($request->name));
+            // Mail::to($request->email)->send(new WelcomeMail($request->name));
         }
 
-        return redirect('/login')->with('success', 'Registration success! Please login!');
+        return redirect('/login')->with('success', 'Thank you for your registration. For more information, please contact us!');
     }
 }

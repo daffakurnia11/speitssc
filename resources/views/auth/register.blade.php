@@ -157,9 +157,9 @@
             </div>
           </div>
         </div>
-        <p class="fw-bold register-notes mb-1 mt-4">Upload the screenshot of your twibbon post & fee payment transaction!</p>
+        <p class="fw-bold register-notes mb-1 mt-3">Upload the screenshot of your Instagram Story & fee payment transaction!</p>
         <div class="mb-3">
-          <label class="register-notes mb-2">Please <strong>upload the screenshot of twibbon post</strong> on Instagram (<a class="text-small" href="https://speitssc.org/TermsforMember">https://speitssc.org/TermsforMember</a>)</label>
+          <label class="register-notes mb-2">Please <strong>upload the screenshot of Instagram Story</strong> (<a class="text-small" href="https://speitssc.org/TermsforMember">https://speitssc.org/TermsforMember</a>)</label>
           <input class="form-control @error('screenshot') is-invalid @enderror" type="file" id="formFileMultiple" name="screenshot" accept=".jpg,.jpeg,.png">
           @error('screenshot')
             <div class="invalid-feedback">

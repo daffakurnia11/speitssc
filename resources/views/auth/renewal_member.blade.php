@@ -9,7 +9,7 @@
       <p>Welcome to the registration of SPE ITS SC 2021/2022 Membership.</p>
       <p class="mb-0">Before filling this form, please do the instructions below : </p>
         <ol type="1">
-          <li><strong>Pay the registration fee</strong> (<em>Rp 25.000</em>).</li>
+          <li><strong>Pay the registration fee</strong> (<em>Rp 20.000</em>).</li>
           <li><strong>Upload instagram story</strong> for Open Registration for Member SPE ITS SC on your Instagram account. <strong>Follow and tag</strong> <a href="https://www.instagram.com/speitssc/" target="_blank">@speitssc</a> and 3 of your friends. Make sure your account is <strong>not private</strong>.</li>
           <li>Upload the screenshot of your Instagram Story Post and fee payment transaction.</li>
         </ol>
@@ -17,8 +17,8 @@
       </p>
       <ul class="mb-0">
         <li><strong>BCA Bank</strong> : 2180232641 (<em>Salsabila Putri Zani</em>)</li>
-        <li><strong>GoPay</strong> : 39358082123340027 (<em>Salsabila Putri Zani</em>)</li>
-        <li><strong>OVO</strong> : 70001082123340027 (<em>Salsabila Putri Zani</em>)</li>
+        <li><strong>GoPay</strong> : 082123340027 (<em>Salsabila Putri Zani</em>)</li>
+        <li><strong>OVO</strong> : 082123340027 (<em>Salsabila Putri Zani</em>)</li>
       </ul>
       <p class="mb-0">Twibbon, caption, and snapgram video can be downloaded in the link as follows: <a href="https://speitssc.org/TermsforMember" target="_blank">https://speitssc.org/TermsforMember</a></p>
       <p>Member renewal fee applies for Members of SPE ITS SC 2020/2021</p>
