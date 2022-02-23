@@ -17,7 +17,7 @@ class RegisterController extends Controller
 {
     public function deadline()
     {
-        return Carbon::create(2022, 2, 22, 23, 59, 59);
+        return Carbon::create(2022, 2, 26, 23, 59, 59);
     }
 
     // RENEWAL INFORMATION
